@@ -1,0 +1,6 @@
+- store buttons states
+- features layout
+- line break on second feature extra
+- links :after
+- aria labels
+- meta tags
