@@ -437,3 +437,77 @@ button.round:focus {
 	margin-bottom: 1em;
 }
 
+/* -------- Testimonials -------- */
+
+.testimonials {
+	padding: 50px 0 70px 0;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1.9rem;
+	grid-column: 2 / span 10;
+	padding: 2em 0;
+  background-image: url(img/grid.svg), url(img/grid.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+.slide {
+	grid-column: 2 / span 8;
+	padding: 2em 6em 2.2em 6em;
+	background-color: #fff;
+	border-radius: 15px;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.17);
+}
+
+.slide img {
+	margin: 0 auto 2.5em auto;
+	display: block;
+}
+
+blockquote p {
+	color: var(--primary-color);
+	font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+	margin-bottom: 3em;
+}
+
+blockquote footer {
+	display: flex;
+  justify-content: center;
+}
+
+cite {
+	font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+
+.partners {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	grid-column: 3 / span 8;
+}
+
+.partners h3 {
+	color: var(--primary-color);
+	text-align: center;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+/* -------- Call to action -------- */
+
+.cta {
+	padding: 50px 0 60px 0;
+	background-color: var(--secondary-color);
+}
