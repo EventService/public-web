@@ -1,0 +1,161 @@
+/* -------- Variables -------- */
+
+:root {
+  --primary-color: #2f3c54;
+  --secondary-color: #84bd01;
+}
+
+/* -------- Reset -------- */
+
+html {
+	background-color: #fff;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ 	box-sizing: inherit;
+}
+
+html, body, h1, h2, h3, h4, h5, p, ol, ul, li, blockquote, address, section {
+  margin: 0;
+	padding: 0
+}
+
+/* -------- Typography -------- */
+
+:root {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	color: var(--primary-color)
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 400;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+a {
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	color: inherit;
+	transition: border .05s ease-out;
+	text-decoration: none;
+	/* border-bottom: 2px solid transparent; */
+	position: relative;
+}
+
+a:hover {
+	border-bottom: 2px solid var(--primary-color);
+}
+
+a:focus {
+	outline: none;
+}
+
+a:focus::after {
+	content: '';
+  width: 100%;
+  height: 100%;
+  padding: .2em .4em;
+  box-sizing: content-box;
+  position: absolute;
+  top: -.2em;
+  left: -.4em;
+  border-radius: 8px;
+  border: 2px solid var(--secondary-color);
+}
+
+
+/* -------- Base -------- */
+
+section {
+
+}
+
+.container {
+	width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.logo img {
+	vertical-align: middle;
+}
+
+button {
+	cursor: pointer;
+}
+
+button.round {
+	color: white;
+	background-color: var(--secondary-color);
+	padding: .5em 1.7em;
+	font-family: 'Helvetica Neue', 'Inter', sans-serif;
+	font-size: inherit;
+	font-weight: 400;
+	letter-spacing: 0.1px;
+	border: none;
+	border-radius: 18px;
+}
+
+button.round:hover {
+	background-color: #76a800;
+}
+
+button.round:active {
+	background-color: #598000;
+}
+
+button.round:focus {
+	outline: none;
+	background-color: var(--secondary-color);
+	box-shadow: 0 0 0 2px white, 0 0 0 4px var(--secondary-color);
+}
+
+/* -------- Header -------- */
+
+.page-header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 12px 40px;
+}
+
+.page-header nav {
+	margin-left: 40px;
+}
+
+.page-header nav a {
+	margin-right: 26px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.page-header nav a:hover {
+	border-bottom: 2px solid var(--secondary-color);
+}
+
+.registration-button {
+	margin-left: auto;
+}
