@@ -4,7 +4,8 @@
   --primary-color: #2f3c54;
   --secondary-color: #84bd01;
 	--text-color: #585858;
-  --alternate-bg-color: #f5f5f5
+	--secondary-text-color: #bbc3ca;
+  --secondary-bg-color: #f5f5f5
 }
 
 /* -------- Reset -------- */
@@ -30,6 +31,8 @@ html, body, h1, h2, h3, h4, h5, p, ol, ul, li, blockquote, address, section {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 24px;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 	color: var(--text-color)
 }
 
@@ -48,7 +51,7 @@ h1 {
 }
 
 h2 {
-	margin-bottom: .4em;
+	margin-bottom: .35em;
 	font-size: 56px;
 	line-height: 56px;
 	letter-spacing: -1px;
@@ -78,7 +81,7 @@ a {
 	font-weight: 600;
 	border: none;
 	color: var(--primary-color);
-	transition: border .05s ease-out;
+	transition: border .1s ease-out;
 	text-decoration: none;
 	border-bottom: 2px solid transparent;
 	position: relative;
@@ -105,6 +108,13 @@ a:focus::after {
   border: 2px solid var(--secondary-color);
 }
 
+a.secondary {
+	font-family: 'Bebas Neue', cursive;
+	line-height: 24px;
+	letter-spacing: 0.11px;
+	font-weight: 400;
+}
+
 
 /* -------- Base -------- */
 
@@ -113,7 +123,7 @@ a:focus::after {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
+  gap: 1.9rem;
 }
 
 .container header {
@@ -278,7 +288,7 @@ button.round:focus {
 
 .features {
 	padding: 100px 0;
-	background-color: var(--alternate-bg-color);
+	background-color: var(--secondary-bg-color);
 }
 
 .features header {
@@ -300,7 +310,7 @@ button.round:focus {
 
 .features h3 {
 	color: var(--primary-color);
-	margin-bottom: .4em;
+	margin-bottom: .5em;
 }
 
 .features h5 {
@@ -312,8 +322,13 @@ button.round:focus {
 }
 
 .feature-description-detail {
-	width: 49%;
+	width: 43%;
 	margin-bottom: 2em;
+	font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: var(--primary-color);
 }
 
 .feature-extra {
@@ -321,7 +336,7 @@ button.round:focus {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-	margin-top: 5em;
+	margin-top: 3em;
 }
 
 .feature-extra-icon {
@@ -332,18 +347,11 @@ button.round:focus {
 	margin: 1em 0;
 }
 
-.feature-extra a {
-	font-family: 'Bebas Neue', cursive;
-	line-height: 24px;
-	letter-spacing: 0.11px;
-	font-weight: 400;
-}
-
 /* -------- Stats -------- */
 
 .stats {
 	padding-top: 50px;
-	padding-bottom: 130px;
+	padding-bottom: 190px;
 }
 
 .stats header {
@@ -377,12 +385,12 @@ button.round:focus {
 
 .stat-4 {
   grid-column-start: 4;
-	margin-top: 9em;
+	margin-top: 7em;
 }
 
 .stat-5 {
   grid-column-start: 8;
-	margin-top: 9em;
+	margin-top: 7em;
 }
 
 /* -------- News -------- */
@@ -390,5 +398,42 @@ button.round:focus {
 .news {
 	padding-top: 50px;
 	padding-bottom: 80px;
-	background-color: var(--alternate-bg-color);
+	background-color: var(--secondary-bg-color);
 }
+
+.news header {
+	margin-bottom: 2em;
+}
+
+.news-item {
+	grid-column: span 4;
+	background-color: #fff;
+	border-radius: 0 0 1em 1em;
+  overflow: hidden;
+	box-shadow: 0 1px 4px 0 rgba(0, 101, 242, 0.1), 0 0 2px 0 rgba(0, 101, 242, 0.1), 0 11px 15px 0 rgba(0, 0, 0, 0.17);
+}
+
+.news-item-content {
+	padding: 14px 20px 24px 20px;
+}
+
+.news-item time {
+	display: block;
+	margin-bottom: 1em;
+	font-size: 13px;
+  font-weight: bold;
+	line-height: normal;
+	text-transform: uppercase;
+	color: var(--secondary-text-color);
+}
+
+.news-item h4 {
+	line-height: 1.33;
+  letter-spacing: -0.1px;
+	margin-bottom: .5em;
+}
+
+.news-item p {
+	margin-bottom: 1em;
+}
+
