@@ -1,6 +1,10 @@
 - store buttons states
-- features layout
+- partners buttons states
+- fix the focus states that looks weird on some links
+- fix the features layout (no space between left and right sections)
 - line break on second feature extra
 - links :after
+- hide the unnecessary elements
+- javascript for the slider (which is why there is no buttons on it yet)
 - aria labels
 - meta tags
