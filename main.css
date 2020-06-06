@@ -37,15 +37,28 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
+	font-size: 100px;
+	line-height: 100px;
+	letter-spacing: -1.79px;
+  text-align: center;
+	grid-column: span 12;
+	margin-bottom: .3em;
 }
 
 h2 {
 }
 
 h3 {
+	font-size: 42px;
+	line-height: 48px;
+	color: var(--secondary-color);
+	grid-column: span 12;
 }
 
 h4 {
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 0,15px;
 }
 
 h5 {
@@ -58,7 +71,7 @@ a {
 	color: inherit;
 	transition: border .05s ease-out;
 	text-decoration: none;
-	/* border-bottom: 2px solid transparent; */
+	border-bottom: 2px solid transparent;
 	position: relative;
 }
 
@@ -91,15 +104,11 @@ section {
 }
 
 .container {
-	width: 1140px;
+	width: 1110px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
-}
-
-.logo img {
-	vertical-align: middle;
 }
 
 button {
@@ -132,6 +141,27 @@ button.round:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 4px var(--secondary-color);
 }
 
+.logo:hover, .store-buttons a {
+	border: none;
+}
+
+.logo img {
+	vertical-align: middle;
+}
+
+.store-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.store-buttons a {
+	margin-right: 2px;
+}
+
+.store-buttons a:last-of-type {
+	margin-right: 0;
+}
+
 /* -------- Header -------- */
 
 .page-header {
@@ -159,3 +189,83 @@ button.round:focus {
 .registration-button {
 	margin-left: auto;
 }
+
+/* -------- Hero -------- */
+
+.hero {
+	padding-top: 170px;
+	padding-bottom: 15px;
+}
+
+.hero-content {
+	grid-column: span 12;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero h3 {
+	text-align: center;
+	margin-bottom: 1.2em;
+}
+
+.hero-illustration {
+	width: 100%;
+}
+
+.hero-link {
+	margin: 1.2em 0;
+}
+
+/* -------- Use cases -------- */
+
+.use-cases {
+	background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-color) 50%, var(--primary-color) 50%, var(--primary-color) 100%);
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.use-case {
+	grid-column-end: span 5;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.use-case:nth-child(1) h3, .use-case:nth-child(1) .use-case-detail {
+	color: var(--primary-color);
+}
+
+.use-case:nth-child(2) {
+	grid-column-start: 8;
+}
+
+.use-case h3 {
+	margin-bottom: 1em;
+}
+
+.use-case h4 {
+	margin-bottom: 1.6em;
+}
+
+.use-case-details {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2em;
+}
+
+.use-case-detail {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0;
+}
+
+.use-case-detail img {
+	margin-right: 1em;
+}
+
