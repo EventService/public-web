@@ -577,6 +577,9 @@ cite {
   letter-spacing: 0.1px;
   color: var(--text-color);
 }
+.footer-links a:hover {
+	border-bottom: 2px solid var(--text-color);
+}
 
 .footer-social {
 	display: flex;
