@@ -190,7 +190,7 @@ button.square:focus {
 	box-shadow: 0 0 0 3px var(--secondary-color), 0 0 0 5px #fff;
 }
 
-.logo:hover, .store-buttons a {
+.logo, .logo:hover, .store-buttons a, .partners a, .footer-social a {
 	border: none;
 }
 
@@ -550,4 +550,61 @@ cite {
 
 .cta .store-buttons a {
 	margin-right: 13px;
+}
+
+/* -------- Footer -------- */
+
+.site-footer {
+	padding-top: 35px;
+}
+
+.site-footer .logo {
+	grid-column: 1 / span 2;
+}
+
+.footer-links{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+	grid-column: 4 / span 6;
+}
+
+.footer-links a{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--text-color);
+}
+
+.footer-social {
+	display: flex;
+  justify-content: flex-end;
+  align-items: center;
+	grid-column: 11 / span 2;
+}
+
+.footer-social a {
+	margin-left: .3em;
+}
+
+.copyright {
+	display: flex;
+  justify-content: flex-end;
+	padding-bottom: 20px;
+	grid-column: span 12;
+	font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: var(--secondary-text-color);
+}
+
+.copyright p:nth-child(1) {
+	margin-right: auto;
+}
+
+.copyright p:nth-child(2) {
+	margin-right: 1em;
 }
