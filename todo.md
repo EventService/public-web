@@ -1,10 +1,14 @@
+- FAQ page
+- responsive images
+- fonts on Chrome
 - store buttons states
 - partners buttons states
 - fix the focus states that looks weird on some links
-- fix the features layout (no space between left and right sections)
-- line break on second feature extra
 - links :after
-- hide the unnecessary elements
-- javascript for the slider (which is why there is no buttons on it yet)
 - aria labels
 - meta tags
+- transitions in FAQ
+- AJAX calls on news
+- line break on second feature extra
+- hide the unnecessary elements
+- javascript for the slider
