@@ -1043,6 +1043,9 @@ cite {
 .faq .container > header {
 	align-items: flex-start;
 	grid-column: 3 / span 8;
+	font-size: 18px;
+  font-weight: 600;
+	padding-bottom: 2rem;
 }
 
 .faq-question {
