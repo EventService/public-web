@@ -115,6 +115,10 @@ a.secondary {
 	font-weight: 400;
 }
 
+ul {
+	padding-left: 3em;
+}
+
 @media all and (max-width: 1200px) {
 
 	:root {
@@ -153,7 +157,7 @@ body.header-open {
   gap: 1.9rem;
 }
 
-.container header {
+.container > header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -302,7 +306,7 @@ body.header-open {
 }
 
 .nav-toggle {
-	display: block;
+	display: none;
 	width: 2rem;
 	height: 2rem;
 	margin-left: auto;
@@ -363,6 +367,10 @@ body.header-open {
 
 	.page-header:not(.open) nav, .page-header:not(.open) .registration-button {
 		display: none;
+	}
+
+	.nav-toggle {
+		display: block;
 	}
 
 }
@@ -1020,4 +1028,58 @@ cite {
 		width: 100%;
 	}
 
+}
+
+/* -------- FAQ -------- */
+
+.faq {
+	padding: 4.3rem 0 8rem 0;
+}
+
+.faq .container {
+	row-gap: 0;
+}
+
+.faq .container > header {
+	align-items: flex-start;
+	grid-column: 3 / span 8;
+}
+
+.faq-question {
+	grid-column: 3 / span 8;
+	border-bottom: 1px solid var(--secondary-color);
+	position: relative;
+}
+
+.faq-question-body {
+	height: 0;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+
+.faq-question.open .faq-question-body {
+	height: auto;
+}
+
+.faq-question h4 {
+	padding: 1em 0;
+	cursor: pointer;
+}
+
+.faq-question h4::after {
+	content: 'V';
+	position: absolute;
+	right: 0;
+}
+
+.faq-question.open h4::after {
+	transform: rotate(180deg);
+}
+
+.faq-question p, .faq-question ul {
+	margin-bottom: 2em;
+}
+
+.faq-question a {
+	font-size: 1rem;
 }
