@@ -141,6 +141,10 @@ a.secondary {
 
 /* -------- Base -------- */
 
+body.header-open {
+  overflow-y: hidden;
+}
+
 .container {
 	width: 1110px;
   margin: auto;
@@ -164,11 +168,11 @@ a.secondary {
 	display: none;
 }
 
-button {
+.button {
 	cursor: pointer;
 }
 
-button.round {
+.button.round {
 	color: #fff;
 	background-color: var(--secondary-color);
 	padding: .5em 1.7em;
@@ -177,28 +181,29 @@ button.round {
 	font-weight: 400;
 	letter-spacing: 0.1px;
 	border: none;
-	border-radius: 18px;
+	border-radius: 25px;
 }
 
-button.round:hover {
+.button.round:hover {
 	background-color: #76a800;
 }
 
-button.round:active {
+.button.round:active {
 	background-color: #598000;
 }
 
-button.round:focus {
+.button.round:focus {
 	outline: none;
 	background-color: var(--secondary-color);
 	box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--secondary-color);
 }
 
-button.square {
+.button.square {
 	color: var(--primary-color);
 	background-color: #fff;
 	padding: 0 1em;
   height: 38px;
+	line-height: 38px;
 	font-family: 'Inter', sans-serif;
 	font-size: inherit;
 	font-weight: 600;
@@ -207,15 +212,15 @@ button.square {
 	border-radius: 5px;
 }
 
-button.square:hover {
+.button.square:hover {
 	background-color: var(--secondary-bg-color);
 }
 
-button.square:active {
+.button.square:active {
 	background-color: #e6e6e6;
 }
 
-button.square:focus {
+.button.square:focus {
 	outline: none;
 	background-color: #fff;
 	box-shadow: 0 0 0 3px var(--secondary-color), 0 0 0 5px #fff;
@@ -294,6 +299,72 @@ button.square:focus {
 
 .registration-button {
 	margin-left: auto;
+}
+
+.nav-toggle {
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	margin-left: auto;
+	cursor: pointer;
+	background-color: transparent;
+  background-image: url('img/hamburger/hamburger-open.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+	border: none;
+  border-radius: 0;
+}
+
+#header.open .nav-toggle {
+	position: absolute;
+	right: 3rem;
+	top: 3rem;
+	background-image: url('img/hamburger/hamburger-close.svg');
+}
+
+#header.open {
+	position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem;
+}
+
+#header.open nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#header.open nav a {
+	font-size: 1rem;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#header.open .logo img {
+	height: 4rem;
+}
+
+#header.open .registration-button {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem !important;
+}
+
+@media all and (max-width: 730px) {
+
+	.page-header:not(.open) nav, .page-header:not(.open) .registration-button {
+		display: none;
+	}
+
 }
 
 /* -------- Hero -------- */
@@ -886,7 +957,7 @@ cite {
 }
 
 .footer-social a {
-	margin-left: .3em;
+	margin-left: .8em;
 }
 
 .copyright {
@@ -901,12 +972,21 @@ cite {
   color: var(--secondary-text-color);
 }
 
-.copyright p:nth-child(1) {
-	margin-right: auto;
+.copyright a {
+	margin-right: 1em;
+	font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+	color: var(--secondary-text-color);
 }
 
-.copyright p:nth-child(2) {
-	margin-right: 1em;
+.copyright a:hover {
+	border-bottom: 1px solid var(--secondary-text-color);
+}
+
+.copyright p {
+	margin-right: auto;
 }
 
 @media all and (max-width: 1023px) {
