@@ -13,6 +13,7 @@
   "author": "BAM",
   "license": "ISC",
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
     "just-validate": "^1.5.0",

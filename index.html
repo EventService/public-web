@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Týmuj</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="main.css" rel="stylesheet">
+  <link href="main.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -280,15 +280,47 @@
         <a class="section-link hidden" href="">Přečtěte si zkušeností klubů s používáním Týmuj</a>
       </header>
       <div class="slider hidden">
-        <div class="slide">
-          <img src="https://dummyimage.com/240x90/585858/ffffff.jpg" alt="Interesting article headline about events">
-          <blockquote>
-            <p>“Here goes a testimonial of one of the sports clubs expressing their absolute pleasure to be using Tymuj for their team management, how it makes their work easier and more pleasant”</p>
-            <footer>
-              <cite>Name Surname, Job title, Sport Club Name</cite>
-            </footer>
-          </blockquote>
+        <div class="slider-track" data-glide-el="track">
+          <div class="slides">
+            <div class="slide">
+              <div class="inner-slide">
+                <img src="https://dummyimage.com/240x90/585858/ffffff.jpg" alt="Interesting article headline about events">
+                <blockquote>
+                  <p>“Here goes a testimonial of one of the sports clubs expressing their absolute pleasure to be using Tymuj for their team management, how it makes their work easier and more pleasant”</p>
+                  <footer>
+                    <cite>Name Surname, Job title, Sport Club Name</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="inner-slide">
+                <img src="https://dummyimage.com/240x90/585858/ffffff.jpg" alt="Interesting article headline about events">
+                <blockquote>
+                  <p>“Here goes a testimonial of one of the sports clubs expressing their absolute pleasure to be using Tymuj for their team management, how it makes their work easier and more pleasant”</p>
+                  <footer>
+                    <cite>Name Surname, Job title, Sport Club Name</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="inner-slide">
+                <img src="https://dummyimage.com/240x90/585858/ffffff.jpg" alt="Interesting article headline about events">
+                <blockquote>
+                  <p>“Here goes a testimonial of one of the sports clubs expressing their absolute pleasure to be using Tymuj for their team management, how it makes their work easier and more pleasant”</p>
+                  <footer>
+                    <cite>Name Surname, Job title, Sport Club Name</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="slider-controls hidden" data-glide-el="controls">
+        <button id="slider-previous" data-glide-dir="<"></button>
+        <button id="slider-next" data-glide-dir=">"></button>
       </div>
       <div class="partners">
         <h3>Partneři Týmuj</h3>
@@ -355,7 +387,7 @@
     </div>
   </footer>
 
-  <script src="main.js" charset="utf-8"></script>
+  <script src="main.min.js" charset="utf-8"></script>
 
 </body>
 </html>

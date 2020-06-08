@@ -1,3 +1,5 @@
+import Glide from '@glidejs/glide'
+
 const body = document.getElementsByTagName('body')[0]
 const header = document.getElementById('header')
 const navToggle = document.getElementById('nav-toggle')
@@ -5,6 +7,8 @@ const questions = document.getElementsByClassName('faq-question')
 const news = document.getElementsByClassName('news-item')
 const newsUrl = 'https://5edd6a78ae06ed0016ee3557.mockapi.io/news'
 const months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+
+// ----- Blog posts -----
 
 fetch(newsUrl)
   .then(response => response.json())
@@ -30,6 +34,8 @@ fetch(newsUrl)
     }
   });
 
+// ----- Mobile nav toggle -----
+
 navToggle.addEventListener('click', function () {
   if (!header.classList.contains('open')) {
     header.classList.add('open')
@@ -46,6 +52,8 @@ window.addEventListener('hashchange', function () {
   body.classList.remove('header-open')
 })
 
+// ----- FAQ accordion -----
+
 for (let i = 0; i < questions.length; i++) {
   let questionTitle = questions[i].getElementsByTagName('h4')[0]
 
@@ -60,4 +68,30 @@ for (let i = 0; i < questions.length; i++) {
     }
   })
 }
+
+// ----- Carousel -----
+
+const carousel = new Glide('.slider', {
+  type: 'carousel',
+  perView: 1,
+  autoplay: 5000,
+  hoverpause: true
+}).mount()
+
+carousel.on('run.before', function(evt) {
+    const scrollSteps = carousel.settings.perView;
+    evt.steps = evt.direction === '>' ? -scrollSteps : scrollSteps
+})
+
+const carouselPrev = document.getElementById('slider-previous')
+
+carouselPrev.addEventListener('click', function () {
+  carousel.go('<')
+})
+
+const carouselNext = document.getElementById('slider-next')
+
+carouselNext.addEventListener('click', function () {
+  carousel.go('>')
+})
 
