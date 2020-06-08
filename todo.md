@@ -1,4 +1,3 @@
-- responsive images
-- fonts on Chrome
-- aria labels
+
 - meta tags
+- favicons
