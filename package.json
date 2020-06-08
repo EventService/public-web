@@ -16,6 +16,7 @@
     "@glidejs/glide": "^3.4.1",
     "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
+    "focus-visible": "^5.1.0",
     "just-validate": "^1.5.0",
     "postcss-cli": "^7.1.1",
     "rollup": "^2.15.0",

@@ -91,11 +91,11 @@ a:hover {
   border-bottom: 2px solid var(--primary-color);
 }
 
-a:focus {
+a.focus-visible {
   outline: none;
 }
 
-a:focus::after {
+a.focus-visible::after {
   content: '';
   position: absolute;
   border-radius: 8px;
@@ -213,7 +213,7 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
   background-color: #598000;
 }
 
-.button.round:focus::after {
+.button.round.focus-visible::after {
   border-radius: 35px;
   top: -.4em;
   bottom: -.4em;
@@ -243,11 +243,11 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
   background-color: #e6e6e6;
 }
 
-.button.square:focus::after {
+.button.square.focus-visible::after {
   bottom: -.4em;
 }
 
-.store-buttons a:focus::after {
+.store-buttons a.focus-visible::after {
   border: 3px solid var(--secondary-color);
   top: -.4em;
   bottom: -.1em;
@@ -1084,7 +1084,7 @@ cite {
   margin-right: 13px;
 }
 
-.cta .store-buttons a:focus::after {
+.cta .store-buttons a.focus-visible::after {
   border: 3px solid #fff;
 }
 

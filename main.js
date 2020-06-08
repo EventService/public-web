@@ -1,4 +1,5 @@
 import Glide from '@glidejs/glide'
+import Focus from 'focus-visible'
 
 const body = document.getElementsByTagName('body')[0]
 const header = document.getElementById('header')
