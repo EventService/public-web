@@ -1,0 +1,27 @@
+{
+  "name": "tymuj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "rollup -c && postcss main.css -u autoprefixer cssnano -o main.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:by-all-means/tymuj/public-web.git"
+  },
+  "author": "BAM",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
+    "just-validate": "^1.5.0",
+    "postcss-cli": "^7.1.1",
+    "rollup": "^2.15.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "smoothscroll-polyfill": "^0.4.4",
+    "watch": "^1.0.2"
+  }
+}

@@ -1,14 +1,8 @@
-- FAQ page
 - responsive images
-- fonts on Chrome
-- store buttons states
-- partners buttons states
-- fix the focus states that looks weird on some links
-- links :after
 - aria labels
+
+- fonts on Chrome
 - meta tags
 - transitions in FAQ
-- AJAX calls on news
 - line break on second feature extra
-- hide the unnecessary elements
 - javascript for the slider
