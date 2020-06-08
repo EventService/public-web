@@ -186,7 +186,7 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .button {
