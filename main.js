@@ -15,6 +15,7 @@ fetch(newsUrl)
       let newsItemDate = newsItem.getElementsByTagName('time')[0]
       let newsItemTitle = newsItem.getElementsByTagName('h4')[0]
       let newsItemDescription = newsItem.getElementsByTagName('p')[0]
+      let newsItemLink = newsItem.getElementsByTagName('a')[0]
 
       let newsItemShortDate = resNews[i].createdAt.split('T')[0]
       let newsItemDay = newsItemShortDate.split('-')[2]
@@ -25,6 +26,7 @@ fetch(newsUrl)
       newsItemDate.innerHTML = `${newsItemDay} ${months[+newsItemMonth]} ${newsItemYear}`
       newsItemTitle.innerHTML = resNews[i].title
       newsItemDescription.innerHTML = resNews[i].description
+      newsItemLink.href = resNews[i].url
     }
   });
 
