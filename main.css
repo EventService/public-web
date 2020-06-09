@@ -834,32 +834,19 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
   }
 
   .use-case-details {
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 2rem;
   }
 
   .use-case-detail {
-    width: 30%;
-    margin-bottom: 0;
-   }
-
-   .use-case-detail p {
-     /* height: 12em; */
-   }
-
-}
-
-@media all and (max-width: 670px) {
-
-  .use-case-details {
-    margin-bottom: 0;
-  }
-
-  .use-case-detail {
-    width: 100%;
+    width: 60%;
     margin-bottom: 2em;
-    justify-content: space-evenly;
-  }
+    justify-content: flex-start;
+   }
+
+   .use-case-detail img {
+     margin-right: 2em;
+   }
 
 }
 
@@ -870,7 +857,7 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
   background-color: var(--secondary-bg-color);
 }
 
-.features header {
+.features .container > header {
   margin-bottom: 6em;
 }
 
@@ -922,8 +909,17 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
   grid-column: span 4;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 3em;
+}
+
+.feature-extra header {
+  display: flex;
+}
+
+.feature-extra h4 {
+  display: flex;
+  align-items: center;
 }
 
 .feature-extra-icon {
@@ -933,14 +929,6 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
 
 .feature-extra p {
   margin: 1em 0;
-}
-
-@media all and (max-width: 1200px) {
-
-  .feature-extra h4 {
-    max-width: 70%;
-  }
-
 }
 
 @media all and (max-width: 1023px) {
@@ -1015,6 +1003,10 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
     width: 45%;
   }
 
+  .feature-extra p {
+    margin: 0;
+  }
+
 }
 
 /* -------- Stats -------- */
@@ -1065,6 +1057,10 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
 
 @media all and (max-width: 730px) {
 
+  .stats {
+    padding-bottom: 4rem;
+  }
+
   .stats .container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1081,6 +1077,10 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
     flex-direction: column;
     align-items: center;
     margin-bottom: 3em;
+  }
+
+  .stat-5 {
+    margin: auto;
   }
 
   .stat h4 {
