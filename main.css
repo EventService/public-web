@@ -1127,6 +1127,17 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
 
 .news-item-content {
   padding: 14px 20px 24px 20px;
+
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+
+  /* grid-template-rows: 40px;
+  grid-row-gap: 10px;
+  display: grid;
+
+  height: 57%; */
 }
 
 .news-item time {
@@ -1576,4 +1587,24 @@ cite {
 
 .faq-question a {
   font-size: 1rem;
+}
+
+/* -------- Blog -------- */
+
+.blog {
+  align-items: flex-start;
+  padding: 4.3rem 0 8rem 0;
+}
+
+.blog-content-wrapper {
+  
+  grid-column: 3 / span 8;
+}
+
+.blog-content-wrapper p {
+  margin-top: 2rem;
+}
+
+#blog-image {
+  width: 100%;
 }

@@ -1,3 +1,5 @@
 
 - meta tags
-- favicons
+- blog dynamic url
+- blog detail
+- about us
