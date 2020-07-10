@@ -214,7 +214,7 @@ const getPostList = function () {
     btnLoadMoreContainer.className = 'center'
     const btnLoadMore = document.createElement('button')
     btnLoadMore.className = "button round blue-button load-more-btn"
-    btnLoadMore.innerHTML = "Load more"
+    btnLoadMore.innerHTML = "Načíst další"
     btnLoadMore.onclick = () => appendPostToPage(buildUrl(postsUrl, globalPageNumber++, PAGE_SIZE), blogsContainer)
 
     btnLoadMoreContainer.appendChild(btnLoadMore)
