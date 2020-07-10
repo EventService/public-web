@@ -33,30 +33,16 @@
 		</nav>
 		<a class="button round registration-button" href="https://int.tymuj.cz/login">Registrace</a>
 		<button class="nav-toggle" id="nav-toggle"></button>
-    </header>
-    
+	</header>
 
-
-	<section class="blog">   
+	<section class="blogs">   
         <div class="container">
-            <header>        
-                <time id="blog-time" datetime="2020-03-11">Published 11 Mar 2020</time>
-                <h2 id="blog-title"></h2>                
-            </header>
-        </div>
-        <div  class="container">          
-            <img id="blog-main-image" src="https://dummyimage.com/350x180/585858/ffffff.jpg" alt="Blog hero image" />
-        </div>
-         
-		<div class="container">
-            <div class="blog-content-wrapper">                
-                <p id="blog-content"></p>
-            </div>
-        <div class="center">
-            <a class="secondary with-right-arrow" href="blogs.html">Zpet na seznam blogu</a>
-        </div>
-        </div>
-        
+            <header>                        
+                <h2>Articles you might be interested to read about tymuj</h2>                
+            </header>                                            
+        </div>               		
+
+        <div class="blogs-list container"></div>     
 	</section>
 
 	<footer class="site-footer">
@@ -90,8 +76,9 @@
     <script src="main.js" charset="utf-8"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function(event) {           
-            loadBlogPost(window.location.href)
+        document.addEventListener('DOMContentLoaded', function(event) {
+            //the event occurred         
+            getPostList()
         })
     </script>
 </body>
