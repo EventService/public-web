@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "start": "serve . -l $PORT",
     "build": "rollup -c && postcss main.css -u autoprefixer cssnano -o main.min.css"
   },
   "repository": {
@@ -12,7 +13,7 @@
   },
   "author": "BAM",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@glidejs/glide": "^3.4.1",
     "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
@@ -25,5 +26,8 @@
     "rollup-plugin-terser": "^6.1.0",
     "smoothscroll-polyfill": "^0.4.4",
     "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
   }
 }

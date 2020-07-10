@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-config
+  labels:
+    app: tymuj-web
+data:
+  NODE_ENV: production
+  PORT: '80'
+  BASE_URL: https://web.tymuj.byallmeans.cloud

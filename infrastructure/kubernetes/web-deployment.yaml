@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-deployment
+  labels:
+    app: tymuj-web
+spec:
+  selector:
+    matchLabels:
+      app: tymuj-web
+  template:
+    metadata:
+      labels:
+        app: tymuj-web
+    spec:
+      containers:
+        - name: tymuj-web
+          image: gcr.io/tymuj-dev/tymuj-web:2.0.2
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: web-config

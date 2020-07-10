@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: gcr.io/tymuj-dev/tymuj-web:2.0.2
+    build:
+      context: .
+    ports:
+      - 80:80
+    environment:
+      BASE_URL: http://localhost
+      PORT: 80
