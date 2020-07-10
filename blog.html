@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Týmuj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link href="main.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header class="page-header" id="header">
+		<a class="logo" href="index.html"><img src="img/logo.svg" alt="týmuj"></a>
+		<nav>
+			<a class="hidden" href="">About us</a>
+			<a class="hidden" href="">Functions</a>
+			<a class="hidden" href="">Prices</a>
+			<a href="faq.html">FAQ</a>
+			<a href="blogs.html">Blog</a>
+		</nav>
+		<a class="button round registration-button" href="https://int.tymuj.cz/login">Registrace</a>
+		<button class="nav-toggle" id="nav-toggle"></button>
+    </header>
+    
+
+
+	<section class="blog">   
+        <div class="container">
+            <header>        
+                <time id="blog-time" datetime="2020-03-11">Published 11 Mar 2020</time>
+                <h2 id="blog-title"></h2>                
+            </header>
+        </div>
+        <div  class="container">          
+            <img id="blog-main-image" src="https://dummyimage.com/350x180/585858/ffffff.jpg" alt="Blog hero image" />
+        </div>
+         
+		<div class="container">
+            <div class="blog-content-wrapper">                
+                <p id="blog-content"></p>
+            </div>
+        <div class="center">
+            <a class="secondary with-right-arrow" href="blogs.html">Zpet na seznam blogu</a>
+        </div>
+        </div>
+        
+	</section>
+
+	<footer class="site-footer">
+		<div class="container">
+			<a class="logo" href="#"><img src="img/logo.svg" alt="týmuj"></a>
+			<div class="footer-links">
+				<a href="">O Týmuj</a>
+				<a href="">Napište nám</a>
+				<a href="">Reklamní možnosti</a>
+				<a href="">Podmínky užití</a>
+			</div>
+			<div class="footer-social">
+				<a href="https://www.instagram.com/tymujcz/">
+					<img src="img/social/instagram.svg" alt="Instagram">
+				</a>
+				<a href="https://www.facebook.com/Týmujcz-106398882786886/">
+					<img src="img/social/facebook.svg" alt="Facebook">
+				</a>
+				<a href="https://www.youtube.com/channel/UCxTpcAhltG1SupXCQdbI4sw">
+					<img src="img/social/youtube.svg" alt="YouTube">
+				</a>
+			</div>
+  		<div class="copyright">
+  			<p>© Týmuj 2020</p>
+  			<a href="http://www.eventservice.cz/">Event Service (Provozovatel Týmuj)</a>
+  			<a href="http://www.byallmeans.website/">ByAllMeans (App & website)</a>
+  		</div>
+		</div>
+	</footer>
+
+    <script src="main.js" charset="utf-8"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(event) {           
+            loadBlogPost(window.location.href)
+        })
+    </script>
+</body>
+</html>

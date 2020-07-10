@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <title>Týmuj</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
   <link href="main.min.css" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +28,7 @@
       <a class="hidden" href="">Functions</a>
       <a class="hidden" href="">Prices</a>
       <a href="faq.html">FAQ</a>
-      <a class="hidden" href="">Blog</a>
+      <a href="blogs.html">Blog</a>
     </nav>
     <a class="button round registration-button" href="https://int.tymuj.cz/login">Registrace</a>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
@@ -251,8 +264,8 @@
   <section class="news">
     <div class="container">
       <header>
-        <h2>What’s new at Tymuj</h2>
-        <a class="section-link hidden" href="">Explore our blog</a>
+        <h2>Co je nového v Tymuj</h2>
+        <a class="section-link" href="blogs.html">Prozkoumejte náš blog</a>
       </header>
       <div class="news-item">
         <img src="https://dummyimage.com/350x180/585858/ffffff.jpg" alt="Interesting article headline about events">
@@ -260,7 +273,7 @@
           <time datetime="2020-03-11">11 Mar 2020</time>
           <h4>Interesting article headline about events</h4>
           <p>First sentence of the post or a short but engaging description.</p>
-          <a class="secondary" href="">Read article</a>
+          <a class="secondary" href="">Celý článek</a>
         </div>
       </div>
       <div class="news-item">
@@ -269,7 +282,7 @@
           <time datetime="2020-03-11">11 Mar 2020</time>
           <h4>Interesting article headline about events</h4>
           <p>First sentence of the post or a short but engaging description.</p>
-          <a class="secondary" href="">Read article</a>
+          <a class="secondary" href="">Celý článek</a>
         </div>
       </div>
       <div class="news-item">
@@ -278,7 +291,7 @@
           <time datetime="2020-03-11">11 Mar 2020</time>
           <h4>Interesting article headline about events</h4>
           <p>First sentence of the post or a short but engaging description.</p>
-          <a class="secondary" href="">Read article</a>
+          <a class="secondary" href="">Celý článek</a>
         </div>
       </div>
     </div>
@@ -398,7 +411,14 @@
     </div>
   </footer>
 
-  <script src="main.min.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+        //the event occurred         
+        getFirstPosts()
+    })
+  </script>
 
 </body>
 </html>

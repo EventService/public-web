@@ -410,9 +410,14 @@ a.focus-visible::after {
 
 a.secondary {
   font-family: 'Bebas Neue', cursive;
-  line-height: 24px;
+  line-height: 25px;
   letter-spacing: 0.11px;
   font-weight: 400;
+}
+
+.center {
+  text-align: center;
+  grid-column: span 12;
 }
 
 ul {
@@ -481,6 +486,13 @@ body.header-open {
 section:not(.hero) .container > header a::after, .news-item a::after, .feature-extra a::after {
   content: url(img/link-icon.svg);
   margin-left: .3em;
+}
+
+a.with-right-arrow::before {
+  content: url(img/link-icon.svg);
+  margin-right: .3em;
+  transform: rotate(180deg);
+  display: inline-block;
 }
 
 .container > img {
@@ -644,6 +656,10 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
 
 .registration-button {
   margin-left: auto;
+}
+
+button.blue-button {
+  background-color: var(--primary-color) !important;
 }
 
 .nav-toggle {
@@ -1127,9 +1143,21 @@ section:not(.hero) .container > header a::after, .news-item a::after, .feature-e
 
 .news-item-content {
   padding: 14px 20px 24px 20px;
+
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+
+  /* grid-template-rows: 40px;
+  grid-row-gap: 10px;
+  display: grid;
+
+  height: 57%; */
 }
 
-.news-item time {
+.news-item time,
+.blog time {
   display: block;
   margin-bottom: 1em;
   font-size: 0.8125rem;
@@ -1576,4 +1604,48 @@ cite {
 
 .faq-question a {
   font-size: 1rem;
+}
+
+/* -------- Blog -------- */
+
+.blogs {
+  padding: 4.3rem 0 8rem 0;
+}
+
+.blogs-list {
+  grid-column: span 12;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.blog {
+  align-items: flex-start;
+  padding: 4.3rem 0 8rem 0;
+}
+
+.blog img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-content-wrapper {  
+  grid-column: 3 / span 8;
+  margin-bottom: 5rem;
+}
+
+.blog-content-wrapper p {
+  margin-top: 2rem;
+}
+
+#blog-time {
+  margin-bottom: 2em;
+}
+
+#blog-main-image {
+  grid-column: 1 / span 12;
+  height: 40vw;
+  max-height: 600px;
+  width: 100%;
+  object-fit: cover;
+  margin: 2rem 0;
 }
