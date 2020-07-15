@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="33px" viewBox="0 0 17 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Line</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Arrows-/-Slider-/-Bw" transform="translate(1.000000, -7.000000)" fill="#2F3C54">
+            <polygon id="Line" transform="translate(7.405714, 23.698286) scale(-1, 1) rotate(-90.000000) translate(-7.405714, -23.698286) " points="7.40571429 30.0433398 22.2171429 15.2319113 23.277803 16.2925714 7.40571429 32.1646602 -8.46637446 16.2925714 -7.40571429 15.2319113"></polygon>
+        </g>
+    </g>
+</svg>

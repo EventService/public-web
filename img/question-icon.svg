@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Line</title>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="-Arrows-/-Default-/-Down" transform="translate(-2.000000, -8.000000)" fill="#2F3C54">
-            <polygon id="Line" transform="translate(7.530330, 11.295495) scale(1, -1) rotate(-180.000000) translate(-7.530330, -11.295495) " points="12 8 13.0606602 9.06066017 7.53033009 14.5909903 2 9.06066017 3.06066017 8 7.53033009 12.4696699"></polygon>
-        </g>
-    </g>
-</svg>
