@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "serve . -l $PORT",
+    "dev": "nodemon ./server.js",
     "build": "rollup -c && postcss main.css -u autoprefixer cssnano -o main.min.css"
   },
   "repository": {
@@ -19,6 +19,7 @@
     "cssnano": "^4.1.10",
     "focus-visible": "^5.1.0",
     "just-validate": "^1.5.0",
+    "nodemon": "^2.0.4",
     "postcss-cli": "^7.1.1",
     "rollup": "^2.15.0",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -28,6 +29,7 @@
     "watch": "^1.0.2"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "serve": "^11.3.2"
   }
 }
