@@ -737,7 +737,6 @@ button.blue-button {
 
 .hero {
   padding-top: 10.5rem;
-  padding-bottom: 40px;
 
   background-image: url(img/hero-bg.png);
   background-repeat: no-repeat;
@@ -1032,7 +1031,6 @@ button.blue-button {
   .feature-extra p {
     margin: 0;
   }
-
 }
 
 /* -------- Stats -------- */

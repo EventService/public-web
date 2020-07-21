@@ -9,7 +9,6 @@ app.get('/faq', (req, res) => res.sendFile(path.join(__dirname, 'faq.html')))
 app.get('/about-us', (req, res) => res.sendFile(path.join(__dirname, 'about-us.html')))
 app.get('/blogs', (req, res) => res.sendFile(path.join(__dirname, 'blogs.html')))
 app.get('/blogs/:blogId', (req, res) => {    
-    console.log('req.params.blogId ', req.params.blogId)
     res.sendFile(path.join(__dirname, 'blog.html'))
 })
 

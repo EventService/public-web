@@ -131,14 +131,12 @@ var loadBlogPost = function (url) {
 	// 	params[pair[0]] = decodeURIComponent(pair[1]);
   // }
 
-  const blogId =  parseInt(url.split('/blogs/')[1], 10)
+  const blogId = parseInt(url.split('/blogs/')[1], 10)
 
   if (blogId) {  
-    fetch(buildUrl(postsUrl, 0, PAGE_SIZE))
+    fetch(`${postsUrl}/${blogId}`)
     .then(response => response.json())
-    .then(resNews => {
-      
-      const post = resNews.results.filter(p => p.id === blogId)[0]
+    .then(post => {      
       const [newsItemDay, newsItemMonth, newsItemYear, shortDate] = getDate(post.createdAt)
 
       blogTitle.innerHTML = post.title
