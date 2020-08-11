@@ -18,20 +18,26 @@
       <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
     <link href="/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    
   </head>
 <body>
 
   <header class="page-header" id="header">
+   
     <a class="logo" href="#"><img src="img/logo.svg" alt="týmuj"></a>
     <nav>
       <a href="about-us">O nás</a>
-      <a class="hidden" href="">Functions</a>
+      <a href="features">Funkce</a>
       <a class="hidden" href="">Prices</a>
       <a href="faq">FAQ</a>
       <a href="blogs">Blog</a>
-    </nav>
-    <a class="button round registration-button" href="https://int.tymuj.cz/login">Registrace</a>
+    </nav>   
+
+    <div class="header-buttons">
+      <a class="button round inverse login-button" href="https://int.tymuj.cz/login">Přihlášení</a>
+      <a class="button round registration-button" href="https://int.tymuj.byallmeans.cloud/register">Registrace</a>
+    </div>
+
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
   </header>
 
@@ -64,8 +70,8 @@
         <a class="hero-link hidden" href="/about-us">Learn more about Tymuj</a>
       </header>
       <picture class="hero-illustration">
-        <source srcset="img/hero-mobile.png 1x, img/hero-mobile@2x.png 2x, img/hero-mobile@3x.png 3x" media="(max-width: 730px)">
-        <img srcset="img/hero_visual.png 1x, img/hero_visual@2x.png 2x, img/hero_visual@3x.png 3x" alt="App preview">
+        <source srcset="img/hero_visual_mobile.png 1x, img/hero_visual_mobile@2x.png 2x, img/hero_visual_mobile@3x.png 3x" media="(max-width: 730px)">
+        <img srcset="img/hero_visual.png 1x, img/hero_visual@3x.png 2x, img/hero_visual@3x.png 3x" alt="App preview">
       </picture>
     </div>
   </section>
@@ -73,13 +79,13 @@
   <section class="use-cases">
     <div class="container">
       <div class="use-case">
-        <h4>Use case</h4>
+        <!-- <h4>Use case</h4> -->
         <h3>Vedoucí týmu</h3>
         <p>Na Týmuj budou všechny informace přehledně na jednom místě. Termíny tréninků a zápasů, seznam hráčů a jejich docházka. Díky zprávám a nástěnce budou všichni vědět o aktuálním dění v týmu. Můžeš vytvořit libovolný počet týmů a pozvat do nich tolik hráčů, kolik je potřeba. K dispozici jsou ti všechny moduly a funkce – zdarma a bez omezení.</p>
         <div class="use-case-details">
           <div class="use-case-detail">
             <img src="img/use-case-icons/1.svg" alt="Rychle Naplánuj tréninky a zápasy">
-            <p>Rychle Naplánuj<br>tréninky a zápasy</p>
+            <p>Rychle naplánuj<br>tréninky a zápasy</p>
           </div>
           <div class="use-case-detail">
             <img src="img/use-case-icons/2.svg" alt="Sleduj docházku">
@@ -92,7 +98,7 @@
         </div>
       </div>
       <div class="use-case">
-        <h4>Use case</h4>
+        <!-- <h4>Use case</h4> -->
         <h3>Hráči nebo rodiče</h3>
         <p>Díky přehlednému seznamu budeš vždy vědět, kdy a kde jsou nejbližší tréninky nebo zápasy. V chatu můžeš probrat taktiku na příští zápas a v galerii se podívat na nejlepší fotky z minulého klání. Můžeš být členem libovolného počtu týmů a mít tak na jednom místě celou svoji sportovní aktivitu. K dispozici jsou ti všechny moduly a funkce – zdarma a bez omezení.</p>
         <div class="use-case-details">
@@ -265,7 +271,7 @@
   <section class="news">
     <div class="container">
       <header>
-        <h2>Co je nového v Tymuj</h2>
+        <h2>Co je nového na Týmuj</h2>
         <a class="section-link" href="blogs">Prozkoumejte náš blog</a>
       </header>
       <div class="news-item">
@@ -300,7 +306,7 @@
 
   <section class="testimonials">
     <div class="container">
-      <header>
+      <header class="hidden">
         <h2>Kluby využívající Týmuj</h2>
         <a class="section-link hidden" href="">Přečtěte si zkušeností klubů s používáním Týmuj</a>
       </header>
@@ -350,9 +356,9 @@
 
       <div class="partners">
         <h3>Partneři Týmuj</h3>
-        <a><img src="img/partners/lion-sport.svg" alt="Lion Sport"></a>
         <a><img src="img/partners/mercedes.svg" alt="Mercedes-Benz"></a>
         <a><img src="img/partners/energie.svg" alt="Energie ČS"></a>
+        <a><img src="img/partners/lion-sport.svg" alt="Lion Sport"></a>
       </div>
     </div>
   </section>
@@ -389,9 +395,8 @@
     <div class="container">
       <a class="logo" href="#"><img src="img/logo.svg" alt="týmuj"></a>
       <div class="footer-links">
-        <a href="">O Týmuj</a>
-        <a href="">Napište nám</a>
-        <a href="">Reklamní možnosti</a>
+        <a href="about-us">O Týmuj</a>
+        <a href="mailto:info@tymuj.cz">Napište nám</a>
         <a href="">Podmínky užití</a>
       </div>
       <div class="footer-social">
