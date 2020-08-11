@@ -26,12 +26,16 @@
 		<a class="logo" href="/"><img src="img/logo.svg" alt="týmuj"></a>
 		<nav>
 			<a href="/about-us">O nás</a>
-			<a class="hidden" href="">Functions</a>
+			<a href="/features">Funkce</a>
 			<a class="hidden" href="">Prices</a>
-			<a href="/faq" class="active">FAQ</a>
+			<a href="/faq">FAQ</a>
 			<a href="/blogs">Blog</a>
-		</nav>
-		<a class="button round registration-button" href="https://int.tymuj.cz/login">Registrace</a>
+		</nav>   
+		
+        <div class="header-buttons">
+            <a class="button round inverse login-button" href="https://int.tymuj.cz/login">Přihlášení</a>
+            <a class="button round registration-button" href="https://int.tymuj.byallmeans.cloud/register">Registrace</a>
+        </div>
 		<button class="nav-toggle" id="nav-toggle"></button>
 	</header>
 
@@ -44,16 +48,16 @@
 			<div class="faq-question">
 				<h4>Co je to Týmuj?</h4>
 				<div class="faq-question-body">
-					<p><b>Týmuj.cz</b> je online služba, která pomáhá organizovat aktivity ve sportovních týmech a skupinách. <b>Zdarma</b>.</p>
+					<p><b>Týmuj</b> je online služba, která pomáhá organizovat aktivity ve sportovních týmech a skupinách. <b>Zdarma</b>.</p>
 					<p>Díky této službě jsou organizace akcí i týmová komunikace mnohem snadnější a rychlejší.</p>
 				</div>
 			</div>
 			<div class="faq-question">
 				<h4>Jak je to s Týmuj na webu a v mobilu?</h4>
 				<div class="faq-question-body">
-					<p>Na počítači nebo notebooku můžete využívat Týmuj na adrese <b>www.tymuj.cz</b>, v mobilu doporučujeme naši novou mobilní aplikaci <b>Týmuj</b>. Ta je dostupná pro systémy iOS i Android. Stáhnout ji můžete zde:</p>
+					<p>Na počítači nebo notebooku můžete využívat Týmuj na adrese <b>www.tymuj.cz</b>, v mobilu doporučujeme naši mobilní aplikaci <b>Týmuj</b>. Ta je dostupná pro systémy iOS i Android. Stáhnout ji můžete zde:</p>
 					<p>iOS: <a href="http://bit.ly/Tymuj-AppStore">http://bit.ly/Tymuj-AppStore</a><br>Android: <a href="http://bit.ly/Tymuj-GooglePlay">http://bit.ly/Tymuj-GooglePlay</a></p>
-					<p>Funkcemi a možnostmi se mobil a web trochu liší, ale všechna data jsou mezi aplikací a webem plně synchronizována. Každá změna, kterou provedete na webu, se tak zobrazí i na mobilu a naopak.</p>
+					<p>Mobilní aplikace i webová stránka disponují stejnými funkcemi a všechna data jsou mezi aplikací a webem plně synchronizována. Každá změna, kterou provedete na webu, se tak zobrazí i na mobilu a naopak.</p>
 				</div>
 			</div>
 			<div class="faq-question">
@@ -68,6 +72,7 @@
 				<div class="faq-question-body">
 					<p>Není.</p>
 					<p>Týmuj mohou využít všechny sportovní kolektivy: od fotbalistů, přes florbalisty, pozemní hokejistky, vodní pólisty, akvabely, až po dobrovolné hasiče nebo mažoretky. Důležitý je týmový duch.</p>
+					<p>Používat Týmuj mohou i skupiny, které nejsou primárně sportovní, ale potřebují nástroj pro organizaci svých aktivit.</p>
 				</div>
 			</div>
 			<div class="faq-question">
@@ -85,49 +90,31 @@
 			<div class="faq-question">
 				<h4>Co je třeba udělat pro založení týmu?</h4>
 				<div class="faq-question-body">
-					<p>Nejdříve si založte svůj vlastní účet. To lze udělat na webu <b>Týmuj.cz</b> i v mobilní aplikaci. Pro založení účtu je potřeba e-mailová adresa a heslo. Dobrovolně můžete uvést i další údaje, jako například vaše jméno a příjmení, což vám usnadní pozdější komunikaci v týmu. Po dokončení registrace budete vyzváni k založení týmu.</p>
-					<p>Jakmile zaregistrujete i tým, můžete doplnit jeho členy a pozvat je do týmu e-mailem nebo sdílením odkazu třeba přes Facebook nebo WhatsApp (v mobilu). Pokud pozvání přijmou, průvodce je provede osobní registrací a pak budou automaticky zařazeni k Vašemu týmu. V praxi to tedy může trvat jen pár minut, než se celý tým sejde na Týmuj.</p>
+					<p>Nejdříve si založte svůj vlastní účet. To lze udělat na webu <b>Týmuj.cz</b> i v mobilní aplikaci. Pro založení účtu je potřeba e-mailová adresa a heslo. Po dokončení registrace budete vyzváni k založení týmu.</p>
+					<p>Jakmile vytvoříte tým, můžete pozvat do týmu e-mailem nebo zvacím odkazem jednotlivé členy. Pokud pozvání přijmou, průvodce je provede osobní registrací a pak budou automaticky zařazeni k Vašemu týmu. V praxi to tedy může trvat jen pár minut, než se celý tým sejde na Týmuj.</p>
 				</div>
 			</div>
-			<div class="faq-question">
-				<h4>Liší se nějak role v týmu?</h4>
-				<div class="faq-question-body">
-					<p>Ano, uživatelé mohou mít různé role.</p>
-					<ul>
-						<li><b>Vlastník</b> - osoba, která tým na Týmuj zaregistrovala jako první a pozvala do něj další členy. Jen vlastník má právo tým zrušit, nebo práva na vlastnictví týmu převést na jinou osobu. Pro každý tým existuje pouze jeden majitel. Vlastník týmu má také automaticky roli správce týmu.</li>
-						<li><b>Správce (manager)</b> - roli správce má od začátku vlastník týmu a dále pak kterákoli osoba vlastníkem pověřená (při přizvání spoluhráčů do týmu určuje vlastník jejich role). Správce má právo jmenovat další správce, upravovat volitelné položky, vést si poznámky k jednotlivým hráčům, které vidí pouze on sám, má prioritu v oznámeních směrem k týmu, zadává úkoly, plánuje události, zve členy týmu na zápasy atd.</li>
-						<li><b>Člen</b> - vidí veškerý obsah týmových stránek, s výjimkou manažerských poznámek. Může upravovat pouze svůj profil, ale má právo plně komunikovat s ostatními členy týmu, aktivně se účastnit diskusí, hlasovat, zadávat docházku, plánovat absence atd.</li>
-						<li><b>Host</b> - má stejná práva jako člen, pouze je odděleně veden v docházce a seznamu uživatelů. Role hosta je určen pro všechny, kteří nejsou aktivními hráči či členy (např. kustod, věrný fanoušek, rodič atd.).</li>
-					</ul>
-				</div>
-			</div>
-			<div class="faq-question">
+						<div class="faq-question">
 				<h4>Kdo má přístup k našim stránkám?</h4>
 				<div class="faq-question-body">
 					<p>Jen ten, koho sami pozvete.</p>
-					<p>Pouze manager (správce) má právo rozesílat pozvánky do týmu. Pozvaný uživatel se musí nejprve registrovat na Týmuj.cz. Pokud budete chtít týmové informace veřejně sdílet, můžete si zvolit v nastavení, že tým bude (pro čtení) veřejně přístupný.</p>
+					<p>Pouze vlastník a správci týmu mají právo rozesílat pozvánky do týmu. Pozvaný uživatel se musí nejprve registrovat na Týmuj. Veškeré informace, které v týmu sdílíte jsou soukromé pouze pro váš tým a bez vašeho vědomí se k nim nikdo jiný nedostane.</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Mohu být členem více týmů na tymuj.cz?</h4>
+				<h4>Mohu být členem více týmů na Týmuj?</h4>
 				<div class="faq-question-body">
 					<p>Samozřejmě!</p>
 					<p>Je to jen na Vás, Vaší sportovní vášni a počtu sportovních týmů, ve kterých jste aktivní. Stačí jedna osobní registrace a můžete se stát členem libovolného počtu týmů na Týmuj. O všech svých sportovních aktivitách tak budete mít přehled na jednom místě.</p>
-					<p>V každém z týmů můžete mít jinou roli. Jednou budete vystupovat jako vlastník či správce, podruhé jako člen a jindy zase jen coby host.</p>
+					<p>V každém z týmů můžete mít jinou roli. Jednou budete vystupovat jako vlastník či správce, jinde pouze jako člen.</p>
 				</div>
 			</div>
 			<div class="faq-question">
 				<h4>Zapomněl jsem heslo nebo mám jiný technický problém.</h4>
 				<div class="faq-question-body">
-					<p>Heslo si můžete obnovit na stránce <a href="https://app.tymuj.cz/password/regeneration">https://app.tymuj.cz/password/regeneration</a>, stačí zadat vaši e-mailovu adresu pod kterou jste se registrovali, nebo uživatelské jméno. Na e-mail, kterým jste se registrovali, vám následně přijde odkaz pro obnovu hesla.</p>
+					<p>Heslo si můžete obnovit na stránce <a href="https://app.tymuj.cz/password/regeneration">https://app.tymuj.cz/password/regeneration</a>, stačí zadat vaši e-mailovu adresu pod kterou jste se registrovali. Na e-mail, kterým jste se registrovali, vám následně přijde odkaz pro obnovu hesla.</p>
 					<p>Hesla jsou v databázi hashována funkcí bcrypt, nemůžeme vám tedy poslat vaše dosavadní heslo, ale budete si muset nastavit nové.</p>
-					<p>V případě jiného dotazu nebo problému se zkuste podívat do <a href="http://old.tymuj.cz/napoveda-registrace-prihlaseni.html">Nápovědy</a>. Pokud ani zde nenajdete odpověď, můžete kontaktovat správce aplikace e-mailem na info(zavináč)tymuj.cz nebo se nám ozvěte přes Facebook Týmuj.</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>Je Týmuj opravdu zdarma a bez omezení?</h4>
-				<div class="faq-question-body">
-					<p>Ano. Opravdu. V plné funkcionalitě. Bez omezení na počet týmů či jejich členů. Včetně mobilní aplikace. Sportu zdar!</p>
+					<p>V případě jiného dotazu nebo problému se zkuste podívat do <a href="/features">Popisu funkcí</a>. Pokud ani zde nenajdete odpověď, můžete kontaktovat správce aplikace e-mailem na info(zavináč)tymuj.cz nebo se nám ozvěte přes Facebook Týmuj.</p>
 				</div>
 			</div>
 		</div>
@@ -137,9 +124,8 @@
 		<div class="container">
 			<a class="logo" href="/"><img src="img/logo.svg" alt="týmuj"></a>
 			<div class="footer-links">
-				<a href="">O Týmuj</a>
-				<a href="">Napište nám</a>
-				<a href="">Reklamní možnosti</a>
+				<a href="/about-us">O Týmuj</a>
+				<a href="mailto:info@tymuj.cz">Napište nám</a>
 				<a href="">Podmínky užití</a>
 			</div>
 			<div class="footer-social">

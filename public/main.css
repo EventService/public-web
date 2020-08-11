@@ -473,7 +473,7 @@ body.header-open {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 1.9rem;
+  gap: 1.8rem;
 }
 
 .container > header {
@@ -655,8 +655,21 @@ a.with-right-arrow::before {
   border-bottom: 2px solid var(--secondary-color);
 }
 
-.registration-button {
+.header-buttons {
+  display: flex;
   margin-left: auto;
+}
+
+.button.round.inverse {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid var(--secondary-color);
+}
+
+.login-button {
+  margin-right: 1rem;
 }
 
 button.blue-button {
@@ -723,14 +736,24 @@ button.blue-button {
 
 @media all and (max-width: 730px) {
 
-  .page-header:not(.open) nav, .page-header:not(.open) .registration-button {
+  .page-header:not(.open) nav, .page-header:not(.open) .header-buttons {
     display: none;
+  }
+
+  .page-header .header-buttons {
+    flex-direction: column;
+    width: 100%;
+    margin-left: unset;
+  }
+
+  .login-button {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
   }
 
   .nav-toggle {
     display: block;
   }
-
 }
 
 /* -------- Hero -------- */
@@ -1393,7 +1416,7 @@ cite {
 
   .inner-slide {
     grid-column: 2 / span 8;
-    padding: 2em 2.5em 2.2em 2.5em;
+    padding: 2em;
   }
 
   blockquote p {
@@ -1782,5 +1805,40 @@ cite {
   .timeline-item.left .content {
     text-align: left;
   }
+
+  .signin-button {
+    width: 210px;
+    height: 40px;
+  }
+
+}
+
+
+/* FEATURES */
+
+.all-features {
+  padding: 4.3rem 0 8rem 0;
+}
+
+.all-features .container {
+  row-gap: 0;
+}
+
+.all-features .container > header,
+.all-features .container .block {
+  align-items: flex-start;
+  grid-column: 3 / span 8;
+  font-size: 18px;
+  padding-bottom: 2rem;
+}
+
+.all-features .container .block > h3  {
+  margin-top: 1rem;
+}
+
+.all-features .container .block > p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
 
 }

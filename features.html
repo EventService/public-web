@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Týmuj</title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+		  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+		  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+		  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+		  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+		  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+		  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+		  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+		  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+		  <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicons/android-icon-192x192.png">
+		  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+		  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+		  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+		<link href="/main.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	  </head>
+<body>
+
+	<header class="page-header" id="header">
+		<a class="logo" href="/"><img src="img/logo.svg" alt="týmuj"></a>
+        <nav>
+            <a href="/about-us">O nás</a>
+            <a href="/features">Funkce</a>
+            <a class="hidden" href="">Prices</a>
+            <a href="/faq">FAQ</a>
+            <a href="/blogs">Blog</a>
+          </nav>   
+      
+          <div class="header-buttons">
+            <a class="button round inverse login-button" href="https://int.tymuj.cz/login">Přihlášení</a>
+            <a class="button round registration-button" href="https://int.tymuj.byallmeans.cloud/register">Registrace</a>
+          </div>
+		<button class="nav-toggle" id="nav-toggle"></button>
+	</header>
+
+	<section class="all-features">
+		<div class="container">            
+			<header>
+                <h2>Funkce</h2>                                                
+            </header>
+        </div>
+
+        <div class="container">
+            <div class="block">
+            <h3>Jak začít na Týmuj</h3>
+                <p>Prvním krokem pro používání Týmuj je založení uživatelského účtu. Poté už jen vytvoříte váš tým, pozvete spoluhráče a můžete začít týmovat.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Založení účtu a vyplnění údajů</h4>
+                    <div class="faq-question-body">
+                        <p>Pro založení účtu je potřeba především e-mailová adresa a heslo. Po vytvoření účtu můžete doplnit ještě kontaktní telefon, datum narození a další položky, které se pak budou zobrazovat na vaší kartě ve všech týmech, kterých budete členem.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Založení týmu</h4>
+                    <div class="faq-question-body">
+                        <p>Pro založení týmu je potřeba mít již vytvořený svůj uživatelský účet. Po přihlášení je vytvoření týmu jednoduché, v mobilní aplikaci kliknete na ikonu „+“ v levém horním rohu, na webu kliknete na zelené tlačítko „Vytvořit“ na horní liště. Při tvorbě týmu můžete kromě názvu zadat také sport, město a vložit logo týmu.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Pozvání spoluhráčů</h4>
+                    <div class="faq-question-body">
+                        <p>Spoluhráči se členy týmu stanou na základě pozvánky, kterou jim zašlete. Pozvánku můžete vytvořit jak v mobilní aplikaci, tak na webu. U obou si musíte vybrat, zda součástí pozvánky do týmu je i automatické pozvání na vytvořené události.
+                            Pozvánka má formu jednotné URL adresy, kterou můžete poslat všem, kteří mají o členství v týmu zájem.
+                            <br /><br />
+                            <em>TIP: Pokud už jste vytvořili v týmu první události, zvolte variantu pozvánky s pozváním na vytvořené události.</em></p>
+                    </div>
+                </div>
+			</div>
+        </div>
+
+        <div class="container">
+            <div class="block">
+            <h3>Týmy</h3>
+                <p>Týmy jsou základní organizační jednotkou na Týmuj. Každý uživatel může být členem libovolného množství týmů a také počet členů týmu není omezen.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Role v týmu</h4>
+                    <div class="faq-question-body">
+                        <p>V týmu existují 3 role: Majitel, Správce a Hráč.
+                            Majitel je zakladatel týmu a má plná práva k ovládání a nastavení týmu, včetně zvaní a mazání hráčů a jako jediný může tým smazat. Funkci majitele lze předat jinému hráči, slouží k tomu tlačítko „Předat tým“ v nastavení týmu.
+                            Správce má téměř totožná práva jako Majitel, může zvát a odebírat členy týmu, může vytvářet a mazat události, jmenovat nové správce, psát na nástěnku týmu, pracovat s pokladnou apod. Nemůže ale tým smazat.
+                            Hráč je základní role v týmu, nemůže vytvářet události, zvát nové členy ani členy z týmu odstraňovat. Může ale reagovat na události, zadávat svou docházku nebo psát do chatu.
+                            <br /><br />
+                            <em>TIP: Správcem týmu jmenujte pouze členy, kterým plně důvěřujete.</em></p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Nastavení soukromí v týmu</h4>
+                    <div class="faq-question-body">
+                        <p>V nastavení týmu je možné kromě názvu týmu, sportu, města a loga měnit také 2 nastavení soukromí – viditelnost kontaktních údajů a viditelnost docházky. Tato nastavení se týkají pouze role Hráč v týmu. Majitel a Správci vidí vždy všechny údaje.
+                            Viditelnost kontaktních údajů určuje, zda hráči vidí e-maily a telefony v profilech ostatních členů týmu.
+                            Viditelnost docházky určuje, zda hráči vidí účast ostatních členů týmu na událostech.
+                            <br /><br />
+                            <em>
+                                TIP: Skrytí kontaktních údajů a údajů o docházce je vhodné třeba pro dětské týmy.
+                            </em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Podskupiny v týmu</h4>
+                    <div class="faq-question-body">
+                        <p>V rámci týmu můžete vytvořit několik podskupin, do kterých členy týmu rozdělíte. Každý člen může být pouze v 1 podskupině. 
+                            Podskupina se zobrazuje jako barevný štítek u každého hráče. Hlavní výhodou je, že podskupiny vidíte odděleně v docházce události a můžete jim nastavit samostatný limit počtu účastníků.
+                            <br /><br />
+                            <em>
+                                TIP: Podskupiny jsou vhodné například pro brankáře nebo jiné členy, kterých je potřeba omezený počet.
+                            </em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Dodatečná pole</h4>
+                    <div class="faq-question-body">
+                        <p>Vytvořit dodatečná pole můžete v nastavení týmu. Zobrazovat se pak budou na kartě hráče v soupisce týmu. Můžete navíc nastavit, které pole je viditelné všem, a které vidí jen konkrétní hráč.
+                            <br /><br />
+                            <em>
+                                TIP: V dodatečných polích můžete mít číslo dresu, kontakt na rodiče nebo počet gólů a asistencí.
+                            </em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Soupeři a místa</h4>
+                    <div class="faq-question-body">
+                        <p>Soupeř a Místo jsou pole, která se vkládají do jednotlivých událostí. Zde můžete tato pole spravovat, například smazat místo, kde již netrénujete nebo soupeře, se kterým se již nesetkáváte v soutěži.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Nastavení sezóny</h4>
+                    <div class="faq-question-body">
+                        <p>Využitím této funkcionality lze dělit zápasy a události do jednotlivých období - sezon. Vhodné při velkém množství zadávaných akcí, případně za existence soutěžních období v reálném týmovém životě. 
+                            Týká se dat z modulů Zápasy/události a Docházka. Ostatní data ze zbývajících modulů nejsou založením sezony ovlivněna, zůstávají beze změn.
+                            </p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Předání týmu</h4>
+                    <div class="faq-question-body">
+                        <p>Předání týmu slouží ke změně majitele. Nový majitel tak získá plnou kontrolu nad týmem.</p>
+                    </div>
+                </div>
+
+			</div>
+        </div>
+
+        <div class="container">
+            <div class="block">
+            <h3>Události</h3>
+                <p>Záložka události nabízí snadnou a přehlednou organizaci a správu zápasů, tréninků, oslav atp. Umožňuje správcům zadávat jednorázové i opakované události.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Přehled událostí</h4>
+                    <div class="faq-question-body">
+                        <p>V přehledu událostí se chronologicky zobrazují všechny události ze všech týmů, kterých jste členem. Základní zobrazení obsahuje budoucí události. Je však možné změnit filtr na minulé události. Také lze nastavit filtr pro zobrazení pouze jednoho konkrétního týmu.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Tvorba události</h4>
+                    <div class="faq-question-body">
+                        <p>Na Týmuj existují 2 typy událostí: Událost a Zápas. Rozdíl spočívá v tom, že u události vyplňujete její název, zatímco název Zápasu je tvořen jako „Název vašeho týmu vs. Název soupeře“. Další rozdíly mezi nimi nejsou.
+                            U událostí nastavujete: termín konání (povinný je start události, volitelně můžete zadat i termín srazu a termín konce) a vybíráte, které členy týmu na událost zvete. 
+                            Dále je zde široká škála nepovinných položek – místo konání, limit účastníků, termín pro vyplnění docházky, termín pro rozeslání upozornění těm, co docházku nevyplnili a poznámka/popis události.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Opakovaná událost</h4>
+                    <div class="faq-question-body">
+                        <p>Během tvorby události je možné nastavit událost jako opakovanou a vytvořit tak více událostí najednou. Opakované události se tvoří při nastavení konání události.
+                            Můžete buď vytvořit několik samostatných termínů konání, nebo vytvořit jeden termín konání a tomu nastavit frekvenci opakování.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Fronta na událost</h4>
+                    <div class="faq-question-body">
+                        <p>Události, které mají limit účastníků, automaticky obsahují i frontu. Do té se zařadí ti členové, kteří se přihlásí na událost v momentě, kdy je již obsazená kapacita.
+                            Ve frontě jsou v pořadí podle termínu přihlášení. Pokud dojde k uvolnění místa, jsou členové z fronty automaticky přesunuti mezi účastníky.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Přidání hosta</h4>
+                    <div class="faq-question-body">
+                        <p>Tato funkce slouží pro indikaci, že na událost jde host, který není členem týmu. Hlavním cílem této funkce je blokovat pro hosta místo v případě, že událost má limit účastníků.
+                            Přidáním hosta dojde k jednorázovému vložení nového člena do události jako „Jdu“. Správce v případě potřeby může tohoto hosta nastavit na „Nejdu“.
+                            <br /><br />
+                            <em>TIP: Pokud přidáváte do události hosta, je dobré o tom v chatu informovat vedoucího týmu.</em></p>
+                    </div>
+                </div>
+
+
+                <div class="faq-question">
+                    <h4>Označení události za zrušenou</h4>
+                    <div class="faq-question-body">
+                        <p>Pokud se nějaká událost nebude konat, označte ji za zrušenou, ale nemažte ji.  Účastníkům přijde speciální notifikace. </p>
+                    </div>
+                </div>               
+			</div>
+        </div>
+
+        <div class="container">
+            <div class="block">
+            <h3>Docházka</h3>
+                <p>Je dobrým nástrojem pro vedoucí týmů, kterým dává podrobný přehled o dosavadních a budoucích účastech a umožňuje jim tak lépe plánovat či vyhodnocovat dění v týmu.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Práce s přehledem docházky</h4>
+                    <div class="faq-question-body">
+                        <p>Docházka se nachází pouze na webu Týmuj, svým rozsahem by pro mobilní aplikaci nebyla vhodná. Zobrazuje vždy maximálně 6 sloupců s událostmi. V řádcích pak zobrazuje všechny členy týmu. 
+                            Pomocí filtrů lze nastavit, které události chcete vidět. Pro zvolený filtr se vždy přepočítá účast jednotlivých členů týmu.
+                            Docházka navíc umožňuje export do CSV, takže s daty můžete dále pracovat ve svém vlastním programu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="block">
+            <h3>Zprávy</h3>
+                <p>V modulu zprávy najdete týmový chat, také souhrny všech chatů k událostem a v neposlední řadě týmovou nástěnku.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Týmový chat</h4>
+                    <div class="faq-question-body">
+                        <p>Jedná se o společný chat pro všechny členy týmu. Funguje v reálném čase a všichni členové týmu dostanou notifikaci o nové zprávě. Vhodný je především k obecné diskuzi o dění v týmu.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Chat událostí</h4>
+                    <div class="faq-question-body">
+                        <p>V okně s chaty událostí uvidíte všechny chaty navázané na jednotlivé události. Ty jsou praktické především pro témata navázaná na konkrétní událost, třeba naplánování spolujízdy nebo diskuzi o barvě rozlišováků.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Nástěnka</h4>
+                    <div class="faq-question-body">
+                        <p>Na nástěnku mohou psát pouze majitel a správci týmu. Může obsahovat buď textový příspěvek (s možností přílohy) nebo ankety. Slouží k oznámením, která nezapadnout a budou vždy na očích.</p>
+                    </div>
+                </div>               
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="block">
+            <h3>Pokladna</h3>
+                <p>Pokladna slouží ke snazší evidenci týmových plateb, například za hřiště, dresy nebo příspěvků na celou sezónu.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Vytvoření platby</h4>
+                    <div class="faq-question-body">
+                        <p>Platbu může vytvářet pouze majitel nebo správce týmu. V nastavení platby je klíčový název platby, částka a povinní členové týmu – tedy kdo má zaplatit. Zbývající položky jako termín nebo poznámka jsou volitelné.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Evidence plateb</h4>
+                    <div class="faq-question-body">
+                        <p>Označit platbu jako zaplacenou může opět pouze majitel nebo správce. V evidenci plateb jsou 3 hlavní pohledy – tým, hráč a platba.
+                            Pohled na tým představuje všechny vytvořené platby v týmu, jejich stav a celkový objem prostředků, který čeká na zaplacení. 
+                            Pohled na hráče představuje přehled všech plateb, které má hráč zaplatit (nebo už zaplatil) a součet těch nezaplacených.
+                            Pohled na platbu ukazuje detailní přehled, kolik je již vybráno, kolik ještě zbývá vybrat a kdo z týmu již zaplatil a na koho se čeká.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="block">
+            <h3>Galerie</h3>
+                <p>Slouží jako prostor pro sdílení fotografií, každý tým může využít kapacity 200MB.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Vytvoření alba</h4>
+                    <div class="faq-question-body">
+                        <p>Pro přidání fotografií je nutné nejprve vytvořit album. To může vytvářet pouze majitel nebo správce týmu. Poté již do alba mohou fotografie přidávat všichni členové týmu.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Práce s galerií</h4>
+                    <div class="faq-question-body">
+                        <p>V rámci alba je možné fotografie vkládat, exportovat (tedy stáhnout do svého zařízení) a mazat. Majitel a správce může mazat veškeré fotografie, člen týmu pouze ty fotografie, které sám vložil. Do galerie není možné vkládat jiné, než obrázkové soubory.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="block">
+            <h3>Notifikace</h3>
+                <p>Důležitou součástí Týmuj jsou notifikace. Mají za úkol zajistit, abyste vždy věděli o všem, co se ve vašem týmu děje.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Druhy notifikací</h4>
+                    <div class="faq-question-body">
+                        <p>
+                            Týmuj posílá notifikace k následujícím situacím:
+                            <ul>
+                                <li>Vytvoření události v týmu</li>
+                                <li>Změna události</li>
+                                <li>Zrušení události</li>
+                                <li>Upomínka na vyplnění docházky na událost</li>
+                                <li>Nová zpráva v události</li>
+                                <li>Nová zpráva v týmovém chatu</li>
+                                <li>Nová zpráva na nástěnce</li>
+                                <li>Hráč se přidal do týmu (pouze majitel a správci)</li>
+                                <li>Hráč zadal účast na událost (pouze majitel a správci)</li>
+                            </ul>                                
+                            </p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Nastavení notifikací</h4>
+                    <div class="faq-question-body">
+                        <p>U jednotlivých notifikací si lze nastavit, zda se mají posílat e-mailem a formou push notifikace na mobilní telefon. Lze mít zapnuté oba způsoby, pouze jeden, nebo vypnuté oba dva.</p>
+                    </div>
+                </div>              
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="block">
+            <h3>Uživatelský účet</h3>
+                <p>Pro používání Týmuj je nutné založit si uživatelský účet. Každý hráč potřebuje svůj vlastní unikátní účet.</p>                          
+                
+                <div class="faq-question">
+                    <h4>Trend účasti</h4>
+                    <div class="faq-question-body">
+                        <p>Barevný pruh okolo vaší profilové fotografie se nazývá trend účasti. Zobrazuje vaši procentuální účast na poslední 20 událostech, na které jste byli pozvaní napříč týmy.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Účast v týmech</h4>
+                    <div class="faq-question-body">
+                        <p>Zde vidíte procentuální účast na událostech v jednotlivých týmech, kterých jste členem. Účast se vždy počítá z posledních 20 událostí.</p>
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <h4>Absence</h4>
+                    <div class="faq-question-body">
+                        <p>Slouží k automatickému nastavení „Nejdu“ na události v termínu, ve kterém si nastavíte absenci. Funguje zpětně (nastaví „Nejdu“ na již vytvořené události) i na následující události (nastaví „Nejdu“ na události vytvořené v budoucnu s termínem konání v době mé absence).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<div class="container">
+			<a class="logo" href="/"><img src="img/logo.svg" alt="týmuj"></a>
+			<div class="footer-links">
+				<a href="/about-us">O Týmuj</a>
+				<a href="mailto:info@tymuj.cz">Napište nám</a>
+				<a href="">Podmínky užití</a>
+			</div>
+			<div class="footer-social">
+				<a href="https://www.instagram.com/tymujcz/">
+					<img src="img/social/instagram.svg" alt="Instagram">
+				</a>
+				<a href="https://www.facebook.com/Týmujcz-106398882786886/">
+					<img src="img/social/facebook.svg" alt="Facebook">
+				</a>
+				<a href="https://www.youtube.com/channel/UCxTpcAhltG1SupXCQdbI4sw">
+					<img src="img/social/youtube.svg" alt="YouTube">
+				</a>
+			</div>
+  		<div class="copyright">
+  			<p>© Týmuj 2020</p>
+  			<a href="http://www.eventservice.cz/">Event Service (Provozovatel Týmuj)</a>
+  			<a href="http://www.byallmeans.website/">ByAllMeans (App & website)</a>
+  		</div>
+		</div>
+	</footer>
+
+	<script src="main.min.js" charset="utf-8"></script>
+
+</body>
+</html>
