@@ -2,11 +2,12 @@ version: '3'
 
 services:
   web:
-    image: gcr.io/tymuj-dev/tymuj-web:2.0.2
+    image: gcr.io/tymuj-4937c/tymuj-web:2.0.7
     build:
       context: .
     ports:
       - 80:80
     environment:
-      BASE_URL: http://localhost
       PORT: 80
+      FALLBACK_URI: https://109.205.73.82
+      FALLBACK_HOST: tymuj.cz

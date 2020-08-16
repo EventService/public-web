@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "nodemon ./server.js",
-    "build": "rollup -c && postcss main.css -u autoprefixer cssnano -o main.min.css"
+    "build": "rollup -c && postcss public/main.css -u autoprefixer cssnano -o public/main.min.css"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^6.1.0",
     "smoothscroll-polyfill": "^0.4.4",
-    "watch": "^1.0.2"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "serve": "^11.3.2"
+    "watch": "^1.0.2",
+    "express": "^4.17.1"
   }
 }

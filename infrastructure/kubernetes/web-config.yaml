@@ -5,6 +5,6 @@ metadata:
   labels:
     app: tymuj-web
 data:
-  NODE_ENV: production
-  PORT: '80'
-  BASE_URL: https://web.tymuj.byallmeans.cloud
+  PORT: "80"
+  FALLBACK_URI: https://109.205.73.82
+  FALLBACK_HOST: tymuj.cz

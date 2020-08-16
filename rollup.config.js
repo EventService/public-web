@@ -3,9 +3,9 @@ import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs';
 
 export default {
-    input: 'main.js',
+    input: 'public/main.js',
     output: {
-        file: 'main.min.js',
+        file: 'public/main.min.js',
         format: 'iife',
         sourcemap: 'inline'
     },
