@@ -14,28 +14,8 @@ const months = ["Led", "Úno", "Bře", "Dub", "Kvě", "Čvn", "Čvc", "Srp", "Z�
 // ----- Blog posts -----
 
 const getFirstPosts = function () {
-  fetch(buildUrl(postsUrl, 0, 3))
-    .then(response => response.json())
-    .then(resNews => {
-      const posts = resNews.results
-      for (let i = 0; i < news.length; i++) {
-
-        let newsItem = news[i]
-        let newsItemImage = newsItem.getElementsByTagName('img')[0]
-        let newsItemDate = newsItem.getElementsByTagName('time')[0]
-        let newsItemTitle = newsItem.getElementsByTagName('h4')[0]
-        let newsItemDescription = newsItem.getElementsByTagName('p')[0]
-        let newsItemLink = newsItem.getElementsByTagName('a')[0]
-
-        const [newsItemDay, newsItemMonth, newsItemYear] = getDate(posts[i].createdAt)
-
-        newsItemImage.src = posts[i].imageUrl
-        newsItemDate.innerHTML = `${newsItemDay} ${months[+newsItemMonth]} ${newsItemYear}`
-        newsItemTitle.innerHTML = posts[i].title
-        newsItemDescription.innerHTML = `${posts[i].content.split('.')[0]}...`
-        newsItemLink.href = `blogs/${posts[i].id}`
-      }
-    });
+  const blogsContainer = document.querySelector('.news .blogs-list')
+  appendPostToPage(buildUrl(postsUrl, 0, 3), blogsContainer) 
 }
 
   const getDate = function (dateString) {
@@ -170,6 +150,8 @@ const appendPostToPage = function (url, blogsContainer) {
         const postTextEl = document.createElement('p')
         const postLinkEl = document.createElement('a')
         postLinkEl.className = "secondary"
+        const imgLinkEl = document.createElement('a')
+        imgLinkEl.className = "simple"
 
         // Apply content
         const [newsItemDay, newsItemMonth, newsItemYear] = getDate(post.createdAt)
@@ -178,17 +160,19 @@ const appendPostToPage = function (url, blogsContainer) {
         postTimeEl.innerHTML = `${newsItemDay} ${months[+newsItemMonth]} ${newsItemYear}`
         postTitleEl.innerHTML = post.title
         postTextEl.innerHTML = `${post.content.replace(/h3/gu, '!--').split('.')[0]}...`
+        imgLinkEl.href = `blogs/${post.id}`
         postLinkEl.href = `blogs/${post.id}`
         postLinkEl.innerHTML = "Celý článek"
 
-        postContentEl.appendChild(postImgEl)
+        imgLinkEl.appendChild(postImgEl)
+        // postContentEl.appendChild(imgLinkEl)
         postContentEl.appendChild(postTimeEl)
         postContentEl.appendChild(postTitleEl)
         postContentEl.appendChild(postTextEl)
         postContentEl.appendChild(postLinkEl)
 
         // Append to root
-        rootEl.appendChild(postImgEl)
+        rootEl.appendChild(imgLinkEl)
         rootEl.appendChild(postContentEl)
 
         blogsContainer.appendChild(rootEl)

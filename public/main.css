@@ -415,6 +415,11 @@ a.secondary {
   font-weight: 400;
 }
 
+a.simple:hover {
+  border: none;
+  width: 100%;
+}
+
 .center {
   text-align: center;
   grid-column: span 12;
@@ -483,7 +488,7 @@ body.header-open {
   grid-column: span 12;
 }
 
-section:not(.hero) .container > header a::after, .news-item a::after, .feature-extra a::after {
+section:not(.hero) .container > header a::after, .news-item a.secondary::after, .feature-extra a::after {
   content: url(img/link-icon.svg);
   margin-left: .3em;
 }
@@ -1170,25 +1175,26 @@ button.blue-button {
   border-radius: 1em;
   overflow: hidden;
   box-shadow: 0 1px 4px 0 rgba(0, 101, 242, 0.1), 0 0 2px 0 rgba(0, 101, 242, 0.1), 0 11px 15px 0 rgba(0, 0, 0, 0.17);
+
+
+  display: flex;
+  flex-direction: column;
 }
 
-.news-item > img {
+.news-item > a > img {
   width: 100%;
 }
 
 .news-item-content {
   padding: 14px 20px 24px 20px;
-
-  /* height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; */
+  flex: 1;
+}
 
-  /* grid-template-rows: 40px;
-  grid-row-gap: 10px;
-  display: grid;
-
-  height: 57%; */
+.news-item-content > a.secondary {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .news-item time,
