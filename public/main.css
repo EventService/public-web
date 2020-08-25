@@ -415,8 +415,12 @@ a.secondary {
   font-weight: 400;
 }
 
+a.simple {
+  border-bottom: none;
+} 
+
 a.simple:hover {
-  border: none;
+  border-bottom: none;
   width: 100%;
 }
 
@@ -1163,6 +1167,12 @@ button.blue-button {
   padding-top: 50px;
   padding-bottom: 80px;
   background-color: var(--secondary-bg-color);
+}
+
+.news-list {
+  grid-column: span 12;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .news header {

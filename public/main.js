@@ -8,13 +8,14 @@ const questions = document.getElementsByClassName('faq-question')
 const news = document.getElementsByClassName('news-item')
 
 const PAGE_SIZE = 10
-const postsUrl = 'https://gql.tymuj.byallmeans.cloud/blog-posts'
+// const postsUrl = 'https://gql.tymuj.byallmeans.cloud/blog-posts'
+const postsUrl = 'https://api2.tymuj.cz/blog-posts'
 const months = ["Led", "Úno", "Bře", "Dub", "Kvě", "Čvn", "Čvc", "Srp", "Zář", "Říj", "Lis", "Pro"];
 
 // ----- Blog posts -----
 
 const getFirstPosts = function () {
-  const blogsContainer = document.querySelector('.news .blogs-list')
+  const blogsContainer = document.querySelector('.news .news-list')
   appendPostToPage(buildUrl(postsUrl, 0, 3), blogsContainer) 
 }
 
@@ -98,18 +99,12 @@ const buildUrl = function(url, page, pageSize) {
 var loadBlogPost = function (url) {
   const blogTitle = document.getElementById('blog-title')
   const blogContent = document.getElementById('blog-content')
-  const blogImage = document.getElementById('blog-main-image')
+  // const blogImage = document.getElementById('blog-main-image')
   const blogTime = document.getElementById('blog-time')
+  const blogImage = document.createElement('img')
+  blogImage.id = "blog-main-image"
 
-	// var params = {};
-	// var parser = document.createElement('a');
-	// parser.href = url;
-	// var query = parser.search.substring(1);
-	// var vars = query.split('&');
-	// for (var i = 0; i < vars.length; i++) {
-	// 	var pair = vars[i].split('=');
-	// 	params[pair[0]] = decodeURIComponent(pair[1]);
-  // }
+  const blogsContainer = document.querySelector('.blog .blog-header')
 
   const blogId = parseInt(url.split('/blogs/')[1], 10)
 
@@ -118,10 +113,11 @@ var loadBlogPost = function (url) {
     .then(response => response.json())
     .then(post => {      
       const [newsItemDay, newsItemMonth, newsItemYear, shortDate] = getDate(post.createdAt)
+      blogImage.src = post.imageUrl
+      blogsContainer.appendChild(blogImage)
 
       blogTitle.innerHTML = post.title
       blogContent.innerHTML = post.content
-      blogImage.src = post.imageUrl
       blogTime.datetime = shortDate
       blogTime.innerHTML = `${newsItemDay} ${months[+newsItemMonth]} ${newsItemYear}`
     })	
@@ -159,7 +155,7 @@ const appendPostToPage = function (url, blogsContainer) {
         postImgEl.src = post.imageUrl
         postTimeEl.innerHTML = `${newsItemDay} ${months[+newsItemMonth]} ${newsItemYear}`
         postTitleEl.innerHTML = post.title
-        postTextEl.innerHTML = `${post.content.replace(/h3/gu, '!--').split('.')[0]}...`
+        postTextEl.innerHTML = `${post.content.replace(/(h3|h2)/gu, '!--').split('.')[0]}...`
         imgLinkEl.href = `blogs/${post.id}`
         postLinkEl.href = `blogs/${post.id}`
         postLinkEl.innerHTML = "Celý článek"
