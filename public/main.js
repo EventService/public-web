@@ -119,7 +119,7 @@ var loadBlogPost = function (url) {
       blogTitle.innerHTML = post.title
       blogContent.innerHTML = post.content
       blogTime.datetime = shortDate
-      blogTime.innerHTML = `${newsItemDay} ${months[+newsItemMonth]} ${newsItemYear}`
+      blogTime.innerHTML = `${newsItemDay} ${months[+newsItemMonth - 1]} ${newsItemYear}`
     })	
   }
 };
@@ -153,7 +153,7 @@ const appendPostToPage = function (url, blogsContainer) {
         const [newsItemDay, newsItemMonth, newsItemYear] = getDate(post.createdAt)
         
         postImgEl.src = post.imageUrl
-        postTimeEl.innerHTML = `${newsItemDay} ${months[+newsItemMonth]} ${newsItemYear}`
+        postTimeEl.innerHTML = `${newsItemDay} ${months[+newsItemMonth -1]} ${newsItemYear}`
         postTitleEl.innerHTML = post.title
         postTextEl.innerHTML = `${post.content.replace(/(h3|h2)/gu, '!--').split('.')[0]}...`
         imgLinkEl.href = `blogs/${post.id}`
