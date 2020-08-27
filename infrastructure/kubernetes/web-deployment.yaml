@@ -14,8 +14,8 @@ spec:
         app: tymuj-web
     spec:
       containers:
-        - name: tymuj-web
-          image: gcr.io/tymuj-4937c/tymuj-web:2.0.7
+        - name: tymuj-web-tmp
+          image: gcr.io/tymuj-4937c/tymuj-web:2.0.16
           ports:
             - containerPort: 80
           envFrom:
