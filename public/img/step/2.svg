@@ -1,0 +1,22 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="a">
+      <path d="M1440 0v3534H0V0h1440Z"/>
+    </clipPath>
+    <clipPath id="c">
+      <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0Z"/>
+    </clipPath>
+    <filter id="b" x="-68.75%" y="-65.625%" filterUnits="userSpaceOnUse" width="193.75%" height="193.75%">
+      <feGaussianBlur stdDeviation="7" in="SourceAlpha" result="i2"/>
+      <feOffset dy="2" in="i2" result="i3"/>
+      <feColorMatrix values="0 0 0 0.0 0 0 0 0 0.0 0 0 0 0 0.0 0 0 0 0 0.09956840034965035 0" in="i3"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-645 -2739)">
+    <path d="M18 36c9.941 0 18-8.059 18-18S27.941 0 18 0 0 8.059 0 18s8.059 18 18 18Z" filter="url(#b)" transform="translate(659 2751)"/>
+    <g clip-path="url(#c)" transform="translate(659 2751)">
+      <path fill="#84BD00" d="M0 0h36v36H0V0z"/>
+    </g>
+    <text transform="translate(672 2777)" font-family="BebasNeue, Bebas Neue" font-size="24" fill="#FFF" text-anchor="left">2</text>
+  </g>
+</svg>
