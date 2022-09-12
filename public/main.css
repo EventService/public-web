@@ -1065,6 +1065,61 @@ button.blue-button {
   }
 }
 
+/* PREMIUM OVERVIEW */
+
+.premium-overview {
+  padding: 100px 0;
+}
+
+.premium-overview-title {
+  text-align: left;
+}
+
+.premium-overview-description {
+  width: 80%;
+}
+
+.premium-overview .container > div {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.premium-overview a h5 {
+  padding-block-start: 40px;
+  color: var(--secondary-color);
+}
+
+.premium-overview .container > img {
+  grid-column: span 4;
+}
+
+.premium-feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-block-start: 40px;
+}
+
+@media all and (max-width: 730px) {
+  .premium-feature-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.premium-feature {
+  display: flex;
+  align-items: center;
+}
+
+.premium-feature-icon {
+  margin-right: 1em;
+  width: 2.5em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 50%;
+}
+
 /* -------- Stats -------- */
 
 .stats {
@@ -1857,4 +1912,333 @@ cite {
   margin-bottom: 2rem;
   font-weight: 600;
 
+}
+
+/* PREMIUM */
+
+.premium {
+  padding-block: 8rem;
+
+  background-image: url(img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.premium h1 {
+  color: white;
+}
+
+.premium h3 {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+.premium p {
+  text-align: center;
+  max-width: 580px;
+  color: white;
+  font-weight: 400;
+}
+
+/* BENEFITS */
+
+.benefits {
+  padding-block: 6rem;
+}
+
+.benefits-description {
+  grid-column-end: span 6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.benefits-description img {
+  margin-block-end: 1.125rem;
+}
+
+.benefits-description h3 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-block-end: 0.875rem;
+}
+
+.benefits-description p {
+  margin-block-end: 0.625rem;
+  font-weight: 400;
+}
+
+.benefits-table {
+  grid-column-start: span 6;
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.benefits-table thead tr th {
+  border-bottom: 1px solid #e1e1e1
+}
+
+.benefits-table thead tr th h4 {
+  line-height: 48px;
+  padding-top: 6px;
+}
+
+.benefits-table thead tr th:first-child {
+  text-align: left;
+  padding-left: 28px;
+  width: 221px;
+}
+
+.benefits-table thead tr th:last-child {
+  padding-right: 10px;
+}
+
+.benefits-table tbody tr td:first-child {
+  text-align: left;
+  padding-left: 28px;
+  width: 221px;
+}
+
+.benefits-table tbody tr td:nth-child(2) {
+  border-inline: 1px solid #e1e1e1;
+}
+
+.benefits-table tbody tr td:last-child {
+  padding-right: 10px;
+}
+
+.benefits-table tbody tr td {
+  font-weight: 400;
+  padding-block: 8px;
+  line-height: 1rem;
+  width: 30%;
+}
+
+.benefits-table tbody tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.benefits-table tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+/* PREMIUM FEATURES */
+
+.premium-features {
+  padding: 80px 0;
+  background-color: var(--secondary-bg-color);
+}
+
+@media all and (max-width: 730px) {
+  .premium-features .feature-extra {
+    width: 100%;
+  }
+}
+
+.premium-features h3 {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+/* PRICES */
+
+.prices {
+  padding: 80px 0;
+}
+
+.prices .container {
+  position: relative;
+}
+
+.prices h3 {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.prices p {
+  grid-column: 4 / 10;
+  text-align: center;
+}
+
+
+.prices-table {
+  grid-column: 4 / 10;
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+  margin-block-end: 65px;
+}
+
+@media all and (max-width: 730px) {
+  .prices-table {
+    width: 75%;
+    align-self: center;
+    margin-block-end: 50px
+  }
+}
+
+.prices-table thead {
+  background-color: var(--secondary-color);
+}
+
+.prices-table thead tr th {
+  border-bottom: 1px solid #e1e1e1;
+  position: relative;
+}
+
+.prices-table thead tr th h4 {
+  line-height: 48px;
+  padding-top: 6px;
+  color: white;
+}
+
+.prices-table thead tr th span {
+  background-color: #ff533a;
+  border-radius: 9px;
+  color: white;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 13px;
+  padding: 3px 8px;
+  position: absolute;
+  top: -9px;
+  right: calc(50% + 5px);
+  transform: translateX(50%);
+  width: max-content;
+}
+
+.prices-table thead tr th:first-child {
+  text-align: left;
+  padding-left: 28px;
+  width: 221px;
+  border-top-left-radius: 10px;
+}
+
+.prices-table thead tr th:last-child {
+  padding-right: 10px;
+  border-top-right-radius: 10px;
+}
+
+.prices-table tbody tr td:first-child {
+  text-align: left;
+  padding-left: 28px;
+  width: 221px;
+}
+
+.prices-table tbody tr td:nth-child(2) {
+  border-inline: 1px solid #e1e1e1;
+}
+
+.prices-table tbody tr td:last-child {
+  padding-right: 10px;
+}
+
+.prices-table tbody tr td {
+  font-weight: 400;
+  padding-block: 8px;
+  line-height: 1rem;
+  width: 30%;
+}
+
+.prices-table tbody tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.prices-table tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+.prices-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.prices-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.prices-illustration {
+  grid-column: 3 / 11;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media all and (max-width: 1023px) {
+  .prices-illustration {
+    grid-column: span 12;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .prices-illustration {
+    grid-column: 2 / 12;
+  }
+}
+
+/* BUY */
+
+.buy {
+  padding-block-end: 8rem;
+}
+
+.buy h3 {
+  color: var(--primary-color);
+}
+
+.buy a {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.buy a:hover {
+  border-color: var(--secondary-color);
+}
+
+.buy p {
+  text-align: center;
+  grid-column: 3 / 11;
+}
+
+.buy-process {
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 25px;
+  flex-wrap: wrap;
+}
+
+.buy-step {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* @media all and (max-width: 1023px) { */
+@media all and (max-width: 730px) {
+  .buy-step {
+    width: 45%;
+  }
+}
+
+.buy-step h4 {
+  margin-block: 1rem;
+  text-align: center;
+}
+
+.buy-step-icon {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+
+.buy-illustration {
+  width: 100%;
+  border-radius: 10px;
 }
