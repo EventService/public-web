@@ -12,6 +12,7 @@ app.get('/blogs', (req, res) => res.sendFile(path.join(__dirname, 'blogs.html'))
 app.get('/blogs/:blogId', (req, res) => {    
     res.sendFile(path.join(__dirname, 'blog.html'))
 })
+app.get('/premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
 
 const port = process.env.PORT || 3000
 
