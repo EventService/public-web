@@ -12,7 +12,11 @@ app.get('/blogs', (req, res) => res.sendFile(path.join(__dirname, 'blogs.html'))
 app.get('/blogs/:blogId', (req, res) => {    
     res.sendFile(path.join(__dirname, 'blog.html'))
 })
-app.get('/premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
+// app.get('/premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
+
+// Routes for testing purpose
+app.get('/new-premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
+app.get('/new-homepage', (req, res) => res.sendFile(path.join(__dirname, 'new-index.html')))
 
 const port = process.env.PORT || 3000
 
