@@ -4,19 +4,15 @@ const path = require('path');
 
 app.use(express.static('public'))
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')))
-app.get('/faq', (req, res) => res.sendFile(path.join(__dirname, 'faq.html')))
-app.get('/features', (req, res) => res.sendFile(path.join(__dirname, 'features.html')))
-app.get('/about-us', (req, res) => res.sendFile(path.join(__dirname, 'about-us.html')))
-app.get('/blogs', (req, res) => res.sendFile(path.join(__dirname, 'blogs.html')))
-app.get('/blogs/:blogId', (req, res) => {    
+app.get('public-web/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')))
+app.get('public-web/faq', (req, res) => res.sendFile(path.join(__dirname, 'faq.html')))
+app.get('public-web/features', (req, res) => res.sendFile(path.join(__dirname, 'features.html')))
+app.get('public-web/about-us', (req, res) => res.sendFile(path.join(__dirname, 'about-us.html')))
+app.get('public-web/blogs', (req, res) => res.sendFile(path.join(__dirname, 'blogs.html')))
+app.get('public-web/blogs/:blogId', (req, res) => {    
     res.sendFile(path.join(__dirname, 'blog.html'))
 })
-// app.get('/premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
-
-// Routes for testing purpose
-app.get('/new-premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
-app.get('/new-homepage', (req, res) => res.sendFile(path.join(__dirname, 'new-index.html')))
+app.get('public-web/premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
 
 const port = process.env.PORT || 3000
 
