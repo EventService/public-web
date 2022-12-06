@@ -8,7 +8,6 @@ const questions = document.getElementsByClassName('faq-question')
 const news = document.getElementsByClassName('news-item')
 
 const PAGE_SIZE = 10
-// const postsUrl = 'https://gql.tymuj.byallmeans.cloud/blog-posts'
 const postsUrl = 'https://api2.tymuj.cz/blog-posts'
 const months = ["Led", "Úno", "Bře", "Dub", "Kvě", "Čvn", "Čvc", "Srp", "Zář", "Říj", "Lis", "Pro"];
 
