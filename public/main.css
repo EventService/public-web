@@ -1264,8 +1264,7 @@ button.blue-button {
 }
 
 .news-item time,
-.blog time,
-.about time {
+.blog time {
   display: block;
   margin-bottom: 1em;
   font-size: 0.8125rem;
@@ -1616,7 +1615,7 @@ cite {
   border-bottom: 1px solid var(--secondary-text-color);
 }
 
-.copyright p {
+.copyright .copyright-text {
   margin-right: auto;
 }
 
@@ -1765,126 +1764,6 @@ cite {
   object-fit: cover;
   margin: 2rem 0;
 }
-
-
-/* --- ABOUT US --- */
-
-.about {
-  padding: 4.3rem 0 8rem 0;
-}
-
-.about-us-letter {
-  grid-column: span 12;
-  margin-bottom: 2rem;
-}
-
-.timeline {
-  grid-column: span 12;
-  position: relative;
-  padding-bottom: 2rem;
-  margin-top: 3rem;
-}
-
-/* the timeline "line" itself */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: var(--secondary-color);
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-.timeline-item {
-  padding: 0 40px 32px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-.timeline-item::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  right: -6px;
-  background-color: var(--secondary-color);
-  top: 0;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline-item.left .content {
-  text-align: right;
-}
-
-.timeline-item.right .content {
-  text-align: left;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -9px;
-}
-
-.left {
-  left: 0;
-}
-
-.right {
-  left: 50%;
-}
-
-.timeline-arrow {
-  width: 20px;
-	height: 20px;
-	box-sizing: border-box;
-	position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -12px;
-  transform: rotate(-45deg);
-  border-left: 2px solid var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-}
-
-@media all and (max-width: 730px) {
-
-  .about .container {
-    width: 100%;
-  }
-
-  .timeline::after,
-  .timeline-arrow {
-    left: 10%;
-  }
-
-  .timeline-item {
-    width: 90%;
-  }
-
-  .left, 
-  .right {
-    left: 10%;
-  }
-
-  .left::after {
-    left: -9px;
-  }
-
-  .timeline-item.left .content {
-    text-align: left;
-  }
-
-  .signin-button {
-    width: 210px;
-    height: 40px;
-  }
-
-}
-
 
 /* FEATURES */
 

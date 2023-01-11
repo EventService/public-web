@@ -26,11 +26,10 @@
    
     <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
     <nav>
-      <a href="/about-us">O nás</a>
+      <a href="/news">Noviny</a>
       <a href="/features">Funkce</a>
       <a href="/premium">Premium</a>
       <a href="/faq">FAQ</a>
-      <a href="/blogs">Blog</a>
     </nav>   
 
     <div class="header-buttons">
@@ -311,7 +310,7 @@
     <div class="container">
       <header>
         <h2>Co je nového na Týmuj</h2>
-        <a class="section-link" href="/blogs">Prozkoumejte náš blog</a>
+        <a class="section-link" href="/news">Prozkoumejte náš blog</a>
       </header>
       <div class="news-list container"></div>
     </div>
@@ -408,7 +407,6 @@
     <div class="container">
       <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
       <div class="footer-links">
-        <a href="/about-us">O Týmuj</a>
         <a href="mailto:info@tymuj.cz">Napište nám</a>
         <a href="">Podmínky užití</a>
       </div>
@@ -424,7 +422,7 @@
         </a>
       </div>
       <div class="copyright">
-        <p>© Týmuj 2022</p>
+        <p class="copyright-text" id="copyright-year">© Týmuj </p>
         <a href="http://www.eventservice.cz/">Event Service (Provozovatel Týmuj)</a>
 			  <p>Fox Media (App & website)</p>
       </div>
@@ -437,6 +435,7 @@
     document.addEventListener('DOMContentLoaded', function(event) {
         //the event occurred         
         getFirstPosts()
+        addCopyrightYear()
     })
   </script>
 
