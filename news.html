@@ -25,11 +25,10 @@
 	<header class="page-header" id="header">
 		<a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
 		<nav>
-            <a href="/about-us">O nás</a>
+            <a href="/news">Noviny</a>
             <a href="/features">Funkce</a>
             <a href="/premium">Premium</a>
             <a href="/faq">FAQ</a>
-            <a href="/blogs">Blog</a>
         </nav>   
       
 		<div class="header-buttons">
@@ -53,7 +52,6 @@
 		<div class="container">
 			<a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
 			<div class="footer-links">
-				<a href="/about-us">O Týmuj</a>
 				<a href="mailto:info@tymuj.cz">Napište nám</a>
 				<a href="">Podmínky užití</a>
 			</div>
@@ -82,6 +80,7 @@
         document.addEventListener('DOMContentLoaded', function(event) {
             //the event occurred         
             getPostList()
+						addCopyrightYear()
         })
     </script>
 </body>

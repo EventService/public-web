@@ -7,12 +7,13 @@ app.use(express.static('public'))
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')))
 app.get('/faq', (req, res) => res.sendFile(path.join(__dirname, 'faq.html')))
 app.get('/features', (req, res) => res.sendFile(path.join(__dirname, 'features.html')))
-app.get('/about-us', (req, res) => res.sendFile(path.join(__dirname, 'about-us.html')))
-app.get('/blogs', (req, res) => res.sendFile(path.join(__dirname, 'blogs.html')))
-app.get('/blogs/:blogId', (req, res) => {    
+app.get('/news', (req, res) => res.sendFile(path.join(__dirname, 'news.html')))
+app.get('/news/:blogId', (req, res) => {    
     res.sendFile(path.join(__dirname, 'blog.html'))
 })
 app.get('/premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
+app.get('/terms-of-use', (req, res) => res.sendFile(path.join(__dirname, 'terms-of-use.html')))
+app.get('/privacy', (req, res) => res.sendFile(path.join(__dirname, 'privacy.html')))
 
 const port = process.env.PORT || 3000
 
