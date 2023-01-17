@@ -13,9 +13,11 @@ spec:
       labels:
         app: tymuj-web
     spec:
+      imagePullSecrets:
+        - name: foxmedia-gitlab-auth
       containers:
         - name: tymuj-web-tmp
-          image: gcr.io/tymuj-4937c/tymuj-web:2.0.16
+          image: registry.gitlab.com/fox-media-czech-republic/tymuj-2021/web:2023-01-17
           ports:
             - containerPort: 80
           envFrom:
