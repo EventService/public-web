@@ -4,13 +4,21 @@
 const body = document.getElementsByTagName('body')[0]
 const header = document.getElementById('header')
 const navToggle = document.getElementById('nav-toggle')
+const copyright = document.getElementById('copyright-year')
 const questions = document.getElementsByClassName('faq-question')
 const news = document.getElementsByClassName('news-item')
 
 const PAGE_SIZE = 10
-// const postsUrl = 'https://gql.tymuj.byallmeans.cloud/blog-posts'
 const postsUrl = 'https://api2.tymuj.cz/blog-posts'
 const months = ["Led", "Úno", "Bře", "Dub", "Kvě", "Čvn", "Čvc", "Srp", "Zář", "Říj", "Lis", "Pro"];
+
+// ----- Copyright -----
+
+const addCopyrightYear = function () {
+  if(copyright) {
+    copyright.append(new Date().getUTCFullYear())
+  }
+}
 
 // ----- Blog posts -----
 
@@ -106,7 +114,7 @@ var loadBlogPost = function (url) {
 
   const blogsContainer = document.querySelector('.blog .blog-header')
 
-  const blogId = parseInt(url.split('/blogs/')[1], 10)
+  const blogId = parseInt(url.split('/news/')[1], 10)
 
   if (blogId) {  
     fetch(`${postsUrl}/${blogId}`)
@@ -156,8 +164,8 @@ const appendPostToPage = function (url, blogsContainer) {
         postTimeEl.innerHTML = `${newsItemDay} ${months[+newsItemMonth -1]} ${newsItemYear}`
         postTitleEl.innerHTML = post.title
         postTextEl.innerHTML = `${post.content.replace(/(h3|h2)/gu, '!--').split('.')[0]}...`
-        imgLinkEl.href = `blogs/${post.id}`
-        postLinkEl.href = `blogs/${post.id}`
+        imgLinkEl.href = `news/${post.id}`
+        postLinkEl.href = `news/${post.id}`
         postLinkEl.innerHTML = "Celý článek"
 
         imgLinkEl.appendChild(postImgEl)
