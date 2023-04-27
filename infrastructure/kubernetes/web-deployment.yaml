@@ -15,11 +15,20 @@ spec:
     spec:
       imagePullSecrets:
         - name: foxmedia-gitlab-auth
+      nodeSelector:
+        name: jobs-node-pool
       containers:
         - name: tymuj-web-tmp
-          image: registry.gitlab.com/fox-media-czech-republic/tymuj-2021/web:2023-01-17
+          image: registry.gitlab.com/fox-media-czech-republic/tymuj-2021/web:2023-04-27
           ports:
             - containerPort: 80
           envFrom:
             - configMapRef:
                 name: web-config
+          resources:
+            limits:
+              cpu: 100m
+              memory: 250Mi
+            requests:
+              cpu: 20m
+              memory: 100Mi
