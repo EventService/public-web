@@ -14,6 +14,8 @@ app.get('/news/:blogId', (req, res) => {
 app.get('/premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
 app.get('/terms-of-use', (req, res) => res.sendFile(path.join(__dirname, 'terms-of-use.html')))
 app.get('/privacy', (req, res) => res.sendFile(path.join(__dirname, 'privacy.html')))
+app.get('/en/terms-of-use', (req, res) => res.sendFile(path.join(__dirname, 'terms-of-use-en.html')))
+app.get('/en/privacy', (req, res) => res.sendFile(path.join(__dirname, 'privacy-en.html')))
 
 const port = process.env.PORT || 3000
 
