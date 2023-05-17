@@ -29,15 +29,15 @@
 
     <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
     <nav>
-      <a href="/news">Novinky</a>
-      <a href="/features">Funkce</a>
-      <a href="/premium">Premium</a>
-      <a href="/faq">FAQ</a>
+      <a href="/news" class="i18n" data-i18n="navigation.news"></a>
+      <a href="/features" class="i18n" data-i18n="navigation.features"></a>
+      <a href="/premium" class="i18n" data-i18n="navigation.premium"></a>
+      <a href="/faq" class="i18n" data-i18n="navigation.faq"></a>
     </nav>
 
     <div class="header-buttons">
-      <a class="button round inverse login-button" href="https://app.tymuj.cz/login">Přihlášení</a>
-      <a class="button round registration-button" href="https://app.tymuj.cz/signup">Registrace</a>
+      <a class="button round inverse login-button i18n" href="https://app.tymuj.cz/login" data-i18n="navigation.login">Přihlášení</a>
+      <a class="button round registration-button i18n" href="https://app.tymuj.cz/signup" data-i18n="navigation.register">Registrace</a>
     </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
@@ -46,8 +46,8 @@
   <section class="hero">
     <div class="container">
       <header>
-        <h1>Organizuj sportovní tým online</a>
-          <h3>V mobilu i na webu.</h3>
+        <h1 class="i18n" data-i18n="homepage.title">Organizuj sportovní tým online</a>
+          <h3 class="i18n" data-i18n="homepage.subtitle">V mobilu i na webu.</h3>
           <div class="store-buttons">
             <a href="https://apps.apple.com/us/app/tymuj/id1218860308">
               <svg xmlns="http://www.w3.org/2000/svg" width="123" height="38" viewBox="0 0 123 38">
@@ -475,15 +475,9 @@
   </footer>
 
   <script src="/main.js" charset="utf-8"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function (event) {
-      //the event occurred         
-      getFirstPosts()
-      addCopyrightYear()
-    })
-  </script>
-
+  <script src="/localization/en.js" charset="utf-8"></script>
+  <script src="/localization/cs.js" charset="utf-8"></script>
+  <script src="/localization/index.js" charset="utf-8"></script>
 </body>
 
 </html>
