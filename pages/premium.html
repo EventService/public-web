@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 
 <head>
   <meta charset="UTF-8">
-  <title>Premium - Týmuj</title>
+  <title>{{premium.pageTitle}} - Týmuj</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
@@ -24,20 +24,20 @@
 </head>
 
 <body>
-
   <header class="page-header" id="header">
-
-    <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
+    <a class="logo" href="/">
+      <img src="/img/logo.svg" alt="týmuj">
+    </a>
     <nav>
-      <a href="/news">Novinky</a>
-      <a href="/features">Funkce</a>
-      <a href="/premium">Premium</a>
-      <a href="/faq">FAQ</a>
+      <a href="/news">{{navigation.news}}</a>
+      <a href="/features">{{navigation.features}}</a>
+      <a href="/premium">{{navigation.premium}}</a>
+      <a href="/faq">{{navigation.faq}}</a>
     </nav>
 
     <div class="header-buttons">
-      <a class="button round inverse login-button" href="https://app.tymuj.cz/login">Přihlášení</a>
-      <a class="button round registration-button" href="https://app.tymuj.cz/signup">Registrace</a>
+      <a class="button round inverse login-button" href="https://app.tymuj.cz/login">{{navigation.login}}</a>
+      <a class="button round registration-button" href="https://app.tymuj.cz/signup">{{navigation.register}}</a>
     </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
@@ -46,8 +46,8 @@
   <section class="premium">
     <div class="container">
       <header>
-        <h1>Týmuj Premium</a>
-          <h3>Využijte Týmuj naplno s novými funkcemi</h3>
+        <h1>{{premium.title}}</h1>
+        <h3>{{premium.subtitle}}</h3>
       </header>
     </div>
   </section>
@@ -55,22 +55,18 @@
   <section class="benefits">
     <div class="container">
       <div class="benefits-description">
-        <img src="/img/icons/premium-badge.svg" alt="Týmuj Premium">
-        <h3>Co získáte s Týmuj Premium</h3>
-        <p>Díky Týmuj Premium bude organizace vašeho týmu ještě jednodušší a efektivnější. Využíváním Týmuj Premium také
-          podpoříte další provoz a rozvoj Týmuj.</p>
-        <p>Budete moci naplánovat neomezené množství budoucích událostí a využít přitom funkci jejich hromadné tvorby,
-          vytvořit termínovou listinu tréninků nebo zápasů na celou sezónu vám tak zabere jen několik kliknutí.</p>
-        <p>S pomocí limitu počtu účastníků na události a systému podskupin budete mít dokonalý přehled o docházce na
-          jednotlivé události.</p>
-        <p>Komunikaci v týmu a sdílení informací vám pomohou zlepšit e-mailové a push notifikace na zprávy v týmu a
-          možnost nahrát a sdílet soubory nebo obrázky přímo v rámci aplikace.</p>
+        <img src="/img/icons/premium-badge.svg" alt="{{premium.title}}">
+        <h3>{{premium.benefits.title}}</h3>
+        <p>{{premium.benefits.p1}}</p>
+        <p>{{premium.benefits.p2}}</p>
+        <p>{{premium.benefits.p3}}</p>
+        <p>{{premium.benefits.p4}}</p>
       </div>
       <table class="benefits-table">
         <thead>
           <tr>
             <th>
-              <h4>Funkce</h4>
+              <h4>{{premium.benefits.table.functions}}</h4>
             </th>
             <th>
               <h4>Basic</h4>
@@ -82,72 +78,72 @@
         </thead>
         <tbody>
           <tr>
-            <td>Založení účtu</td>
+            <td>{{premium.benefits.table.createAccount}}</td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Založení týmu</td>
+            <td>{{premium.benefits.table.createTeam}}</td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Soupiska týmu</td>
+            <td>{{premium.benefits.table.teamRoster}}</td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Zprávy</td>
+            <td>{{premium.benefits.table.messages}}</td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Nástěnka</td>
+            <td>{{premium.benefits.table.noticeBoard}}</td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Pokladna</td>
+            <td>{{premium.benefits.table.wallet}}</td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Tvorba události</td>
+            <td>{{premium.benefits.table.createEvent}}</td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Detail události</td>
+            <td>{{premium.benefits.table.eventDetail}}</td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Opakované události</td>
+            <td>{{premium.benefits.table.recurringEvents}}</td>
             <td><img src="/img/icons/no.svg" alt="Ne"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Limit účastníků</td>
+            <td>{{premium.benefits.table.limit}}</td>
             <td><img src="/img/icons/no.svg" alt="Ne"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Notifikace zpráv</td>
+            <td>{{premium.benefits.table.messageNotifications}}</td>
             <td><img src="/img/icons/no.svg" alt="Ne"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Galerie a soubory</td>
+            <td>{{premium.benefits.table.galleries}}</td>
             <td><img src="/img/icons/no.svg" alt="Ne"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Více než 10 událostí</td>
+            <td>{{premium.benefits.table.moreEvents}}</td>
             <td><img src="/img/icons/no.svg" alt="Ne"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
           <tr>
-            <td>Více než 24 členů týmu</td>
+            <td>{{premium.benefits.table.moreMembers}}</td>
             <td><img src="/img/icons/no.svg" alt="Ne"></td>
             <td><img src="/img/icons/yes.svg" alt="Ano"></td>
           </tr>
@@ -159,55 +155,55 @@
   <section class="premium-features">
     <div class="container">
       <header>
-        <h3>Hlavní funkce Premium účtu</h3>
+        <h3>{{premium.features.title}}</h3>
         <a class="section-link hidden" href="">Explore premium features</a>
       </header>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/premium-features-icons/1.svg" alt="Neomezený počet členů v týmu">
-          <h4>Neomezený počet členů v týmu</h4>
+          <img class="feature-extra-icon" src="/img/premium-features-icons/1.svg" alt="{{premium.features.unlimitedMembers.title}}">
+          <h4>{{premium.features.unlimitedMembers.title}}</h4>
         </header>
-        <p>Běžné týmy jsou omezeny na 24 členů týmu, Premium týmy omezení nemají.</p>
+        <p>{{premium.features.unlimitedMembers.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/premium-features-icons/2.svg" alt="Neomezený počet událostí">
-          <h4>Neomezený počet událostí</h4>
+          <img class="feature-extra-icon" src="/img/premium-features-icons/2.svg" alt="{{premium.features.unlimitedEvents.title}}">
+          <h4>{{premium.features.unlimitedEvents.title}}</h4>
         </header>
-        <p>Můžete naplánovat tolik událostí, kolik potřebujete.</p>
+        <p>{{premium.features.unlimitedEvents.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/premium-features-icons/3.svg" alt="Rozšířené notifikace">
-          <h4>Rozšířené notifikace</h4>
+          <img class="feature-extra-icon" src="/img/premium-features-icons/3.svg" alt="{{premium.features.notifications.title}}">
+          <h4>{{premium.features.notifications.title}}</h4>
         </header>
-        <p>Přijde vám notifikace k nové zprávě v týmu nebo výzva k vyplnění docházky.</p>
+        <p>{{premium.features.notifications.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/premium-features-icons/4.svg" alt="Podrobné nastavení událostí">
-          <h4>Podrobné nastavení událostí</h4>
+          <img class="feature-extra-icon" src="/img/premium-features-icons/4.svg" alt="{{premium.features.detailedEvents.title}}">
+          <h4>{{premium.features.detailedEvents.title}}</h4>
         </header>
-        <p>Přidejte limit účastníků, termín pro vyplnění docházky nebo poznámku k akci.</p>
+        <p>{{premium.features.detailedEvents.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/premium-features-icons/5.svg" alt="Podskupiny v docházce">
-          <h4>Podskupiny v docházce</h4>
+          <img class="feature-extra-icon" src="/img/premium-features-icons/5.svg" alt="{{premium.features.subgroups.title}}">
+          <h4>{{premium.features.subgroups.title}}</h4>
         </header>
-        <p>Účastníci události se vám rozdělí dle vytvořených podskupin v týmu.</p>
+        <p>{{premium.features.subgroups.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/premium-features-icons/6.svg" alt="Galerie a soubory">
-          <h4>Galerie a soubory</h4>
+          <img class="feature-extra-icon" src="/img/premium-features-icons/6.svg" alt="{{premium.features.gallery.title}}">
+          <h4>{{premium.features.gallery.title}}</h4>
         </header>
-        <p>V týmu můžete vytvořit galerie a složky pro uložení obrázků nebo důležitých souborů.</p>
+        <p>{{premium.features.gallery.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
     </div>
@@ -216,44 +212,43 @@
   <section class="prices">
     <div class="container">
       <header>
-        <h3>Kolik stojí Týmuj Premium</h3>
+        <h3>{{premium.price.title}}</h3>
         <a class="section-link hidden" href="">Explore premium prices</a>
       </header>
-      <p>Nejvýhodnější cenu za Týmuj Premium získáte při zakoupení 6 měsíců. Pokud jste správcem více týmů, můžete
-        zakoupit Týmuj Premium pro několik týmů najednou a tím ušetřit.</p>
+      <p>{{premium.price.description}}</p>
       <table class="prices-table">
         <thead>
           <tr>
             <th>
-              <h4>Počet týmů</h4>
+              <h4>{{premium.price.table.teamCount}}</h4>
             </th>
             <th>
-              <h4>1 měsíc</h4>
+              <h4>1 {{premium.price.table.month}}</h4>
             </th>
             <th>
-              <h4>6 měsíců</h4>
-              <span>15% sleva</span>
+              <h4>6 {{premium.price.table.months}}</h4>
+              <span>15% {{premium.price.table.discount}}</span>
             </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1 tým</td>
+            <td>1 {{premium.price.table.team}}</td>
             <td>119 Kč</td>
             <td>599 Kč</td>
           </tr>
           <tr>
-            <td>2 týmy</td>
+            <td>2 {{premium.price.table.teams}}</td>
             <td>219 Kč</td>
             <td>1090 Kč</td>
           </tr>
           <tr>
-            <td>3 týmy</td>
+            <td>3 {{premium.price.table.teams}}</td>
             <td>299 Kč</td>
             <td>1490 Kč</td>
           </tr>
           <tr>
-            <td>4 týmy</td>
+            <td>4 {{premium.price.table.teams}}</td>
             <td>369 Kč</td>
             <td>1850 Kč</td>
           </tr>
@@ -261,34 +256,32 @@
       </table>
       <img class="prices-illustration" srcset="/img/pricing.png 1x, /img/pricing@2x.png 2x, /img/pricing@3x.png 3x"
         alt="Týmuj ceník">
-      <p>Pokud jste správcem více týmů, nebo jste klub či jiná sportovní organizace a potřebujete
-        fakturu s IČ, kontaktujte nás na <a href="mailto:info@tymuj.cz">info@tymuj.cz</a>.</p>
+      <p>{{premium.price.contact}}</p>
     </div>
   </section>
 
   <section class="buy">
     <div class="container">
       <header>
-        <h3>Jak zakoupit Týmuj Premium</h3>
+        <h3>{{premium.purchase.title}}</h3>
         <a class="section-link hidden" href="">Explore premium purchase process</a>
       </header>
-      <p>Týmuj premium můžete zakoupit v mobilní aplikaci prostřednictvím Google Play nebo App Store. V současnosti je
-        možné zakoupit Premium až pro 4 týmy.</p>
+      <p>{{premium.purchase.description}}</p>
       <div class="buy-process">
         <div class="buy-step">
           <img class="buy-step-icon" srcset="/img/step/1.svg" alt="Krok 1">
-          <img class="buy-illustration" srcset="/img/buy-process/1.png 1x" alt="Představení a výběr předplatného">
-          <h4>Představení a výběr přeplatného</h4>
+          <img class="buy-illustration" srcset="/img/buy-process/1.png 1x" alt="{{premium.purchase.steps.introduction}}">
+          <h4>{{premium.purchase.steps.introduction}}</h4>
         </div>
         <div class="buy-step">
           <img class="buy-step-icon" srcset="/img/step/2.svg" alt="Krok 2">
-          <img class="buy-illustration" srcset="/img/buy-process/2.png 1x" alt="Výběr týmu">
-          <h4>Výběr týmu</h4>
+          <img class="buy-illustration" srcset="/img/buy-process/2.png 1x" alt="{{premium.purchase.steps.selection}}">
+          <h4>{{premium.purchase.steps.selection}}</h4>
         </div>
         <div class="buy-step">
           <img class="buy-step-icon" srcset="/img/step/3.svg" alt="Krok 3">
-          <img class="buy-illustration" srcset="/img/buy-process/3.png 1x" alt="Shrnutí">
-          <h4>Shrnutí</h4>
+          <img class="buy-illustration" srcset="/img/buy-process/3.png 1x" alt="{{premium.purchase.steps.summary}}">
+          <h4>{{premium.purchase.steps.summary}}</h4>
         </div>
       </div>
     </div>
@@ -297,53 +290,42 @@
   <section class="faq">
     <div class="container">
       <header>
-        <h3>Často kladené dotazy</h3>
+        <h3>{{premium.faq.title}}</h3>
       </header>
       <div class="faq-question">
-        <h4>Je možné používat Týmuj zdarma?</h4>
+        <h4>{{premium.faq.free.title}}</h4>
         <div class="faq-question-body">
-          <p>Ano, je možné využívat Týmuj zdarma a to v režimu Basic s výše popsanými omezeními.</p>
+          <p>{{premium.faq.free.description}}</p>
         </div>
       </div>
       <div class="faq-question">
-        <h4>Kdy musím začít za Týmuj platit?</h4>
+        <h4>{{premium.faq.trial.title}}</h4>
         <div class="faq-question-body">
-          <p>Každý nový tým začíná s 2 měsíci Týmuj Premium zdarma, po jejich uplynutí se musí rozhodnout, zda
-            bude pokračovat v omezeném Týmuj Basic nebo v placeném Týmuj Premium.</p>
+          <p>{{premium.faq.trial.description}}</p>
         </div>
       </div>
       <div class="faq-question">
-        <h4>Počítají se do limitu 24 hráčů v Týmuj Basic i trenéři, rodiče, neaktivní členové apod?</h4>
+        <h4>{{premium.faq.limit.title}}</h4>
         <div class="faq-question-body">
-          <p>Do limitu se počítají všichni členové daného týmu. Systém, který kontroluje počet členů v týmu, je
-            automatický a nerozlišuje, jak aktivní jsou jednotliví členové, nebo jakou roli v týmu plní.</p>
+          <p>{{premium.faq.limit.description}}</p>
         </div>
       </div>
       <div class="faq-question">
-        <h4>Co se stane, pokud Týmuj Premium nezaplatíme? Smaže se náš tým?</h4>
+        <h4>{{premium.faq.notPaying.title}}</h4>
         <div class="faq-question-body">
-          <p>Nikdy nedojde ke smazání vašeho týmu ani jiných informací a dat. V případě, že je vás 24 a méně
-            členů v týmu, budete automaticky pokračovat v používání bezplatné, funkčně omezené verze Týmuj
-            Basic. Pokud je vás více než 24 členů, neumožní vám už Týmuj vytvářet nové události, dokud Týmuj
-            Premium opět neaktivujete.</p>
+          <p>{{premium.faq.notPaying.description}}</p>
         </div>
       </div>
       <div class="faq-question">
-        <h4>Co když mám více týmů?</h4>
+        <h4>{{premium.faq.multipleTeams.title}}</h4>
         <div class="faq-question-body">
-          <p>V aplikaci bude možné zakoupit Premium až pro 4 týmy najednou, cena za 1 tým samozřejmě s
-            rostoucím počtem týmů klesá. Pokud máte na starosti ještě více týmů, kontaktujte nás přímo na
-            <a href="mailto:info@tymuj.cz">info@tymuj.cz</a>.
-          </p>
+          <p>{{premium.faq.multipleTeams.description}}</p>
         </div>
       </div>
       <div class="faq-question">
-        <h4>Co když nemohu platit kartou, nebo potřebuji fakturu do účetnictví??</h4>
+        <h4>{{premium.faq.invoice.title}}</h4>
         <div class="faq-question-body">
-          <p>Kontaktujte nás na <a href="mailto:info@tymuj.cz">info@tymuj.cz</a> a vystavíme vám fakturu s vašimi
-            fakturačnímu údaji, kterou
-            uhradíte bankovním převodem.
-          </p>
+          <p>{{premium.faq.invoice.description}}</p>
         </div>
       </div>
     </div>
@@ -353,9 +335,9 @@
     <div class="container">
       <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
       <div class="footer-links">
-        <a href="mailto:info@tymuj.cz">Napište nám</a>
-        <a href="/terms-of-use">Podmínky užití</a>
-        <a href="/privacy">Ochrana osobních údajů</a>
+        <a href="mailto:info@tymuj.cz">{{footer.contact}}</a>
+        <a href="/terms-of-use">{{footer.termsOfUse}}</a>
+        <a href="/privacy">{{footer.privacy}}</a>
       </div>
       <div class="footer-social">
         <a href="https://www.instagram.com/tymujcz/" aria-label="Instagram">
@@ -377,13 +359,6 @@
   </footer>
 
   <script src="/main.js" charset="utf-8"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function (event) {
-      addCopyrightYear()
-    })
-  </script>
-
 </body>
 
 </html>

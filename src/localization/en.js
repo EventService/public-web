@@ -1,4 +1,5 @@
 const en = {
+  lang: "en",
   pageTitle: "Týmuj website",
   navigation: {
     homepage: "Homepage",
@@ -164,10 +165,15 @@ const en = {
     cta: "Start organizing your team today",
   },
   news: {
+    pageTitle: "News",
     title: "Articles about Týmuj that might be of interest to you",
-    more: "Load more",
+  },
+  blog: {
+    pageTitle: "Blog",
+    backToNews: "Back to blog"
   },
   features: {
+    pageTitle: "Functions",
     title: "Functions",
     firstStep: {
       title: "Getting started with Týmuj",
@@ -187,7 +193,7 @@ const en = {
         title: "Inviting Teammates",
         description:
           "Teammates become team members based on the invitation you send them. Create an invitation either in the mobile app or on the web. For both, you must choose whether the team invitation includes an automatic invitation to the events you create. The invitation comes in the form of a universal URL that you can send to anyone interested in joining the team.",
-        tip: "TIP: If you've already created the first events in your team, choose the invitation option with invitations to the events you've created.",
+        tip: "If you've already created the first events in your team, choose the invitation option with invitations to the events you've created.",
       },
     },
     teams: {
@@ -198,25 +204,25 @@ const en = {
         title: "Team Roles",
         description:
           'There are three possible roles in a team: Owner, Manager and Player. The Owner is the founder of the team and has full rights to control and set up the team, including inviting and removing players, and is the only one who can delete the team. The role of  Owner can be passed to another player. This can be done by using the "Handover Team" button in the team settings. The Manager has almost identical rights as the Owner and can invite and remove team members, create and delete events, appoint new managers, post on the team board, work with the finance section, etc. However, Managers cannot delete the team. A Player’s primary role is simply being on the team, so cannot create events, invite new members, or remove members from the team. Players can, however, respond to events, enter attendance or post to chat.',
-        tip: "TIP: Only appoint members you fully trust as Team Managers.",
+        tip: "Only appoint members you fully trust as Team Managers.",
       },
       privacy: {
         title: "Setting Up Privacy In the Team",
         description:
           "In addition to the team-name, sport, city and logo, you can also change two privacy settings in the team settings - visibility of contact details and visibility of attendance. These settings only apply to the Player role in the team. The Owner and Manager can always see all data. Contact visibility decides whether players can see emails and phones in other team members' profiles. Attendance visibility decides whether players can see other team members' attendance at events.",
-        tip: "TIP: Hiding contact and attendance information is useful for children's teams, for example.",
+        tip: "Hiding contact and attendance information is useful for children's teams, for example.",
       },
       subgroups: {
         title: "Subgroups In the Team",
         description:
           "Within a team, you can create several subgroups into which you divide the team members. Each member can only be in one subgroup. The subgroup is displayed as a coloured label next to each player. The main advantage is that you can see the subgroups separately in the event attendance and you can set a separate limit for the number of participants.",
-        tip: "TIP: Subgroups are useful for goalkeepers or other members where a limited number is needed.",
+        tip: "Subgroups are useful for goalkeepers or other members where a limited number is needed.",
       },
       additionalFields: {
         title: "Additional Fields",
         description:
           "You can create additional fields in the team settings. They will then be displayed on the player tab in the team roster. You can also set which fields are visible to everyone and which are visible only to a specific player.",
-        tip: "TIP: In the additional fields you can have the jersey number, contact information for parents or the number of goals and assists.",
+        tip: "In the additional fields you can have the jersey number, contact information for parents or the number of goals and assists.",
       },
       opponents: {
         title: "Opponent and Location",
@@ -255,14 +261,14 @@ const en = {
       },
       queue: {
         title: "Event Queue",
-        descriptiion:
+        description:
           "Events that have a participant limit automatically include a queue. Members who sign up for an event when it is already full will be added to the queue. They are in the queue in order of their sign-up date. If space becomes available, members in the queue are automatically moved to the participants.",
       },
       guests: {
         title: "Adding a Guest",
         description:
           'This function is used to indicate that a guest who is not a member of the team is going to the event. The main purpose of this feature is to block a guest\'s spot if the event has a limit of attendees. Adding a guest will cause a new participant to be inserted into the event as "Going" once. The manager can set this guest to "Not Going" if needed.',
-        tip: "TIP: Only the Owner or Manager can add a guest.",
+        tip: "Only the Owner or Manager can add a guest.",
       },
       cancelled: {
         title: "Marking an Event as Cancelled",
@@ -357,7 +363,7 @@ const en = {
       title: "User Account",
       description:
         "You must create a user account to use this tool. Each player needs their own unique account.",
-      attendanceiTracking: {
+      attendanceTracking: {
         title: "Tracking Attendance",
         description:
           "The coloured bar around your profile photo is called an Attendance Tracker. It shows your attendance percentage for the last 20 events you were invited to across all your teams.",
@@ -375,6 +381,7 @@ const en = {
     },
   },
   premium: {
+    pageTitle: "Premium",
     title: "Týmuj Premium",
     subtitle: "Make the most of Týmuj with new features",
     benefits: {
@@ -496,43 +503,186 @@ const en = {
     },
   },
   faq: {
+    pageTitle: "FAQ",
     title: "FAQ",
-    description: "",
+    description: "Vše, co chcete vědět o Týmuj a nebojíte se na to zeptat.",
     introduction: {
-      title: "",
-      description: "",
+      title: "Co je to Týmuj?",
+      p1: "<b>Týmuj</b> je online služba, která pomáhá organizovat aktivity ve sportovních týmech a skupinách.",
+      p2: "Díky této službě jsou organizace akcí i týmová komunikace mnohem snadnější a rychlejší.",
     },
     platform: {
-      title: "",
-      description: "",
+      title: "Jak je to s Týmuj na webu a v mobilu?",
+      p1: "Na počítači nebo notebooku můžete využívat Týmuj na adrese www.tymuj.cz, v mobilu doporučujeme naši mobilní aplikaci <b>Týmuj</b>. Ta je dostupná pro systémy iOS i Android. Stáhnout ji můžete zde:",
+      p2: "iOS: http://bit.ly/Tymuj-AppStore<br>Android: http://bit.ly/Tymuj-GooglePlay",
+      p3: "Mobilní aplikace i webová stránka disponují stejnými funkcemi a všechna data jsou mezi aplikací a webem plně synchronizována. Každá změna, kterou provedete na webu, se tak zobrazí i na mobilu a naopak.",
     },
     usage: {
-      title: "",
-      description: "",
+      title: "Kdo může Týmuj využít?",
+      p1: "Jakýkoli tým, skupina nebo parta, která má ráda sport a aktivní trávení volného času.",
+      p2: "Může jít o vrcholový sport, rekreační aktivity, sportování dětí nebo třeba o kolegy z práce, kteří si chodí po večerech zahrát do blízké tělocvičny. Stranou nejsou ani trenéři nebo lektoři, kteří vedou hodiny aerobicu, fitness či bojových sportů.",
     },
     sports: {
-      title: "",
-      description: "",
+      title: "Je využití Týmuj omezeno pouze na některé sporty?",
+      p1: "Není.",
+      p2: "Týmuj mohou využít všechny sportovní kolektivy: od fotbalistů, přes florbalisty, pozemní hokejistky, vodní pólisty, akvabely, až po dobrovolné hasiče nebo mažoretky. Důležitý je týmový duch.",
+      p3: "Používat Týmuj mohou i skupiny, které nejsou primárně sportovní, ale potřebují nástroj pro organizaci svých aktivit.",
     },
     reason: {
-      title: "",
-      description: "",
+      title: "Najde si důvod pro používání Týmuj opravdu každý člen týmu?",
+      p1: "Ano, Týmuj se hodí se pro každého člena týmu a sportovce. Stačí si najít svou roli.",
+      trainer: {
+        title: "Jsem trenér, kapitán, vedoucí týmu, lektor atd.",
+        description:
+          "Mohu snadno a efektivně plánovat (zápasy, tréninky, akce,…), informovat (o zápasech, úkolech, soupeřích atd.), naplňovat své hodiny, kontrolovat docházku, vést záznamy, sdílet soubory, získávat zpětnou vazbu, psát zprávy atd.",
+      },
+      player: {
+        title: "Jsem hráč, člen týmu",
+        description:
+          "Na jednom místě se dozvím všechny podstatné informace, které se týkají mého týmu. Můžu nahrávat fotky, videa a prohlížet si to, co nahráli ostatní. Diskutuji, píšu zprávy spoluhráčům a dostávám upozornění do mailu nebo do mobilu o všem podstatném.",
+      },
+      guest: {
+        title: "Jsem host, rodič",
+        description:
+          "V týmu sice sám nesportuji, ale podílím se na jeho aktivitách. Nebo jsem rodič a chci mít přehled o všem podstatném, co čeká týmu mé děti.",
+      },
     },
     creatingTeam: {
-      title: "",
-      description: "",
+      title: "Co je třeba udělat pro založení týmu?",
+      p1: "Nejdříve si založte svůj vlastní účet. To lze udělat na webu Tymuj.cz i v mobilní aplikaci. Pro založení účtu je potřeba e-mailová adresa a heslo. Po dokončení registrace budete vyzváni k založení týmu.",
+      p2: "Jakmile vytvoříte tým, můžete pozvat do týmu e-mailem nebo zvacím odkazem jednotlivé členy. Pokud pozvání přijmou, průvodce je provede osobní registrací a pak budou automaticky zařazeni k Vašemu týmu. V praxi to tedy může trvat jen pár minut, než se celý tým sejde na Týmuj.",
     },
     privacy: {
-      title: "",
-      description: "",
+      title: "Kdo má přístup k našim stránkám?",
+      p1: "Jen ten, koho sami pozvete.",
+      p2: "Pouze vlastník a správci týmu mají právo rozesílat pozvánky do týmu. Pozvaný uživatel se musí nejprve registrovat na Týmuj. Veškeré informace, které v týmu sdílíte jsou soukromé pouze pro váš tým a bez vašeho vědomí se k nim nikdo jiný nedostane.",
     },
     multipleTeam: {
-      title: "",
-      description: "",
+      title: "Mohu být členem více týmů na Týmuj?",
+      p1: "Samozřejmě!",
+      p2: "Je to jen na Vás, Vaší sportovní vášni a počtu sportovních týmů, ve kterých jste aktivní. Stačí jedna osobní registrace a můžete se stát členem libovolného počtu týmů na Týmuj. O všech svých sportovních aktivitách tak budete mít přehled na jednom místě.",
+      p3: "V každém z týmů můžete mít jinou roli. Jednou budete vystupovat jako vlastník či správce, jinde pouze jako člen.",
     },
     password: {
-      title: "",
-      description: "",
+      title: "Zapomněl jsem heslo nebo mám jiný technický problém.",
+      p1: "Heslo si můžete obnovit na stránce https://app.tymuj.cz/password/regeneration, stačí zadat vaši e-mailovu adresu pod kterou jste se registrovali. Na e-mail, kterým jste se registrovali, vám následně přijde odkaz pro obnovu hesla.",
+      p2: "Hesla jsou v databázi hashována funkcí bcrypt, nemůžeme vám tedy poslat vaše dosavadní heslo, ale budete si muset nastavit nové.",
+      p3: "V případě jiného dotazu nebo problému se zkuste podívat do <a href='/features'>Popisu funkcí</a>. Pokud ani zde nenajdete odpověď, můžete kontaktovat správce aplikace e-mailem na info@tymuj.cz nebo se nám ozvěte přes Facebook Týmuj.",
     },
   },
+  termsOfUse: {
+    pageTitle: "Terms of use",
+    title: "Terms of use",
+    subtitle: "Each game has its own rules. And here are ours...&nbsp;",
+    description:
+      "The following text is the agreement that governs the terms of use of the Týmuj service, available at the URL&nbsp; https://tymuj.cz related subpages and in the Týmuj mobile app for iOS and Android platforms. By accepting this agreement, the user of the services listed below (hereinafter referred to as &quot;User&quot; or &quot;Users&quot;) agrees to comply with the rules set out herein (hereinafter referred to as the Terms of Use). In the event of a breach of the Terms of Use by any User of the Services listed below, the Provider of the Services listed below may apply the measures contained in these Terms of Use. The Terms of Use are effective as of May 25, 2018, including subsequent modifications.",
+    p1: "Týmuj is an online tool for the organization of sports teams and other amateur and organizational units in the field of sports and leisure activities.",
+    p2: "Týmuj can be used free of charge in the &quot;Basic&quot; variant. Extended functionalities are available in the paid &quot;Premium&quot; version. Payments are always linked to the registered team. The description of the &quot;Premium&quot; version, its price list and payment methods are described on https://tymuj.cz/premium.",
+    p3: "Every user interested in using the Týmuj tool is obliged to create a user account within the Týmuj.cz application. Creating a user account consists of entering a username and password.",
+    p4: "Týmuj is intended for persons over 16 years of age. Younger users may use the service only with the knowledge and consent of a legal guardian. By creating a user account, the User confirms that he/she is over 16 years of age or that he/she has the consent of his/her legal representative to use Týmuj.",
+    p5: "One person is not allowed to register more than one user account. However, a User may be a member of more than one team with a team account within the Týmuj.cz application.",
+    p6: "All Users are responsible for their activities related to the use of the Týmuj.cz application and agree not to use the services for any activities that are or could be in violation of the laws of the Czech Republic, the Charter of Fundamental Rights and Freedoms, personality rights or intellectual property rights, violation and interference with copyright, the rules of use of the services of the Provider and its legitimate interests, as well as generally accepted principles of the use of services provided via the Internet.",
+    p7: "The input of personal data in the registration and the further input of personal data, data, audiovisual files, etc. is completely voluntary and the use of the application is not conditioned by them. These data are used as a means of presenting the user or his/her sports team and will not be used for any other purpose, with the exceptions set out in these terms and conditions. The user is obliged to keep his/her login details (username and password) and the details of his/her sports team confidential. The Provider shall not be liable for any misuse of the User&#39;s identification data resulting from the User&#39;s carelessness or violation of these Terms of Use.",
+    p8: "The User agrees that the data he/she enters into the application Týmuj.cz, except for the user password, will be visible to other members of his/her team.",
+    p9: "The User agrees to the anonymous use of the registration and statistical data of the Service by the Service Provider and its partners for the development and operation of the Service.",
+    p10: "The User is entitled to cancel his/her account in the Application at any time without refund by contacting the Service Provider at info@tymuj.cz.",
+    p11: "The Provider of the application Týmuj.cz is not responsible for the content of the team pages and their possible public publications. Users whose user accounts are linked to these pages are fully responsible for the content of the pages within the Týmuj.cz service. This is without prejudice to the provisions on the removal of user accounts or deletion of the team in the event of non-compliance with the rules set out in these Terms of Use.",
+    p12: "The User is obliged to respect the rights of third parties at all times, in particular when dealing with audiovisual works, photographs and similar works. All liability for any unauthorised disposal of such items rests solely with the User.",
+    p13: "The Provider shall be entitled to cancel the user account and/or delete the team account if",
+    p13a: "The User uses the Services in violation of good morals, legal regulations and generally accepted ethical and moral principles and generally accepted rules for the use of the Services provided via the Internet or is intended to be used to commit (or facilitate the commission of) criminal activity, misdemeanours or other offenses;",
+    p13b: "The user will use the services for commercial and other purposes that could ultimately harm the Provider;",
+    p13c: "The User abuses, blocks, modifies or otherwise changes any part of the server and the Týmuj.cz application;",
+    p13d: "User has attempted to disrupt the stability, operation or data of the Týmuj.cz application;",
+    p13e: "User uses the application to distribute commercial software or other illegal content protected by law, or uses it to illegally distribute such content without the consent of the author or other person exercising proprietary rights;",
+    p13f: "The Provider believes that the User is infringing the protected rights of the Provider or third parties in a manner other than as set out in the preceding paragraphs.",
+    p14: "The User is not entitled to any compensation in connection with the termination of the User&#39;s account.",
+    p15: "The Provider reserves the right to any intervention in the application, changes and modifications without prior notification to the User.",
+    p16: "The Provider shall not be liable for any unavailability or non-functionality of services and for any loss or damage to data stored or created in the application Týmuj.cz, caused by technical problems or administrative intervention of the Provider, as well as for possible damage caused in this way.",
+    p17: "The Provider reserves the right to change these Terms of Use of the application Týmuj.cz.",
+    p18: "The Provider of the Týmuj.cz application available at the URL https://tymuj.cz and related subpages is Event Service, s.r.o.",
+  },
+  privacy: {
+    pageTitle: "Privacy Policy",
+    title: "Privacy Policy",
+    consent: {
+      title: "Consent to the processing of personal data",
+      p1: {
+        title: "You hereby grant your consent to Event Service, s.r.o., with registered office at Krameriova 966/8, 148 00 Prague 4, ID No.: 26817721, VAT No.: CZ26817721, registered in the public register kept at the Municipal Court in Prague, Section C, Insert 248208 (hereinafter referred to as the &quot;Controller&quot;), to use your personal data in accordance with Regulation (EU) No. 2016/679 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC (General Data Protection Regulation) (hereinafter referred to as the &quot;<strong>Regulation</strong>&quot;) to process the following personal data:",
+        username: "username",
+        name: "name and surname",
+        email: "e-mail address",
+        gender: "gender",
+        dateOfBirth: "date of birth",
+        likeness: "likeness",
+        phone: "phone number",
+        address: "address",
+        web: "website address",
+        contact: "other contact details",
+        nickname: "nickname",
+        teamName: "name of the sports team",
+        teamMembership: "team membership information",
+        participation: "information about participation in a sporting event",
+        attendance: "attendance",
+        tasks: "tasks",
+        communication: "electronic communication within the team",
+        operation: "operational data related to the account",
+      },
+      p2: "The username and email address must be processed in order to create and administer the user account. Without providing these data, it will not be possible to create a user account.",
+      p3: "First and last name, telephone number, address, website address and other contact details will be processed to enable communication with you. The provision of this data is voluntary.",
+      p4: "Gender, date of birth, likeness and nickname will be processed in order to complete and modify the user profile according to your needs. The provision of this data is voluntary.",
+      p5: "Sports team name, team membership information, sports event participation information, attendance, assignments and electronic communication within the team will be processed in order to use the features of the Teamuj application operated by the Administrator. The provision of this personal data is a condition for the use of the various services provided by the Týmuj application.",
+      p6: "This data will be processed by the Administrator for the period of active use of the user account and for a period of 3 years from your last login.",
+      p7: "In case you have given your consent to receive newsletters (commercial communications), your e-mail address, name and surname, gender, date of birth, telephone number, address, website address, team membership information, operational data related to the user account will also be processed for the purpose of sending commercial communications, for a period of 3 years from the date of consent. Profiling within the meaning of Article 22 of the Regulation may be used for sending commercial communications.",
+      p8: "You give your explicit consent to the above processing. Consent can be withdrawn at any time, for example by sending an email to info@tymuj.cz or a letter to the contact details of the Administrator. Withdrawal of consent will result in the deletion of the user profile.",
+      p9: {
+        title: "The processing of personal data is carried out by the Administrator, but personal data may also be processed for the Administrator by the following processors:",
+        google: "Google Analytics and Google AdSense software provider, Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043;",
+        microsoft: "Microsoft Office software provider, Microsoft Corporation, located at One Microsoft Way, Redmond, WA98052, United States of America, Registration number: 600413485;",
+        alpy: "web hosting provider, ALPY, spol. s r. o., with registered office at Štefánikova 2/63, Smíchov, 150 00 Prague 5, ID No.: 49824881;",
+        smartSelling: "SmartSelling a.s., with registered office at Netroufalky 797/5, Bohunice, 625 00 Brno, ID No.: 292 10 372;",
+        foxMedia: "the provider of development and maintenance of the Týmuj application, Fox Media Czech Republic s.r.o., with registered office at Ocelkova 643/20, Černý Most, 198 00 Prague 9, ID No.: 29144922;",
+        oracle: "MySQL software provider, Oracle Corporation, 500 Oracle Parkway Redwood Shores, CA 94065;",
+        other: "or other providers of processing software, services and applications, which are not currently used by the Company.",
+      },
+      p10: {
+        title: "Please note that under the Regulation you have the right to",
+        withdrawal: "withdraw your consent at any time,",
+        information: "ask us to inform you about which personal data we process about you,",
+        access: "request access to that data and have it updated or corrected, or request a restriction on processing,",
+        erase: "require us to erase that personal data,",
+        copy: "request a copy of the personal data processed,",
+        complaint: "lodge a complaint with the Data Protection Authority."
+      },
+    },
+    cookies: {
+      title: "Information about the processing of personal data through cookies",
+      p1: {
+        title: "The personal data controller, Event Service, s.r.o., with registered office at Krameriova 966/8, 148 00 Prague 4, ID No.: 26817721, VAT No.: CZ26817721, registered in the public register kept at the Municipal Court in Prague, Section C, Insert 248208, as the operator of this website, uses cookies on this website for the following purposes:",
+        measuring: "measuring the website traffic and generating statistics regarding the visitors&#39; traffic and behaviour on the website;",
+        function: "the functioning of the website.",
+      },
+      p2: "The collection of cookies for the purpose referred to in paragraph 1 is considered to be the processing of personal data. Such processing is possible on the basis of a legitimate reason - the legitimate interest of the Controller, and is allowed by Article 6(1)(f) of Regulation (EU) No 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (hereinafter referred to as the &quot;Regulation&quot;).",
+      p3: "The website can also be used in a mode that does <strong>not</strong> allow the collection of data on the behaviour of visitors to the website - this mode can either be set within the browser settings or it is possible to object to such collection on the basis of the legitimate interest of the Administrator pursuant to Article 21 of the Regulation to the address info@tymuj.cz. Your objection will be evaluated without delay. Cookies necessary for the functionality of the website will only be stored for the time necessary for the functioning of the website.",
+      p4: "If the subject objects to the processing of technical cookies necessary for the functioning of the website, the full functionality and compatibility of the website cannot be guaranteed in this case.",
+      p5: "Cookies that are collected for the purpose of measuring website traffic and generating statistics on visitor traffic and behaviour on the website are treated in the form of an aggregate and therefore in an anonymous form that does not allow the identification of individuals.",
+      p6: {
+        title: "The collected cookies are processed by other processors:",
+        google: "Google Analytics, operated by Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.",
+      },
+      p7: {
+        title: "Please note that under the Regulation you have the right to:",
+        process: "request information from the Controller about what personal data it processes about you,",
+        update: "request access to such data from the Controller and have it updated or corrected, or to restrict processing,",
+        delete: "request the Controller to delete such personal data - the Controller will carry out the deletion if the deletion is not contrary to applicable law and the legitimate interests of the Controller,",
+        compliance: "in case of doubts about compliance with the obligations related to the processing of personal data, contact the Controller or the Office for Personal Data Protection.",
+      },
+    },
+  },
+  footer: {
+    contact: "Contact us",
+    termsOfUse: "Terms of Use",
+    privacy: "Privacy Policy",
+  },
 };
+
+module.exports = en;

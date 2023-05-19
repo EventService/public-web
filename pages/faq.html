@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 
 <head>
 	<meta charset="UTF-8">
-	<title>FAQ - Týmuj</title>
+	<title>{{faq.pageTitle}} - Týmuj</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
@@ -24,166 +24,134 @@
 </head>
 
 <body>
+  <header class="page-header" id="header">
+    <a class="logo" href="/">
+      <img src="/img/logo.svg" alt="týmuj">
+    </a>
+    <nav>
+      <a href="/news">{{navigation.news}}</a>
+      <a href="/features">{{navigation.features}}</a>
+      <a href="/premium">{{navigation.premium}}</a>
+      <a href="/faq">{{navigation.faq}}</a>
+    </nav>
 
-	<header class="page-header" id="header">
-		<a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
-		<nav>
-			<a href="/news">Novinky</a>
-			<a href="/features">Funkce</a>
-			<a href="/premium">Premium</a>
-			<a href="/faq">FAQ</a>
-		</nav>
+    <div class="header-buttons">
+      <a class="button round inverse login-button" href="https://app.tymuj.cz/login">{{navigation.login}}</a>
+      <a class="button round registration-button" href="https://app.tymuj.cz/signup">{{navigation.register}}</a>
+    </div>
 
-		<div class="header-buttons">
-			<a class="button round inverse login-button" href="https://app.tymuj.cz/login">Přihlášení</a>
-			<a class="button round registration-button" href="https://app.tymuj.cz/signup">Registrace</a>
-		</div>
-		<button class="nav-toggle" id="nav-toggle"></button>
-	</header>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
+  </header>
 
 	<section class="faq">
 		<div class="container">
 			<header>
-				<h2>FAQ</h2>
-				<p>Vše, co chcete vědět o Týmuj a nebojíte se na to zeptat.</p>
+				<h2>{{faq.title}}</h2>
+				<p>{{faq.description}}</p>
 			</header>
 			<div class="faq-question">
-				<h4>Co je to Týmuj?</h4>
+				<h4>{{faq.introduction.title}}</h4>
 				<div class="faq-question-body">
-					<p><b>Týmuj</b> je online služba, která pomáhá organizovat aktivity ve sportovních týmech a skupinách.</p>
-					<p>Díky této službě jsou organizace akcí i týmová komunikace mnohem snadnější a rychlejší.</p>
+					<p>{{faq.introduction.p1}}</p>
+					<p>{{faq.introduction.p2}}</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Jak je to s Týmuj na webu a v mobilu?</h4>
+				<h4>{{faq.platform.title}}</h4>
 				<div class="faq-question-body">
-					<p>Na počítači nebo notebooku můžete využívat Týmuj na adrese <b>www.tymuj.cz</b>, v mobilu doporučujeme naši
-						mobilní aplikaci <b>Týmuj</b>. Ta je dostupná pro systémy iOS i Android. Stáhnout ji můžete zde:</p>
-					<p>iOS: <a href="http://bit.ly/Tymuj-AppStore">http://bit.ly/Tymuj-AppStore</a><br>Android: <a
-							href="http://bit.ly/Tymuj-GooglePlay">http://bit.ly/Tymuj-GooglePlay</a></p>
-					<p>Mobilní aplikace i webová stránka disponují stejnými funkcemi a všechna data jsou mezi aplikací a webem
-						plně synchronizována. Každá změna, kterou provedete na webu, se tak zobrazí i na mobilu a naopak.</p>
+					<p>{{faq.platform.p1}}</p>
+					<p>{{faq.platform.p2}}</p>
+					<p>{{faq.platform.p3}}</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Kdo může Týmuj využít?</h4>
+				<h4>{{faq.usage.title}}</h4>
 				<div class="faq-question-body">
-					<p>Jakýkoli tým, skupina nebo parta, která má ráda sport a aktivní trávení volného času.</p>
-					<p>Může jít o vrcholový sport, rekreační aktivity, sportování dětí nebo třeba o kolegy z práce, kteří si chodí
-						po večerech zahrát do blízké tělocvičny. Stranou nejsou ani trenéři nebo lektoři, kteří vedou hodiny
-						aerobicu, fitness či bojových sportů.</p>
+					<p>{{faq.usage.p1}}</p>
+					<p>{{faq.usage.p2}}</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Je využití Týmuj omezeno pouze na některé sporty?</h4>
+				<h4>{{faq.sports.title}}</h4>
 				<div class="faq-question-body">
-					<p>Není.</p>
-					<p>Týmuj mohou využít všechny sportovní kolektivy: od fotbalistů, přes florbalisty, pozemní hokejistky, vodní
-						pólisty, akvabely, až po dobrovolné hasiče nebo mažoretky. Důležitý je týmový duch.</p>
-					<p>Používat Týmuj mohou i skupiny, které nejsou primárně sportovní, ale potřebují nástroj pro organizaci svých
-						aktivit.</p>
+					<p>{{faq.sports.p1}}</p>
+					<p>{{faq.sports.p2}}</p>
+					<p>{{faq.sports.p3}}</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Najde si důvod pro používání Týmuj opravdu každý člen týmu?</h4>
+				<h4>{{faq.reason.title}}</h4>
 				<div class="faq-question-body">
-					<p>Ano, Týmuj se hodí se pro každého člena týmu a sportovce. Stačí si najít svou roli.</p>
-					<h5>Jsem trenér, kapitán, vedoucí týmu, lektor atd.</h5>
-					<p>Mohu snadno a efektivně plánovat (zápasy, tréninky, akce,…), informovat (o zápasech, úkolech, soupeřích
-						atd.), naplňovat své hodiny, kontrolovat docházku, vést záznamy, sdílet soubory, získávat zpětnou vazbu,
-						psát zprávy atd.</p>
-					<h5>Jsem hráč, člen týmu</h5>
-					<p>Na jednom místě se dozvím všechny podstatné informace, které se týkají mého týmu. Můžu nahrávat fotky,
-						videa a prohlížet si to, co nahráli ostatní. Diskutuji, píšu zprávy spoluhráčům a dostávám upozornění do
-						mailu nebo do mobilu o všem podstatném.</p>
-					<h5>Jsem host, rodič</h5>
-					<p>V týmu sice sám nesportuji, ale podílím se na jeho aktivitách. Nebo jsem rodič a chci mít přehled o všem
-						podstatném, co čeká týmu mé děti.</p>
+					<p>{{faq.reason.p1}}</p>
+					<h5>{{faq.reason.trainer.title}}</h5>
+					<p>{{faq.reason.trainer.description}}</p>
+					<h5>{{faq.reason.player.title}}</h5>
+					<p>{{faq.reason.player.description}}</p>
+					<h5>{{faq.reason.guest.title}}</h5>
+					<p>{{faq.reason.guest.description}}</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Co je třeba udělat pro založení týmu?</h4>
+				<h4>{{faq.creatingTeam.title}}</h4>
 				<div class="faq-question-body">
-					<p>Nejdříve si založte svůj vlastní účet. To lze udělat na webu <b>Týmuj.cz</b> i v mobilní aplikaci. Pro
-						založení účtu je potřeba e-mailová adresa a heslo. Po dokončení registrace budete vyzváni k založení týmu.
-					</p>
-					<p>Jakmile vytvoříte tým, můžete pozvat do týmu e-mailem nebo zvacím odkazem jednotlivé členy. Pokud pozvání
-						přijmou, průvodce je provede osobní registrací a pak budou automaticky zařazeni k Vašemu týmu. V praxi to
-						tedy může trvat jen pár minut, než se celý tým sejde na Týmuj.</p>
+					<p>{{faq.creatingTeam.p1}}</p>
+					<p>{{faq.creatingTeam.p2}}</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Kdo má přístup k našim stránkám?</h4>
+				<h4>{{faq.privacy.title}}</h4>
 				<div class="faq-question-body">
-					<p>Jen ten, koho sami pozvete.</p>
-					<p>Pouze vlastník a správci týmu mají právo rozesílat pozvánky do týmu. Pozvaný uživatel se musí nejprve
-						registrovat na Týmuj. Veškeré informace, které v týmu sdílíte jsou soukromé pouze pro váš tým a bez vašeho
-						vědomí se k nim nikdo jiný nedostane.</p>
+					<p>{{faq.privacy.p1}}</p>
+					<p>{{faq.privacy.p2}}</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Mohu být členem více týmů na Týmuj?</h4>
+				<h4>{{faq.multipleTeam.title}}</h4>
 				<div class="faq-question-body">
-					<p>Samozřejmě!</p>
-					<p>Je to jen na Vás, Vaší sportovní vášni a počtu sportovních týmů, ve kterých jste aktivní. Stačí jedna
-						osobní registrace a můžete se stát členem libovolného počtu týmů na Týmuj. O všech svých sportovních
-						aktivitách tak budete mít přehled na jednom místě.</p>
-					<p>V každém z týmů můžete mít jinou roli. Jednou budete vystupovat jako vlastník či správce, jinde pouze jako
-						člen.</p>
+					<p>{{faq.multipleTeam.p1}}</p>
+					<p>{{faq.multipleTeam.p2}}</p>
+					<p>{{faq.multipleTeam.p3}}</p>
 				</div>
 			</div>
 			<div class="faq-question">
-				<h4>Zapomněl jsem heslo nebo mám jiný technický problém.</h4>
+				<h4>{{faq.password.title}}</h4>
 				<div class="faq-question-body">
-					<p>Heslo si můžete obnovit na stránce <a
-							href="https://app.tymuj.cz/password/regeneration">https://app.tymuj.cz/password/regeneration</a>, stačí
-						zadat vaši e-mailovu adresu pod kterou jste se registrovali. Na e-mail, kterým jste se registrovali, vám
-						následně přijde odkaz pro obnovu hesla.</p>
-					<p>Hesla jsou v databázi hashována funkcí bcrypt, nemůžeme vám tedy poslat vaše dosavadní heslo, ale budete si
-						muset nastavit nové.</p>
-					<p>V případě jiného dotazu nebo problému se zkuste podívat do <a href="/features">Popisu funkcí</a>. Pokud ani
-						zde nenajdete odpověď, můžete kontaktovat správce aplikace e-mailem na info(zavináč)tymuj.cz nebo se nám
-						ozvěte přes Facebook Týmuj.</p>
+					<p>{{faq.password.p1}}</p>
+					<p>{{faq.password.p2}}</p>
+					<p>{{faq.password.p3}}</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer class="site-footer">
-		<div class="container">
-			<a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
-			<div class="footer-links">
-				<a href="mailto:info@tymuj.cz">Napište nám</a>
-				<a href="/terms-of-use">Podmínky užití</a>
-				<a href="/privacy">Ochrana osobních údajů</a>
-			</div>
-			<div class="footer-social">
-				<a href="https://www.instagram.com/tymujcz/">
-					<img src="/img/social/instagram.svg" alt="Instagram">
-				</a>
-				<a href="https://www.facebook.com/Týmujcz-106398882786886/">
-					<img src="/img/social/facebook.svg" alt="Facebook">
-				</a>
-				<a href="https://www.youtube.com/channel/UCxTpcAhltG1SupXCQdbI4sw">
-					<img src="/img/social/youtube.svg" alt="YouTube">
-				</a>
-			</div>
-			<div class="copyright">
-				<p class="copyright-text" id="copyright-year">© Týmuj </p>
-				<a href="http://www.eventservice.cz/">Event Service (Provozovatel Týmuj)</a>
-				<p>Fox Media (App & website)</p>
-			</div>
-		</div>
-	</footer>
+  <footer class="site-footer">
+    <div class="container">
+      <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
+      <div class="footer-links">
+        <a href="mailto:info@tymuj.cz">{{footer.contact}}</a>
+        <a href="/terms-of-use">{{footer.termsOfUse}}</a>
+        <a href="/privacy">{{footer.privacy}}</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/tymujcz/" aria-label="Instagram">
+          <img src="/img/social/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/Týmujcz-106398882786886/" aria-label="Facebook">
+          <img src="/img/social/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/channel/UCxTpcAhltG1SupXCQdbI4sw" aria-label="YouTube">
+          <img src="/img/social/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text" id="copyright-year">© Týmuj </p>
+        <a href="http://www.eventservice.cz/">Event Service (Provozovatel Týmuj)</a>
+        <p>Fox Media (App & website)</p>
+      </div>
+    </div>
+  </footer>
 
 	<script src="/main.js" charset="utf-8"></script>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function (event) {
-			addCopyrightYear()
-		})
-	</script>
-
 </body>
 
 </html>

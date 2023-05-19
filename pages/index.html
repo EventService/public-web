@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 
 <head>
   <meta charset="UTF-8">
@@ -24,20 +24,20 @@
 </head>
 
 <body>
-
   <header class="page-header" id="header">
-
-    <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
+    <a class="logo" href="/">
+      <img src="/img/logo.svg" alt="týmuj">
+    </a>
     <nav>
-      <a href="/news" class="i18n" data-i18n="navigation.news"></a>
-      <a href="/features" class="i18n" data-i18n="navigation.features"></a>
-      <a href="/premium" class="i18n" data-i18n="navigation.premium"></a>
-      <a href="/faq" class="i18n" data-i18n="navigation.faq"></a>
+      <a href="/news">{{navigation.news}}</a>
+      <a href="/features">{{navigation.features}}</a>
+      <a href="/premium">{{navigation.premium}}</a>
+      <a href="/faq">{{navigation.faq}}</a>
     </nav>
 
     <div class="header-buttons">
-      <a class="button round inverse login-button i18n" href="https://app.tymuj.cz/login" data-i18n="navigation.login">Přihlášení</a>
-      <a class="button round registration-button i18n" href="https://app.tymuj.cz/signup" data-i18n="navigation.register">Registrace</a>
+      <a class="button round inverse login-button" href="https://app.tymuj.cz/login">{{navigation.login}}</a>
+      <a class="button round registration-button" href="https://app.tymuj.cz/signup">{{navigation.register}}</a>
     </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
@@ -46,8 +46,8 @@
   <section class="hero">
     <div class="container">
       <header>
-        <h1 class="i18n" data-i18n="homepage.title">Organizuj sportovní tým online</a>
-          <h3 class="i18n" data-i18n="homepage.subtitle">V mobilu i na webu.</h3>
+        <h1>{{homepage.title}}</a>
+          <h3>{{homepage.subtitle}}</h3>
           <div class="store-buttons">
             <a href="https://apps.apple.com/us/app/tymuj/id1218860308">
               <svg xmlns="http://www.w3.org/2000/svg" width="123" height="38" viewBox="0 0 123 38">
@@ -92,43 +92,39 @@
     <div class="container">
       <div class="use-case">
         <!-- <h4>Use case</h4> -->
-        <h3>Vedoucí týmu</h3>
-        <p>Na Týmuj budou všechny informace přehledně na jednom místě. Termíny tréninků a zápasů, seznam hráčů a jejich
-          docházka. Díky zprávám a nástěnce budou všichni vědět o aktuálním dění v týmu. Můžeš vytvořit libovolný počet
-          týmů a pozvat do nich tolik hráčů, kolik je potřeba.</p>
+        <h3>{{homepage.leader.title}}</h3>
+        <p>{{homepage.leader.description}}</p>
         <div class="use-case-details">
           <div class="use-case-detail">
-            <img src="/img/use-case-icons/1.svg" alt="Rychle Naplánuj tréninky a zápasy">
-            <p>Rychle naplánuj<br>tréninky a zápasy</p>
+            <img src="/img/use-case-icons/1.svg" alt="{{homepage.leader.schedule}}">
+            <p>{{homepage.leader.schedule}}</p>
           </div>
           <div class="use-case-detail">
-            <img src="/img/use-case-icons/2.svg" alt="Sleduj docházku">
-            <p>Sleduj docházku</p>
+            <img src="/img/use-case-icons/2.svg" alt="{{homepage.leader.attendance}}">
+            <p>{{homepage.leader.attendance}}</p>
           </div>
           <div class="use-case-detail">
-            <img src="/img/use-case-icons/3.svg" alt="Sdílej vše důležité v týmu">
-            <p>Sdílej vše důležité<br>v týmu</p>
+            <img src="/img/use-case-icons/3.svg" alt="{{homepage.leader.share}}">
+            <p>{{homepage.leader.share}}</p>
           </div>
         </div>
       </div>
       <div class="use-case">
         <!-- <h4>Use case</h4> -->
-        <h3>Hráči nebo rodiče</h3>
-        <p>Díky přehlednému seznamu budeš vždy vědět, kdy a kde jsou nejbližší tréninky nebo zápasy. V chatu můžeš
-          probrat taktiku na příští zápas a v galerii se podívat na nejlepší fotky z minulého klání. Můžeš být členem
-          libovolného počtu týmů a mít tak na jednom místě celou svoji sportovní aktivitu.</p>
+        <h3>{{homepage.player.title}}</h3>
+        <p>{{homepage.player.description}}</p>
         <div class="use-case-details">
           <div class="use-case-detail">
-            <img src="/img/use-case-icons/4.svg" alt="Dej vědět, zda přijdeš">
-            <p>Dej vědět, zda<br>přijdeš</p>
+            <img src="/img/use-case-icons/4.svg" alt="{{homepage.player.attendance}}">
+            <p>{{homepage.player.attendance}}</p>
           </div>
           <div class="use-case-detail">
-            <img src="/img/use-case-icons/5.svg" alt="Měj přehled, co je nového">
-            <p>Měj přehled, co je<br>nového</p>
+            <img src="/img/use-case-icons/5.svg" alt="{{homepage.player.news}}">
+            <p>{{homepage.player.news}}</p>
           </div>
           <div class="use-case-detail">
-            <img src="/img/use-case-icons/6.svg" alt="Komunikuj s trenéry a spoluhráči">
-            <p>Komunikuj s trenéry<br>a spoluhráči</p>
+            <img src="/img/use-case-icons/6.svg" alt="{{homepage.player.communicate}}">
+            <p>{{homepage.player.communicate}}</p>
           </div>
         </div>
       </div>
@@ -138,127 +134,126 @@
   <section class="features">
     <div class="container">
       <header>
-        <h2>Hlavní funkce Týmuj</h2>
+        <h2>{{homepage.mainFeatures.title}}</h2>
         <a class="section-link hidden" href="">Explore all features</a>
       </header>
       <div class="feature-description">
-        <h3>Události, tréninky a zápasy</h3>
-        <p>Díky přehlednému zobrazení událostí budete vždy vědět, kdy vás čeká nejbližší trénink, nebo kolik zápasů v
-          tomto měsíci hrajete.</p>
+        <h3>{{homepage.mainFeatures.events.title}}</h3>
+        <p>{{homepage.mainFeatures.events.description}}</p>
         <div class="feature-description-detail">
-          <h5>Přehled událostí</h5>
-          <p>Všechny nadcházející události vidíte na jednou místě.</p>
+          <h5>{{homepage.mainFeatures.events.overview.title}}</h5>
+          <p>{{homepage.mainFeatures.events.overview.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Detail události</h5>
-          <p>Obsahuje všechny důležité informace a místo a čas konání.</p>
+          <h5>{{homepage.mainFeatures.events.detail.title}}</h5>
+          <p>{{homepage.mainFeatures.events.detail.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Přihlášení jedním kliknutím</h5>
-          <p>Pro zadání nebo změnu účasti stačí 1 kliknout. Jednoduché!</p>
+          <h5>{{homepage.mainFeatures.events.attendance.title}}</h5>
+          <p>{{homepage.mainFeatures.events.attendance.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Opakované události</h5>
-          <p>Snadno vytvoříte pravidelné události na delší časový úsek.</p>
+          <h5>{{homepage.mainFeatures.events.recurring.title}}</h5>
+          <p>{{homepage.mainFeatures.events.recurring.description}}</p>
         </div>
       </div>
       <img class="feature-illustration"
         srcset="/img/feature-1.png 1x, /img/feature-1@2x.png 2x, /img/feature-1@3x.png 3x"
-        alt="Události, tréninky a zápasy">
+        alt="{{homepage.mainFeatures.events.title}}">
       <img class="feature-illustration"
         srcset="/img/feature-2.png 1x, /img/feature-2@2x.png 2x, /img/feature-2@3x.png 3x"
-        alt="Dokonalý přehled o docházce">
+        alt="{{homepage.mainFeatures.attendance.title}}">
       <div class="feature-description">
-        <h3>Dokonalý přehled o docházce</h3>
-        <p>Na Týmuj budete vždy vědět, s kým můžete počítat a kdo kvůli nemoci zůstává doma. Docházku lze upravit i
-          zpětně a vyhodnocovat účast jednotlivých členů týmu.</p>
+        <h3>{{homepage.mainFeatures.attendance.title}}</h3>
+        <p>{{homepage.mainFeatures.attendance.description}}</p>
         <div class="feature-description-detail">
-          <h5>Vždy víte, kdo přijde</h5>
-          <p>V detailu události vidíte, kolik členů potvrdilo účast.</p>
+          <h5>{{homepage.mainFeatures.attendance.overview.title}}</h5>
+          <p>{{homepage.mainFeatures.attendance.overview.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Statistika účasti</h5>
-          <p>Snadno zjistíte, kdo trénuje pravidelně a kdo občas vynechá.</p>
+          <h5>{{homepage.mainFeatures.attendance.statistics.title}}</h5>
+          <p>{{homepage.mainFeatures.attendance.statistics.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Limit účasti</h5>
-          <p>Nastavte limit počtu účastníků, kdo se dříve přihlásí, ten hraje.</p>
+          <h5>{{homepage.mainFeatures.attendance.limit.title}}</h5>
+          <p>{{homepage.mainFeatures.attendance.limit.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Přiveďte hosta</h5>
-          <p>Chcete přivést kamaráda? V Týmuj snadné a kapitán o tom bude vědět 👍</p>
+          <h5>{{homepage.mainFeatures.attendance.guests.title}}</h5>
+          <p>{{homepage.mainFeatures.attendance.guests.description}}</p>
         </div>
       </div>
       <div class="feature-description">
-        <h3>Snadná komunikace a informovanost</h3>
-        <p>Využijte Týmuj pro snadní sdílení informací. Všichni uvidí nejnovější zprávy, události a o všem dostanou
-          notifikaci.</p>
+        <h3>{{homepage.mainFeatures.information.title}}</h3>
+        <p>{{homepage.mainFeatures.information.description}}</p>
         <div class="feature-description-detail">
-          <h5>E-mailové a push notifikace</h5>
-          <p>Ke každé události nebo zprávě kapitána přijde upozornění.</p>
+          <h5>{{homepage.mainFeatures.information.notifications.title}}</h5>
+          <p>{{homepage.mainFeatures.information.notifications.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Týmový chat a nástěnka</h5>
-          <p>Nástěnka slouží ke zprávám od vedoucího týmu, chat k celotýmové diskuzi.</p>
+          <h5>{{homepage.mainFeatures.information.teamChat.title}}</h5>
+          <p>{{homepage.mainFeatures.information.teamChat.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Chat k událostem</h5>
-          <p>Ke každé události můžete mít samostatný chat a probrat konkrétní pokyny.</p>
+          <h5>{{homepage.mainFeatures.information.eventChat.title}}</h5>
+          <p>{{homepage.mainFeatures.information.eventChat.description}}</p>
         </div>
         <div class="feature-description-detail">
-          <h5>Ankety a soubory</h5>
-          <p>Chcete spoluhráče nechat hlasovat nebo jim nasdílet dokument? I to Týmuj umí.</p>
+          <h5>{{homepage.mainFeatures.information.surveys.title}}</h5>
+          <p>{{homepage.mainFeatures.information.surveys.description}}</p>
         </div>
       </div>
       <img class="feature-illustration" src="/img/feature-3.png"
         srcset="/img/feature-3.png 1x, /img/feature-3@2x.png 2x, /img/feature-3@3x.png 3x"
-        alt="Snadná komunikace a informovanost">
+        alt="{{homepage.mainFeatures.information.title}}">
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/features-icons/1.svg" alt="Soupiska">
-          <h4>Soupiska</h4>
+          <img class="feature-extra-icon" src="/img/features-icons/1.svg" alt="{{homepage.mainFeatures.roster.title}}">
+          <h4>{{homepage.mainFeatures.roster.title}}</h4>
         </header>
-        <p>Všechny členy týmu budete mít na jednom místě, včetně kontaktních informací.</p>
+        <p>{{homepage.mainFeatures.roster.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/features-icons/2.svg" alt="Pokladna">
-          <h4>Pokladna</h4>
+          <img class="feature-extra-icon" src="/img/features-icons/2.svg" alt="{{homepage.mainFeatures.wallet.title}}">
+          <h4>{{homepage.mainFeatures.wallet.title}}</h4>
         </header>
-        <p>Chcete mít přehled o zaplaceném startovném? Týmuj má pro vás celý samostatný modul.</p>
+        <p>{{homepage.mainFeatures.wallet.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/features-icons/3.svg" alt="Galerie">
-          <h4>Galerie</h4>
+          <img class="feature-extra-icon" src="/img/features-icons/3.svg" alt="{{homepage.mainFeatures.gallery.title}}">
+          <h4>{{homepage.mainFeatures.gallery.title}}</h4>
         </header>
-        <p>Nahrajte nejlepší fotografie ze zápasu a sdílejte je s týmem.</p>
+        <p>{{homepage.mainFeatures.gallery.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/features-icons/4.svg" alt="Podskupiny">
-          <h4>Podskupiny</h4>
+          <img class="feature-extra-icon" src="/img/features-icons/4.svg"
+            alt="{{homepage.mainFeatures.subgroups.title}}">
+          <h4>{{homepage.mainFeatures.subgroups.title}}</h4>
         </header>
-        <p>Vytvořte v týmu podskupiny a připravte jim samostatný trénink.</p>
+        <p>{{homepage.mainFeatures.subgroups.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/features-icons/5.svg" alt="Absence">
-          <h4>Absence</h4>
+          <img class="feature-extra-icon" src="/img/features-icons/5.svg" alt="{{homepage.mainFeatures.absence.title}}">
+          <h4>{{homepage.mainFeatures.absence.title}}</h4>
         </header>
-        <p>Jedete lyžovat? Nastavte si absenci a Týmuj vám automaticky vyplní docházku.</p>
+        <p>{{homepage.mainFeatures.absence.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
       <div class="feature-extra">
         <header>
-          <img class="feature-extra-icon" src="/img/features-icons/6.svg" alt="Česky, anglicky nebo slovensky?">
-          <h4>Česky, anglicky nebo slovensky?</h4>
+          <img class="feature-extra-icon" src="/img/features-icons/6.svg"
+            alt="{{homepage.mainFeatures.localization.title}}">
+          <h4>{{homepage.mainFeatures.localization.title}}</h4>
         </header>
-        <p>Týmuj umí několika jazyky a další postupně přibývají.</p>
+        <p>{{homepage.mainFeatures.localization.description}}</p>
         <a class="secondary hidden" href="">Víc info</a>
       </div>
     </div>
@@ -267,72 +262,76 @@
   <section class="premium-overview">
     <div class="container">
       <div>
-        <h2 class="premium-overview-title">Týmuj Premium</h2>
-        <p class="premium-overview-description">Díky Týmuj Premium bude organizace vašeho týmu ještě jednodušší a
-          efektivnější. Využíváním Týmuj Premium také podpoříte další provoz a rozvoj Týmuj.</p>
+        <h2 class="premium-overview-title">{{homepage.premium.title}}</h2>
+        <p class="premium-overview-description">{{homepage.premium.description}}</p>
         <div class="premium-feature-list">
           <div class="premium-feature">
             <img class="premium-feature-icon" src="/img/premium-features-icons/1.svg"
-              alt="Neomezený počet členů v týmu">
-            <h4>Neomezený počet členů v týmu</h4>
+              alt="{{homepage.premium.benefits.unlimitedMembers}}">
+            <h4>{{homepage.premium.benefits.unlimitedMembers}}</h4>
           </div>
           <div class="premium-feature">
-            <img class="premium-feature-icon" src="/img/premium-features-icons/2.svg" alt="Neomezený počet událostí">
-            <h4>Neomezený počet událostí</h4>
+            <img class="premium-feature-icon" src="/img/premium-features-icons/2.svg"
+              alt="{{homepage.premium.benefits.unlimitedEvents}}">
+            <h4>{{homepage.premium.benefits.unlimitedEvents}}</h4>
           </div>
           <div class="premium-feature">
-            <img class="premium-feature-icon" src="/img/premium-features-icons/3.svg" alt="Rozšířené notifikace">
-            <h4>Rozšířené notifikace</h4>
+            <img class="premium-feature-icon" src="/img/premium-features-icons/3.svg"
+              alt="{{homepage.premium.benefits.notifications}}">
+            <h4>{{homepage.premium.benefits.notifications}}</h4>
           </div>
           <div class="premium-feature">
-            <img class="premium-feature-icon" src="/img/premium-features-icons/4.svg" alt="Podrobné nastavení událostí">
-            <h4>Podrobné nastavení událostí</h4>
+            <img class="premium-feature-icon" src="/img/premium-features-icons/4.svg"
+              alt="{{homepage.premium.benefits.detailedEvents}}">
+            <h4>{{homepage.premium.benefits.detailedEvents}}</h4>
           </div>
           <div class="premium-feature">
-            <img class="premium-feature-icon" src="/img/premium-features-icons/5.svg" alt="Podskupiny v docházce">
-            <h4>Podskupiny v docházce</h4>
+            <img class="premium-feature-icon" src="/img/premium-features-icons/5.svg"
+              alt="{{homepage.premium.benefits.subgroups}}">
+            <h4>{{homepage.premium.benefits.subgroups}}</h4>
           </div>
           <div class="premium-feature">
-            <img class="premium-feature-icon" src="/img/premium-features-icons/6.svg" alt="Galerie a soubory">
-            <h4>Galerie a soubory</h4>
+            <img class="premium-feature-icon" src="/img/premium-features-icons/6.svg"
+              alt="{{homepage.premium.benefits.gallery}}">
+            <h4>{{homepage.premium.benefits.gallery}}</h4>
           </div>
         </div>
         <div>
           <a href="/premium">
-            <h5>Více o Týmuj Premium</h5>
+            <h5>{{homepage.premium.more}}</h5>
           </a>
         </div>
       </div>
       <img class="premium-illustration" src="/img/buy-process/1.png" srcset="/img/buy-process/1.png"
-        alt="Snadná komunikace a informovanost">
+        alt="{{homepage.premium.title}}">
     </div>
   </section>
 
   <section class="stats">
     <div class="container">
       <header>
-        <h2>Proč si vybrat Týmuj</h2>
+        <h2>{{homepage.achievements.title}}</h2>
         <a class="section-link hidden" href="">Přečtěte si o nás a o projektu Týmuj</a>
       </header>
       <div class="stat stat-1">
         <img src="/img/stats/1.svg" alt="14">
-        <h4>Let v provozu</h4>
+        <h4>{{homepage.achievements.years}}</h4>
       </div>
       <div class="stat stat-2">
         <img src="/img/stats/2.svg" alt="340 000">
-        <h4>Registrovaných uživatelů</h4>
+        <h4>{{homepage.achievements.users}}</h4>
       </div>
       <div class="stat stat-3">
         <img src="/img/stats/3.svg" alt="150 000">
-        <h4>Stažení aplikace</h4>
+        <h4>{{homepage.achievements.downloads}}</h4>
       </div>
       <div class="stat stat-4">
         <img src="/img/stats/4.svg" alt="3,25 ML">
-        <h4>Vytvořených událostí</h4>
+        <h4>{{homepage.achievements.events}}</h4>
       </div>
       <div class="stat stat-5">
         <img src="/img/stats/5.svg" alt="100 +">
-        <h4>Dostupných sportů</h4>
+        <h4>{{homepage.achievements.sports}}</h4>
       </div>
     </div>
   </section>
@@ -340,8 +339,8 @@
   <section class="news">
     <div class="container">
       <header>
-        <h2>Co je nového na Týmuj</h2>
-        <a class="section-link" href="/news">Prozkoumejte náš blog</a>
+        <h2>{{homepage.blog.title}}</h2>
+        <a class="section-link" href="/news">{{homepage.blog.action}}</a>
       </header>
       <div class="news-list container"></div>
     </div>
@@ -414,7 +413,7 @@
 
   <section class="cta">
     <div class="container">
-      <h2>Začni organizovat svůj tým už dnes</h2>
+      <h2>{{homepage.cta}}</h2>
       <div class="store-buttons">
         <a href="https://apps.apple.com/us/app/tymuj/id1218860308">
           <svg xmlns="http://www.w3.org/2000/svg" width="123" height="38" viewBox="0 0 123 38">
@@ -442,7 +441,7 @@
             </g>
           </svg>
         </a>
-        <a class="button square" href="https://app.tymuj.cz/signup">Registrovat se</a>
+        <a class="button square" href="https://app.tymuj.cz/signup">{{navigation.register}}</a>
       </div>
   </section>
   </div>
@@ -451,9 +450,9 @@
     <div class="container">
       <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
       <div class="footer-links">
-        <a href="mailto:info@tymuj.cz">Napište nám</a>
-        <a href="/terms-of-use">Podmínky užití</a>
-        <a href="/privacy">Ochrana osobních údajů</a>
+        <a href="mailto:info@tymuj.cz">{{footer.contact}}</a>
+        <a href="/terms-of-use">{{footer.termsOfUse}}</a>
+        <a href="/privacy">{{footer.privacy}}</a>
       </div>
       <div class="footer-social">
         <a href="https://www.instagram.com/tymujcz/" aria-label="Instagram">
@@ -474,10 +473,16 @@
     </div>
   </footer>
 
-  <script src="/main.js" charset="utf-8"></script>
   <script src="/localization/en.js" charset="utf-8"></script>
   <script src="/localization/cs.js" charset="utf-8"></script>
   <script src="/localization/index.js" charset="utf-8"></script>
+  <script src="/main.js" charset="utf-8"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+      //the event occurred         
+      getFirstPosts()
+    })
+  </script>
 </body>
 
 </html>

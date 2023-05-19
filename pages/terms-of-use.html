@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 
 <head>
   <meta charset="UTF-8">
-  <title>Podmínky použití - Týmuj</title>
+  <title>{{termsOfUse.pageTitle}} - Týmuj</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
@@ -24,20 +24,20 @@
 </head>
 
 <body>
-
   <header class="page-header" id="header">
-
-    <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
+    <a class="logo" href="/">
+      <img src="/img/logo.svg" alt="týmuj">
+    </a>
     <nav>
-      <a href="/news">Novinky</a>
-      <a href="/features">Funkce</a>
-      <a href="/premium">Premium</a>
-      <a href="/faq">FAQ</a>
+      <a href="/news">{{navigation.news}}</a>
+      <a href="/features">{{navigation.features}}</a>
+      <a href="/premium">{{navigation.premium}}</a>
+      <a href="/faq">{{navigation.faq}}</a>
     </nav>
 
     <div class="header-buttons">
-      <a class="button round inverse login-button" href="https://app.tymuj.cz/login">Přihlášení</a>
-      <a class="button round registration-button" href="https://app.tymuj.cz/signup">Registrace</a>
+      <a class="button round inverse login-button" href="https://app.tymuj.cz/login">{{navigation.login}}</a>
+      <a class="button round registration-button" href="https://app.tymuj.cz/signup">{{navigation.register}}</a>
     </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
@@ -46,99 +46,43 @@
   <section class="blog">
     <div class="container">
       <header>
-        <h2 id="blog-title">Týmuj podmínky užití</h2>
+        <h2 id="blog-title">{{termsOfUse.title}}</h2>
       </header>
     </div>
 
     <div class="container">
       <div class="blog-content-wrapper">
         <p id="blog-content">
-        <h2 class="ql-align-center"><span style="color: black;">Podmínky použití</span></h2>
-        <p><strong style="color: rgb(88, 88, 88);">Každá hra má svá pravidla. A tady jsou ta naše...&nbsp;</strong></p>
-        <p><strong style="color: rgb(88, 88, 88);">Následující text je ujednáním, které upravuje podmínky užívání služby
-            Týmuj, dostupné na URL adresách&nbsp;</strong><a
-            href="http://web.archive.org/web/20200513065022/https:/tymuj.cz/" rel="noopener noreferrer" target="_blank"
-            style="color: rgb(51, 122, 183);"><strong>https://tymuj.cz</strong></a><strong
-            style="color: rgb(88, 88, 88);"> souvisejících podstránkách a v mobilní aplikaci Týmuj pro platformy iOS a
-            Android. Odsouhlasením tohoto ujednání se uživatel níže uvedených služeb (dále jen "Uživatel" či
-            "Uživatelé") zavazuje dodržovat pravidla v něm stanovená (dále jen Podmínky užití). V případě porušení
-            Podmínek užití kterýmkoli Uživatelem níže uvedených služeb může provozovatel níže uvedených služeb uplatnit
-            opatření obsažená v těchto Podmínkách užití. Podmínky užití jsou platné od 25.5.2018 včetně pozdějších
-            úprav.</strong></p>
+        <p><strong style="color: rgb(88, 88, 88);">{{termsOfUse.subtitle}}</strong></p>
+        <p><strong style="color: rgb(88, 88, 88);">{{termsOfUse.description}}</strong></p>
         <ol>
-          <li>Týmuj je internetový nástroj pro organizaci sportovních týmů a dalších amatérských i profesionálních
-            organizačních jednotek v oblasti sportu a volnočasových aktivit.</li>
-          <li>Týmuj lze používat zcela zdarma ve variantě „Basic“. Rozšířené funkcionality jsou k&nbsp;dispozici
-            v&nbsp;placené verzi „Premium“. Platby jsou vždy vázány na registrovaný tým. Popis verze „Premium“, její
-            ceník a způsoby plateb jsou popsány na stránce <a href="https://tymuj.cz/premium" rel="noopener noreferrer"
-              target="_blank" style="color: black;">https://tymuj.cz/premium</a>.</li>
-          <li>Každý uživatel mající zájem o využívání nástroje Týmuj je povinen si v rámci aplikace Týmuj.cz vytvořit
-            uživatelský účet. Vytvoření uživatelského účtu spočívá v zadání uživatelského jména a hesla.&nbsp;</li>
-          <li>Týmuj je určeno osobám starším 16 let. Mladší uživatelé mohou službu využívat pouze s vědomím a souhlasem
-            zákonného zástupce. Vytvořením uživatelského účtu potvrzuje Uživatel skutečnost, že je starší 16 let, nebo
-            že má souhlas svého zákonného zástupce k užívání Týmuj.</li>
-          <li>Jedné osobě není povoleno registrovat více než jeden uživatelský účet. Uživatel však může být členem více
-            než jednoho týmu s týmovým účtem v rámci aplikace Týmuj.cz.</li>
-          <li>Všichni uživatelé nesou zodpovědnost za své aktivity spojené s užíváním aplikace Týmuj.cz a souhlasí s
-            tím, že služby nebudou používat k žádným aktivitám, které jsou nebo by mohly být v rozporu s právními
-            předpisy České republiky, Listinou základních práv a svobod, osobnostními právy či právy duševního
-            vlastnictví, porušováním a zasahováním do práva autorského, pravidly používání služeb provozovatele a jeho
-            oprávněnými zájmy, jakož i obecně uznávanými zásadami používání služeb poskytovaných prostřednictvím sítě
-            Internet.</li>
-          <li>Vkládání osobních údajů v registraci a další vkládání osobních údajů, dat, audiovizuálních souborů atd. je
-            zcela dobrovolné a užívání aplikace jimi není podmíněno. Tyto údaje slouží jako prostředek k prezentaci
-            uživatele nebo jeho sportovního týmu a nebudou použity k žádným dalším účelům s výjimkami stanovenými těmito
-            podmínkami. Uživatel je povinen udržovat své přihlašovací údaje (uživatelské jméno a heslo) a údaje svého
-            sportovního týmu v tajnosti. Provozovatel nenese odpovědnost za zneužití identifikačních údajů uživatele
-            vzniklé jeho neopatrností či porušením těchto Podmínek užití.&nbsp;</li>
-          <li>Uživatel souhlasí s tím, že údaje, které o své osobě zadá do aplikace Týmuj.cz, vyjma uživatelského hesla,
-            budou viditelné pro ostatní členy jeho týmu.</li>
-          <li>Uživatel souhlasí s anonymním užitím registračních a statistických údajů služby provozovatelem služby a
-            jeho partnerů pro rozvoj a provoz služby.</li>
-          <li>Uživatel je oprávněn svůj účet v aplikaci kdykoli bez náhrady zrušit, a to kontaktováním provozovatele
-            služby na adrese <a href="mailto:info@tymuj.cz">info@tymuj.cz</a>.</li>
-          <li>Provozovatel aplikace Týmuj.cz nenese žádnou odpovědnost za obsah týmových stránek a jejich případné
-            veřejné publikace. Za obsah stránek v rámci služby Týmuj.cz jsou plně odpovědní uživatelé, jejichž
-            uživatelské účty se k těmto stránkám vztahují. Tím není dotčeno ustanovení o odstranění uživatelských účtů
-            či smazání týmu při nedodržení pravidel stanovených těmito Podmínkami užití.</li>
-          <li>Uživatel je povinen vždy respektovat práva třetích osob, zejména při nakládání s audiovizuálními díly,
-            fotografiemi a obdobnými díly. Veškerou odpovědnost za případné neoprávněné nakládání s takovými předměty
-            nese výhradně uživatel.</li>
-          <li>Provozovatel je oprávněn zrušit uživatelský účet a/nebo smazat týmový účet, pokud
+          <li>{{termsOfUse.p1}}</li>
+          <li>{{termsOfUse.p2}}</li>
+          <li>{{termsOfUse.p3}}</li>
+          <li>{{termsOfUse.p4}}</li>
+          <li>{{termsOfUse.p5}}</li>
+          <li>{{termsOfUse.p6}}</li>
+          <li>{{termsOfUse.p7}}</li>
+          <li>{{termsOfUse.p8}}</li>
+          <li>{{termsOfUse.p9}}</li>
+          <li>{{termsOfUse.p10}}</li>
+          <li>{{termsOfUse.p11}}</li>
+          <li>{{termsOfUse.p12}}</li>
+          <li>{{termsOfUse.p13}}
             <ul>
-              <li>Uživatel používá služby v rozporu s dobrými mravy, právními předpisy a
-                obecně uznávanými etickými a morálními principy a obecně uznávanými pravidly používání služeb
-                poskytovaných prostřednictvím sítě Internet nebo má sloužit k páchání trestné činnosti (nebo napomáhání
-                k
-                páchání trestné činnosti), přestupků či jiných deliktů;</li>
-              <li>Uživatel bude užívat služby ke komerčním a
-                jiným účelům, které by mohly v konečných důsledcích poškodit provozovatele;</li>
-              <li>
-                Uživatel zneužívá,
-                blokuje, modifikuje či jinak mění jakoukoliv součást serveru a aplikace Týmuj.cz;
-              </li>
-              <li>Uživatel pokusil
-                narušit stabilitu, chod nebo data aplikace Týmuj.cz;</li>
-              <li>Uživatel používá aplikaci k šíření komerčního
-                softwaru či jiného nelegálního obsahu chráněného právními předpisy, nebo&nbsp;jej používá&nbsp;k
-                nelegálnímu šíření takového obsahu bez souhlasu autora nebo jiné osoby vykonávající majetková práva;
-              </li>
-              <li>Se
-                Provozovatel domnívá, že uživatel porušuje chráněná práva provozovatele nebo třetích osob jiným způsobem
-                než je uvedeno v předchozích bodech.</li>
+              <li>{{termsOfUse.p13a}}
+              <li>{{termsOfUse.p13b}}
+              <li>{{termsOfUse.p13c}}
+              <li>{{termsOfUse.p13d}}
+              <li>{{termsOfUse.p13e}}
+              <li>{{termsOfUse.p13f}}
             </ul>
           </li>
-          <li>Uživatel nemá nárok na jakoukoli náhradu v souvislosti se zrušením uživatelského účtu.</li>
-          <li>Provozovatel si vyhrazuje právo jakéhokoliv zásahu do aplikace, změn a úprav bez nutnosti předchozího
-            oznámení uživatelům.</li>
-          <li>Provozovatel nenese odpovědnost za případnou nedostupnost či nefunkčnost služeb a za případnou ztrátu nebo
-            poškození dat uložených či vytvořených v aplikaci Týmuj.cz, vzniklou technickými problémy nebo
-            administrativním zásahem Provozovatele, jakož ani za možnou škodu takovýmto způsobem vzniklou.</li>
-          <li>Provozovatel si vyhrazuje právo na změnu těchto Podmínek užití aplikace Týmuj.cz.</li>
-          <li>Provozovatelem aplikace Týmuj.cz dostupné na URL adresách&nbsp;&nbsp;&nbsp;<a
-              href="http://web.archive.org/web/20200513065022/https:/tymuj.cz/" rel="noopener noreferrer"
-              target="_blank" style="color: rgb(51, 122, 183);"><strong>https://tymuj.cz</strong></a> a souvisejících
-            podstránkách je společnost Event Service, s.r.o.</li>
+          <li>{{termsOfUse.p14}}</li>
+          <li>{{termsOfUse.p15}}</li>
+          <li>{{termsOfUse.p16}}</li>
+          <li>{{termsOfUse.p17}}</li>
+          <li>{{termsOfUse.p18}}</li>
         </ol>
         </p>
       </div>
@@ -151,9 +95,9 @@
     <div class="container">
       <a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
       <div class="footer-links">
-        <a href="mailto:info@tymuj.cz">Napište nám</a>
-        <a href="/terms-of-use">Podmínky užití</a>
-        <a href="/privacy">Ochrana osobních údajů</a>
+        <a href="mailto:info@tymuj.cz">{{footer.contact}}</a>
+        <a href="/terms-of-use">{{footer.termsOfUse}}</a>
+        <a href="/privacy">{{footer.privacy}}</a>
       </div>
       <div class="footer-social">
         <a href="https://www.instagram.com/tymujcz/" aria-label="Instagram">
@@ -175,13 +119,6 @@
   </footer>
 
   <script src="/main.js" charset="utf-8"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function (event) {
-      addCopyrightYear()
-    })
-  </script>
-
 </body>
 
 </html>
