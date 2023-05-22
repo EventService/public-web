@@ -5,7 +5,7 @@ const path = require("path");
 const fs = require("fs");
 const translate = require("./src/translate");
 
-const defaultLocale = "en";
+const defaultLocale = process.env.LOCALE || "en";
 
 app.use(express.static("public"));
 
@@ -13,10 +13,9 @@ app.get("/", (_req, res) => res.redirect(`/${defaultLocale}`));
 
 app.use("/:lang(en|cs)", router);
 app.get("/:path", (req, res) => {
-  console.log("REQ", req.headers.referer);
-  const localeMatch = req.headers.referer?.match(
-    /(?<=\/)[\w]{2}(?=[\/\s]|$)/gm
-  );
+  const localeMatch = req.headers.referer
+    ? req.headers.referer.match(/(?<=\/)[\w]{2}(?=[\/\s]|$)/gm)
+    : undefined;
   const locale =
     Array.isArray(localeMatch) && localeMatch.length > 0
       ? localeMatch[0]
