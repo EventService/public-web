@@ -23,7 +23,6 @@ const replaceUrls = (text) => {
   const uniqueUrls = Array.from(new Set(urls));
   if (Array.isArray(uniqueUrls) && uniqueUrls.length > 0) {
     uniqueUrls.forEach((url) => {
-      console.log("URL", url);
       replacedText = replacedText.replaceAll(
         url,
         `<a href="${!url.includes("http") ? "https://" : ""
