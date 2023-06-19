@@ -20,11 +20,14 @@ const replaceUrls = (text) => {
   const urls = replacedText.match(
     /(?<=[\s\.\\,:])(?:https?:\/\/)?(?:www\.)?[a-zA-Z_\-\.]+\.\w{2,}(?:\/[\w\/\-]+)?(?=[\s\.\\,:]?)/g
   );
-  if (Array.isArray(urls) && urls.length > 0) {
-    urls.forEach((url) => {
-      replacedText = replacedText.replace(
+  const uniqueUrls = Array.from(new Set(urls));
+  if (Array.isArray(uniqueUrls) && uniqueUrls.length > 0) {
+    uniqueUrls.forEach((url) => {
+      console.log("URL", url);
+      replacedText = replacedText.replaceAll(
         url,
-        `<a href="${!url.includes("http") ? "https://" : ""}${url}" rel="noopener noreferrer" target="blank">${url}</a>`
+        `<a href="${!url.includes("http") ? "https://" : ""
+        }${url}" rel="noopener noreferrer" target="blank">${url}</a>`
       );
     });
   }
