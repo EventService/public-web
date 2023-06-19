@@ -1,7 +1,9 @@
 const cs = {
   lang: "cs",
-  pageTitle: "Týmuj website",
+  pageTitle: "Týmuj",
   logo: 'logo', // Name of logo svg
+  url: 'tymuj.cz',
+  provider: "Provozovatel",
   navigation: {
     homepage: "Homepage",
     news: "Novinky",
