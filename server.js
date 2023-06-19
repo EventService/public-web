@@ -1,27 +1,10 @@
 const express = require("express");
 const app = express();
-const router = express.Router({ mergeParams: true });
 const path = require("path");
 const fs = require("fs");
 const translate = require("./src/translate");
 
-const defaultLocale = process.env.LOCALE || "en";
-
 app.use(express.static("public"));
-
-app.get("/", (_req, res) => res.redirect(`/${defaultLocale}`));
-
-app.use("/:lang(en|cs)", router);
-app.get("/:path", (req, res) => {
-  const localeMatch = req.headers.referer
-    ? req.headers.referer.match(/(?<=\/)[\w]{2}(?=[\/\s]|$)/gm)
-    : undefined;
-  const locale =
-    Array.isArray(localeMatch) && localeMatch.length > 0
-      ? localeMatch[0]
-      : defaultLocale;
-  res.redirect(`/${locale}/${req.params.path}`);
-});
 
 const translateAndSend = (page, req, res) => {
   fs.readFile(
@@ -31,24 +14,41 @@ const translateAndSend = (page, req, res) => {
       if (err) {
         res.send(404);
       } else {
-        res.send(translate(data, req.params.lang));
+        let hostLocale = "en";
+
+        switch (req.headers.host) {
+          case "tymuj.cz":
+          case "localhost:3000":
+            hostLocale = "cs";
+            break;
+          case "teamheadz.com":
+          default:
+            hostLocale = "en";
+        }
+
+        res.send(translate(data, hostLocale));
       }
     }
   );
 };
 
-router.get("/", (req, res) => translateAndSend("index", req, res));
-router.get("/faq", (req, res) => translateAndSend("faq", req, res));
-router.get("/features", (req, res) => translateAndSend("features", req, res));
-router.get("/news", (req, res) => translateAndSend("news", req, res));
-router.get("/news/:blogId", (req, res) => translateAndSend("blog", req, res));
-router.get("/premium", (req, res) => translateAndSend("premium", req, res));
-router.get("/privacy", (req, res) => translateAndSend("privacy", req, res));
-router.get("/terms-of-use", (req, res) =>
+app.get("/", (req, res) => translateAndSend("index", req, res));
+app.get("/faq", (req, res) => translateAndSend("faq", req, res));
+app.get("/features", (req, res) => translateAndSend("features", req, res));
+app.get("/news", (req, res) => translateAndSend("news", req, res));
+app.get("/news/:blogId", (req, res) => translateAndSend("blog", req, res));
+app.get("/premium", (req, res) => translateAndSend("premium", req, res));
+app.get("/privacy", (req, res) => translateAndSend("privacy", req, res));
+app.get("/terms-of-use", (req, res) =>
   translateAndSend("terms-of-use", req, res)
 );
-router.get("/terms-of-use-en", (_req, res) => res.redirect("/terms-of-use"));
-router.get("/privacy-en", (_req, res) => res.redirect("/privacy"));
+// Support for legacy url
+app.get("/terms-of-use-en", (_req, res) =>
+  res.redirect(301, "https://teamheadz.com/terms-of-use")
+);
+app.get("/privacy-en", (_req, res) =>
+  res.redirect(301, "https://teamheadz.com/privacy")
+);
 
 const port = process.env.PORT || 3000;
 
