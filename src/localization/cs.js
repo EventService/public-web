@@ -1,6 +1,7 @@
 const cs = {
   lang: "cs",
   pageTitle: "Týmuj website",
+  logo: 'logo', // Name of logo svg
   navigation: {
     homepage: "Homepage",
     news: "Novinky",

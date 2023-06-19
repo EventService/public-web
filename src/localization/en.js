@@ -1,6 +1,7 @@
 const en = {
   lang: "en",
-  pageTitle: "Týmuj website",
+  pageTitle: "Teamheadz website",
+  logo: "logo-en", // Name of logo svg
   navigation: {
     homepage: "Homepage",
     news: "News",
@@ -58,7 +59,7 @@ const en = {
       attendance: {
         title: "Perfect Overview of Attendance",
         description:
-          "With Týmuj, you will always know who you can count on to show up on match-day. Attendance can be adjusted retroactively, and the attendance of individual team members calculated and reported.",
+          "With Teamheadz, you will always know who you can count on to show up on match-day. Attendance can be adjusted retroactively, and the attendance of individual team members calculated and reported.",
         overview: {
           title: "Always Know Who’s Coming",
           description:
@@ -77,13 +78,13 @@ const en = {
         guests: {
           title: "Bring a Guest",
           description:
-            "Want to bring a friend? Týmuj makes that easy. The captain will be notified as well, so no surprises!",
+            "Want to bring a friend? Teamheadz makes that easy. The captain will be notified as well, so no surprises!",
         },
       },
       information: {
         title: "Easy Communication and Access to Information",
         description:
-          "Use Týmuj to share information easily. Everyone in the team sees the latest messages and events and gets notified about everything.",
+          "Use Teamheadz to share information easily. Everyone in the team sees the latest messages and events and gets notified about everything.",
         notifications: {
           title: "Emails and Push Notifications",
           description:
@@ -102,7 +103,7 @@ const en = {
         surveys: {
           title: "Surveys and Files",
           description:
-            "Want to let teammates vote? Need to share a document with your team? Týmuj can do that too.",
+            "Want to let teammates vote? Need to share a document with your team? Teamheadz can do that too.",
         },
       },
       roster: {
@@ -113,7 +114,7 @@ const en = {
       wallet: {
         title: "Finance",
         description:
-          "Do you want to keep track of your paid entry fees? Týmuj has a whole separate module for you.",
+          "Do you want to keep track of your paid entry fees? Teamheadz has a whole separate module for you.",
       },
       gallery: {
         title: "Gallery",
@@ -128,18 +129,18 @@ const en = {
       absence: {
         title: "Absence",
         description:
-          "Going skiing? Set your absences and Týmuj will automatically fill in your attendance.",
+          "Going skiing? Set your absences and Teamheadz will automatically fill in your attendance.",
       },
       localization: {
         title: "Czech, English, or Slovak?",
         description:
-          "Týmuj speaks several languages, and more are being added.",
+          "Teamheadz speaks several languages, and more are being added.",
       },
     },
     premium: {
-      title: "Týmuj Premium",
+      title: "Teamheadz Premium",
       description:
-        "With Týmuj Premium, organizing your team will be even easier. By using Týmuj Premium, you’ll also support the further operations and development of Týmuj.",
+        "With Teamheadz Premium, organizing your team will be even easier. By using Teamheadz Premium, you’ll also support the further operations and development of .",
       benefits: {
         unlimitedMembers: "Unlimited number of team members",
         unlimitedEvents: "Unlimited number of events",
@@ -148,10 +149,10 @@ const en = {
         subgroups: "Subgroups in attendance",
         gallery: "Galleries and files",
       },
-      more: "More about Týmuj Premium",
+      more: "More about Teamheadz Premium",
     },
     achievements: {
-      title: "Why Choose Týmuj?",
+      title: "Why Choose Teamheadz?",
       years: "years in operation",
       users: "registered users",
       downloads: "app downloads",
@@ -159,26 +160,26 @@ const en = {
       sports: "sports compatible with the app",
     },
     blog: {
-      title: "What’s new on Týmuj",
+      title: "What’s new on Teamheadz",
       action: "Explore our blog",
     },
     cta: "Start organizing your team today",
   },
   news: {
     pageTitle: "News",
-    title: "Articles about Týmuj that might be of interest to you",
+    title: "Articles about Teamheadz that might be of interest to you",
   },
   blog: {
     pageTitle: "Blog",
-    backToNews: "Back to blog"
+    backToNews: "Back to blog",
   },
   features: {
     pageTitle: "Functions",
     title: "Functions",
     firstStep: {
-      title: "Getting started with Týmuj",
+      title: "Getting started with Teamheadz",
       description:
-        "The first step to using Týmuj is to create a user account. Then, you’re ready to start teaming up by creating your team profile, inviting your teammates, and organizing events.",
+        "The first step to using Teamheadz is to create a user account. Then, you’re ready to start teaming up by creating your team profile, inviting your teammates, and organizing events.",
       account: {
         title: "Creating an Account and Filling In Your Details",
         description:
@@ -199,7 +200,7 @@ const en = {
     teams: {
       title: "Teams",
       description:
-        "Teams are the basic organisational unit on Týmuj. Each user can be a member of any number of teams and there is no limit to the number of team members as well.",
+        "Teams are the basic organisational unit on Teamheadz. Each user can be a member of any number of teams and there is no limit to the number of team members as well.",
       roles: {
         title: "Team Roles",
         description:
@@ -283,7 +284,7 @@ const en = {
       overview: {
         title: "Working with Attendance Overview",
         description:
-          "Attendance is only found on the Týmuj website, its scope would not be suitable for a mobile app. It always displays a maximum of 6 columns with events. It then displays all team members in rows. Using filters, you can set which events you want to see. The participation of each team member is always recalculated for the selected filter. In addition, Attendance allows you to export to CSV so that you can further work with the data in your own program.",
+          "Attendance is only found on the Teamheadz website, its scope would not be suitable for a mobile app. It always displays a maximum of 6 columns with events. It then displays all team members in rows. Using filters, you can set which events you want to see. The participation of each team member is always recalculated for the selected filter. In addition, Attendance allows you to export to CSV so that you can further work with the data in your own program.",
       },
     },
     messages: {
@@ -339,10 +340,11 @@ const en = {
     notifications: {
       title: "Notifications",
       description:
-        "Notifications are an important part of Týmuj. They're there to make sure you always know about everything that's going on in your team.",
+        "Notifications are an important part of Teamheadz. They're there to make sure you always know about everything that's going on in your team.",
       types: {
         title: "Notification Types",
-        description: "Týmuj sends notifications for the following situations:",
+        description:
+          "Teamheadz sends notifications for the following situations:",
         creatingEvent: "Creating a team event",
         changingEvent: "Changing an event",
         eventCancellation: "Event cancellation",
@@ -382,11 +384,11 @@ const en = {
   },
   premium: {
     pageTitle: "Premium",
-    title: "Týmuj Premium",
-    subtitle: "Make the most of Týmuj with new features",
+    title: "Teamheadz Premium",
+    subtitle: "Make the most of Teamheadz with new features",
     benefits: {
-      title: "What you get with Týmuj Premium",
-      p1: "With Týmuj Premium, organizing your team will be even easier. By using Týmuj Premium, you will also become part of our team by supporting the further operation and development of Týmuj.",
+      title: "What you get with Teamheadz Premium",
+      p1: "With Teamheadz Premium, organizing your team will be even easier. By using Teamheadz Premium, you will also become part of our team by supporting the further operation and development of .",
       p2: "You'll be able to schedule an unlimited number of future events and use the bulk creation feature to create a training or match schedule for the entire season in just a few clicks.",
       p3: "With an event attendance limit and a sub-group system, you'll have a perfect overview of attendance at each event.",
       p4: "Team communication and information sharing is improved with email and push notifications for team messages and the ability to upload and share files or images directly within the app.",
@@ -441,9 +443,9 @@ const en = {
       },
     },
     price: {
-      title: "How much does Týmuj Premium cost?",
+      title: "How much does Teamheadz Premium cost?",
       description:
-        "You get the best price for Týmuj Premium when you buy a 6-month subscription. If you are a manager of multiple teams, you can purchase just a single Týmuj Premium subscription for multiple teams to save money.",
+        "You get the best price for Teamheadz Premium when you buy a 6-month subscription. If you are a manager of multiple teams, you can purchase just a single Teamheadz Premium subscription for multiple teams to save money.",
       table: {
         teamCount: "Number of Teams",
         discount: "off",
@@ -453,12 +455,12 @@ const en = {
         teams: "teams",
       },
       contact:
-        "If you are a manager of multiple teams or are a club or other sports organization and need an invoice with a tax number, please contact us at info@tymuj.cz.",
+        "If you are a manager of multiple teams or are a club or other sports organization and need an invoice with a tax number, please contact us at info@teamheadz.com.",
     },
     purchase: {
-      title: "How to buy Týmuj Premium?",
+      title: "How to buy Teamheadz Premium?",
       description:
-        "You can purchase Týmuj Premium on the mobile app via Google Play or the App Store. You can currently purchase Premium for up to four teams.",
+        "You can purchase Teamheadz Premium on the mobile app via Google Play or the App Store. You can currently purchase Premium for up to four teams.",
       steps: {
         introduction: "Introductions and subscription selection",
         selection: "Team selection",
@@ -468,106 +470,107 @@ const en = {
     faq: {
       title: "Frequently Asked Questions",
       free: {
-        title: "Is it possible to use Týmuj for free?",
+        title: "Is it possible to use Teamheadz for free?",
         description:
-          "Yes, it is possible to use Týmuj for free in Basic mode with the restrictions described above.",
+          "Yes, it is possible to use Teamheadz for free in Basic mode with the restrictions described above.",
       },
       trial: {
         title: "When do I have to start paying?",
         description:
-          "Each new team starts with two months of free Týmuj Premium, after which they must decide whether to continue with limited Týmuj Basic or paid Týmuj Premium.",
+          "Each new team starts with two months of free Teamheadz Premium, after which they must decide whether to continue with limited Teamheadz Basic or paid  Premium.",
       },
       limit: {
         title:
-          "Do coaches, parents, inactive members, etc. count towards the limit of 24 players in Týmuj Basic?",
+          "Do coaches, parents, inactive members, etc. count towards the limit of 24 players in Teamheadz Basic?",
         description:
           "All members of a given team count towards the limit. The system that controls the number of members in a team is automatic and does not distinguish how active individual members are or what role they play in the team.",
       },
       notPaying: {
         title:
-          "What happens if we don't pay for Týmuj Premium? Will our team get deleted?",
+          "What happens if we don't pay for Teamheadz Premium? Will our team get deleted?",
         description:
-          "Your team or other information and data will never be deleted. If there are 24 or fewer members on the team, you will automatically continue to use the free, feature-limited version of Týmuj. If you are more than 24 members, Týmuj will no longer allow you to create new events until you reactivate Týmuj Premium.",
+          "Your team or other information and data will never be deleted. If there are 24 or fewer members on the team, you will automatically continue to use the free, feature-limited version of Teamheadz. If you are more than 24 members, Teamheadz will no longer allow you to create new events until you reactivate  Premium.",
       },
       multipleTeams: {
         title: "What if I have multiple teams?",
         description:
-          "You will be able to purchase Premium for up to four teams at a time, the price for one team of course decreases as the number of teams increases. If you are in charge of even more teams, please contact us directly at info@tymuj.cz.",
+          "You will be able to purchase Premium for up to four teams at a time, the price for one team of course decreases as the number of teams increases. If you are in charge of even more teams, please contact us directly at info@teamheadz.com.",
       },
       invoice: {
         title:
           "What if I can't pay by card or need an invoice for my accounts?",
         description:
-          "Contact us at info@tymuj.cz and we will issue an invoice with your billing details, which you can pay by bank transfer.",
+          "Contact us at info@teamheadz.com and we will issue an invoice with your billing details, which you can pay by bank transfer.",
       },
     },
   },
   faq: {
     pageTitle: "FAQ",
     title: "FAQ",
-    description: "Vše, co chcete vědět o Týmuj a nebojíte se na to zeptat.",
+    description:
+      "Everything you want to know about Teamheadz and aren't afraid to ask.",
     introduction: {
-      title: "Co je to Týmuj?",
-      p1: "<b>Týmuj</b> je online služba, která pomáhá organizovat aktivity ve sportovních týmech a skupinách.",
-      p2: "Díky této službě jsou organizace akcí i týmová komunikace mnohem snadnější a rychlejší.",
+      title: "What is Teamheadz?",
+      p1: "<b>Teamheadz</b> is an online service that helps to organize activities in sports teams and groups.",
+      p2: "This service makes organizing events and team communication much easier and faster.",
     },
     platform: {
-      title: "Jak je to s Týmuj na webu a v mobilu?",
-      p1: "Na počítači nebo notebooku můžete využívat Týmuj na adrese www.tymuj.cz, v mobilu doporučujeme naši mobilní aplikaci <b>Týmuj</b>. Ta je dostupná pro systémy iOS i Android. Stáhnout ji můžete zde:",
+      title: "What about Teamheadz on web and mobile?",
+      p1: "You can use Teamheadz on your computer or laptop at www.teamheadz.com, and on your mobile phone we recommend our mobile app <b>Teamheadz</b>. It is available for both iOS and Android. You can download it here:",
       p2: "iOS: http://bit.ly/Tymuj-AppStore<br>Android: http://bit.ly/Tymuj-GooglePlay",
-      p3: "Mobilní aplikace i webová stránka disponují stejnými funkcemi a všechna data jsou mezi aplikací a webem plně synchronizována. Každá změna, kterou provedete na webu, se tak zobrazí i na mobilu a naopak.",
+      p3: "The mobile app and the website have the same functionality and all data is fully synchronized between the app and the website. Every change you make on the web will be displayed on the mobile and vice versa.",
     },
     usage: {
-      title: "Kdo může Týmuj využít?",
-      p1: "Jakýkoli tým, skupina nebo parta, která má ráda sport a aktivní trávení volného času.",
-      p2: "Může jít o vrcholový sport, rekreační aktivity, sportování dětí nebo třeba o kolegy z práce, kteří si chodí po večerech zahrát do blízké tělocvičny. Stranou nejsou ani trenéři nebo lektoři, kteří vedou hodiny aerobicu, fitness či bojových sportů.",
+      title: "Who can use Teamheadz?",
+      p1: "Any team, group or bunch that enjoys sports and active leisure.",
+      p2: "It can be top sports, recreational activities, children's sports or even colleagues from work who go to a nearby gym in the evenings to play. Coaches or instructors who run aerobics, fitness or martial arts classes are not left out either.",
     },
     sports: {
-      title: "Je využití Týmuj omezeno pouze na některé sporty?",
-      p1: "Není.",
-      p2: "Týmuj mohou využít všechny sportovní kolektivy: od fotbalistů, přes florbalisty, pozemní hokejistky, vodní pólisty, akvabely, až po dobrovolné hasiče nebo mažoretky. Důležitý je týmový duch.",
-      p3: "Používat Týmuj mohou i skupiny, které nejsou primárně sportovní, ale potřebují nástroj pro organizaci svých aktivit.",
+      title: "Is the use of Teamheadz limited to certain sports?",
+      p1: "It is not.",
+      p2: "Teamheadz can be used by all sports teams: from football players, floorball players, field hockey players, water polo players, aquaballers, to volunteer firefighters or majorettes. Team spirit is important.",
+      p3: "Groups that are not primarily sporting but need a tool to organise their activities can also use Teamheadz.",
     },
     reason: {
-      title: "Najde si důvod pro používání Týmuj opravdu každý člen týmu?",
-      p1: "Ano, Týmuj se hodí se pro každého člena týmu a sportovce. Stačí si najít svou roli.",
+      title: "Will every team member really find a reason to use Teamheadz?",
+      p1: "Yes, Teamheadz is suitable for every team member and athlete. You just need to find your role.",
       trainer: {
-        title: "Jsem trenér, kapitán, vedoucí týmu, lektor atd.",
+        title: "I am a coach, captain, team leader, lecturer, etc.",
         description:
-          "Mohu snadno a efektivně plánovat (zápasy, tréninky, akce,…), informovat (o zápasech, úkolech, soupeřích atd.), naplňovat své hodiny, kontrolovat docházku, vést záznamy, sdílet soubory, získávat zpětnou vazbu, psát zprávy atd.",
+          "I can easily and efficiently plan (matches, practices, events,...), inform (about matches, assignments, opponents, etc.), fill my hours, check attendance, keep records, share files, get feedback, write reports, etc.",
       },
       player: {
-        title: "Jsem hráč, člen týmu",
+        title: "I'm a player, a team member",
         description:
-          "Na jednom místě se dozvím všechny podstatné informace, které se týkají mého týmu. Můžu nahrávat fotky, videa a prohlížet si to, co nahráli ostatní. Diskutuji, píšu zprávy spoluhráčům a dostávám upozornění do mailu nebo do mobilu o všem podstatném.",
+          "In one place I can find out all the essential information that concerns my team. I can upload photos, videos and view what others have uploaded. I can discuss, message my teammates and get email or mobile notifications about anything important.",
       },
       guest: {
-        title: "Jsem host, rodič",
+        title: "I'm a guest, a parent",
         description:
-          "V týmu sice sám nesportuji, ale podílím se na jeho aktivitách. Nebo jsem rodič a chci mít přehled o všem podstatném, co čeká týmu mé děti.",
+          "I don't play sports myself, but I do participate in the team. Or I'm a parent and I want to keep up to date with all the important things that are coming up for my children.",
       },
     },
     creatingTeam: {
-      title: "Co je třeba udělat pro založení týmu?",
-      p1: "Nejdříve si založte svůj vlastní účet. To lze udělat na webu Tymuj.cz i v mobilní aplikaci. Pro založení účtu je potřeba e-mailová adresa a heslo. Po dokončení registrace budete vyzváni k založení týmu.",
-      p2: "Jakmile vytvoříte tým, můžete pozvat do týmu e-mailem nebo zvacím odkazem jednotlivé členy. Pokud pozvání přijmou, průvodce je provede osobní registrací a pak budou automaticky zařazeni k Vašemu týmu. V praxi to tedy může trvat jen pár minut, než se celý tým sejde na Týmuj.",
+      title: "What do I need to do to start a team?",
+      p1: "First, create your own account. This can be done on Teamheadz.com and on the mobile app. An email address and password are required to create an account. After completing the registration, you will be prompted to create a team.",
+      p2: "Once you have created a team, you can invite individual members to join the team via email or invitation link. If they accept the invitation, the wizard will guide them through a personal registration and then they will automatically be added to your team. So in practice, it can take just a few minutes for the whole team to come together on Teamheadz.",
     },
     privacy: {
-      title: "Kdo má přístup k našim stránkám?",
-      p1: "Jen ten, koho sami pozvete.",
-      p2: "Pouze vlastník a správci týmu mají právo rozesílat pozvánky do týmu. Pozvaný uživatel se musí nejprve registrovat na Týmuj. Veškeré informace, které v týmu sdílíte jsou soukromé pouze pro váš tým a bez vašeho vědomí se k nim nikdo jiný nedostane.",
+      title: "Who has access to our website?",
+      p1: "Only who you invite.",
+      p2: "Only the owner and team administrators have the right to send out invitations to the team. The invited user must first register on Teamheadz. Any information you share on the team is private only to your team and no one else will get access to it without your knowledge.",
     },
     multipleTeam: {
-      title: "Mohu být členem více týmů na Týmuj?",
-      p1: "Samozřejmě!",
-      p2: "Je to jen na Vás, Vaší sportovní vášni a počtu sportovních týmů, ve kterých jste aktivní. Stačí jedna osobní registrace a můžete se stát členem libovolného počtu týmů na Týmuj. O všech svých sportovních aktivitách tak budete mít přehled na jednom místě.",
-      p3: "V každém z týmů můžete mít jinou roli. Jednou budete vystupovat jako vlastník či správce, jinde pouze jako člen.",
+      title: "Can I be a member of multiple teams on Teamheadz?",
+      p1: "Of course!",
+      p2: "It's up to you, your sporting passion and the number of sports teams you are active in. Just one personal registration and you can become a member of any number of teams on Teamheadz. You can keep track of all your sports activities in one place.",
+      p3: "You can have a different role in each team. Sometimes you will be the owner or manager, other times only a member.",
     },
     password: {
-      title: "Zapomněl jsem heslo nebo mám jiný technický problém.",
-      p1: "Heslo si můžete obnovit na stránce https://app.tymuj.cz/password/regeneration, stačí zadat vaši e-mailovu adresu pod kterou jste se registrovali. Na e-mail, kterým jste se registrovali, vám následně přijde odkaz pro obnovu hesla.",
-      p2: "Hesla jsou v databázi hashována funkcí bcrypt, nemůžeme vám tedy poslat vaše dosavadní heslo, ale budete si muset nastavit nové.",
-      p3: "V případě jiného dotazu nebo problému se zkuste podívat do <a href='/features'>Popisu funkcí</a>. Pokud ani zde nenajdete odpověď, můžete kontaktovat správce aplikace e-mailem na info@tymuj.cz nebo se nám ozvěte přes Facebook Týmuj.",
+      title: "I forgot my password or I have another technical problem.",
+      p1: "You can reset your password at https://app.teamheadz.com/password/regeneration, just enter the email address you registered with. A link to reset your password will then be sent to the email you registered with.",
+      p2: "Passwords are hashed in the database using the bcrypt function, so we cannot send you your existing password, but you will need to set a new one.",
+      p3: "If you have another question or problem, try looking at the <a href='/features'>Feature Descriptions</a>. If you don't find an answer there either, you can contact the application administrator via email at info@teamheadz.com or reach out to us via Facebook Teamheadz.",
     },
   },
   termsOfUse: {
@@ -575,31 +578,31 @@ const en = {
     title: "Terms of use",
     subtitle: "Each game has its own rules. And here are ours...&nbsp;",
     description:
-      "The following text is the agreement that governs the terms of use of the Týmuj service, available at the URL&nbsp; https://tymuj.cz related subpages and in the Týmuj mobile app for iOS and Android platforms. By accepting this agreement, the user of the services listed below (hereinafter referred to as &quot;User&quot; or &quot;Users&quot;) agrees to comply with the rules set out herein (hereinafter referred to as the Terms of Use). In the event of a breach of the Terms of Use by any User of the Services listed below, the Provider of the Services listed below may apply the measures contained in these Terms of Use. The Terms of Use are effective as of May 25, 2018, including subsequent modifications.",
-    p1: "Týmuj is an online tool for the organization of sports teams and other amateur and organizational units in the field of sports and leisure activities.",
-    p2: "Týmuj can be used free of charge in the &quot;Basic&quot; variant. Extended functionalities are available in the paid &quot;Premium&quot; version. Payments are always linked to the registered team. The description of the &quot;Premium&quot; version, its price list and payment methods are described on https://tymuj.cz/premium.",
-    p3: "Every user interested in using the Týmuj tool is obliged to create a user account within the Týmuj.cz application. Creating a user account consists of entering a username and password.",
-    p4: "Týmuj is intended for persons over 16 years of age. Younger users may use the service only with the knowledge and consent of a legal guardian. By creating a user account, the User confirms that he/she is over 16 years of age or that he/she has the consent of his/her legal representative to use Týmuj.",
-    p5: "One person is not allowed to register more than one user account. However, a User may be a member of more than one team with a team account within the Týmuj.cz application.",
-    p6: "All Users are responsible for their activities related to the use of the Týmuj.cz application and agree not to use the services for any activities that are or could be in violation of the laws of the Czech Republic, the Charter of Fundamental Rights and Freedoms, personality rights or intellectual property rights, violation and interference with copyright, the rules of use of the services of the Provider and its legitimate interests, as well as generally accepted principles of the use of services provided via the Internet.",
+      "The following text is the agreement that governs the terms of use of the Teamheadz service, available at the URL&nbsp; https://teamheadz.com related subpages and in the Teamheadz mobile app for iOS and Android platforms. By accepting this agreement, the user of the services listed below (hereinafter referred to as &quot;User&quot; or &quot;Users&quot;) agrees to comply with the rules set out herein (hereinafter referred to as the Terms of Use). In the event of a breach of the Terms of Use by any User of the Services listed below, the Provider of the Services listed below may apply the measures contained in these Terms of Use. The Terms of Use are effective as of May 25, 2018, including subsequent modifications.",
+    p1: "Teamheadz is an online tool for the organization of sports teams and other amateur and organizational units in the field of sports and leisure activities.",
+    p2: "Teamheadz can be used free of charge in the &quot;Basic&quot; variant. Extended functionalities are available in the paid &quot;Premium&quot; version. Payments are always linked to the registered team. The description of the &quot;Premium&quot; version, its price list and payment methods are described on https://teamheadz.com/premium.",
+    p3: "Every user interested in using the Teamheadz tool is obliged to create a user account within the Teamheadz.cz application. Creating a user account consists of entering a username and password.",
+    p4: "Teamheadz is intended for persons over 16 years of age. Younger users may use the service only with the knowledge and consent of a legal guardian. By creating a user account, the User confirms that he/she is over 16 years of age or that he/she has the consent of his/her legal representative to use Teamheadz.",
+    p5: "One person is not allowed to register more than one user account. However, a User may be a member of more than one team with a team account within the Teamheadz.cz application.",
+    p6: "All Users are responsible for their activities related to the use of the Teamheadz.cz application and agree not to use the services for any activities that are or could be in violation of the laws of the Czech Republic, the Charter of Fundamental Rights and Freedoms, personality rights or intellectual property rights, violation and interference with copyright, the rules of use of the services of the Provider and its legitimate interests, as well as generally accepted principles of the use of services provided via the Internet.",
     p7: "The input of personal data in the registration and the further input of personal data, data, audiovisual files, etc. is completely voluntary and the use of the application is not conditioned by them. These data are used as a means of presenting the user or his/her sports team and will not be used for any other purpose, with the exceptions set out in these terms and conditions. The user is obliged to keep his/her login details (username and password) and the details of his/her sports team confidential. The Provider shall not be liable for any misuse of the User&#39;s identification data resulting from the User&#39;s carelessness or violation of these Terms of Use.",
-    p8: "The User agrees that the data he/she enters into the application Týmuj.cz, except for the user password, will be visible to other members of his/her team.",
+    p8: "The User agrees that the data he/she enters into the application Teamheadz.cz, except for the user password, will be visible to other members of his/her team.",
     p9: "The User agrees to the anonymous use of the registration and statistical data of the Service by the Service Provider and its partners for the development and operation of the Service.",
-    p10: "The User is entitled to cancel his/her account in the Application at any time without refund by contacting the Service Provider at info@tymuj.cz.",
-    p11: "The Provider of the application Týmuj.cz is not responsible for the content of the team pages and their possible public publications. Users whose user accounts are linked to these pages are fully responsible for the content of the pages within the Týmuj.cz service. This is without prejudice to the provisions on the removal of user accounts or deletion of the team in the event of non-compliance with the rules set out in these Terms of Use.",
+    p10: "The User is entitled to cancel his/her account in the Application at any time without refund by contacting the Service Provider at info@teamheadz.com.",
+    p11: "The Provider of the application Teamheadz.cz is not responsible for the content of the team pages and their possible public publications. Users whose user accounts are linked to these pages are fully responsible for the content of the pages within the Teamheadz.cz service. This is without prejudice to the provisions on the removal of user accounts or deletion of the team in the event of non-compliance with the rules set out in these Terms of Use.",
     p12: "The User is obliged to respect the rights of third parties at all times, in particular when dealing with audiovisual works, photographs and similar works. All liability for any unauthorised disposal of such items rests solely with the User.",
     p13: "The Provider shall be entitled to cancel the user account and/or delete the team account if",
     p13a: "The User uses the Services in violation of good morals, legal regulations and generally accepted ethical and moral principles and generally accepted rules for the use of the Services provided via the Internet or is intended to be used to commit (or facilitate the commission of) criminal activity, misdemeanours or other offenses;",
     p13b: "The user will use the services for commercial and other purposes that could ultimately harm the Provider;",
-    p13c: "The User abuses, blocks, modifies or otherwise changes any part of the server and the Týmuj.cz application;",
-    p13d: "User has attempted to disrupt the stability, operation or data of the Týmuj.cz application;",
+    p13c: "The User abuses, blocks, modifies or otherwise changes any part of the server and the Teamheadz.cz application;",
+    p13d: "User has attempted to disrupt the stability, operation or data of the Teamheadz.cz application;",
     p13e: "User uses the application to distribute commercial software or other illegal content protected by law, or uses it to illegally distribute such content without the consent of the author or other person exercising proprietary rights;",
     p13f: "The Provider believes that the User is infringing the protected rights of the Provider or third parties in a manner other than as set out in the preceding paragraphs.",
     p14: "The User is not entitled to any compensation in connection with the termination of the User&#39;s account.",
     p15: "The Provider reserves the right to any intervention in the application, changes and modifications without prior notification to the User.",
-    p16: "The Provider shall not be liable for any unavailability or non-functionality of services and for any loss or damage to data stored or created in the application Týmuj.cz, caused by technical problems or administrative intervention of the Provider, as well as for possible damage caused in this way.",
-    p17: "The Provider reserves the right to change these Terms of Use of the application Týmuj.cz.",
-    p18: "The Provider of the Týmuj.cz application available at the URL https://tymuj.cz and related subpages is Event Service, s.r.o.",
+    p16: "The Provider shall not be liable for any unavailability or non-functionality of services and for any loss or damage to data stored or created in the application Teamheadz.cz, caused by technical problems or administrative intervention of the Provider, as well as for possible damage caused in this way.",
+    p17: "The Provider reserves the right to change these Terms of Use of the application Teamheadz.cz.",
+    p18: "The Provider of the Teamheadz.cz application available at the URL https://teamheadz.com and related subpages is Event Service, s.r.o.",
   },
   privacy: {
     pageTitle: "Privacy Policy",
@@ -607,7 +610,8 @@ const en = {
     consent: {
       title: "Consent to the processing of personal data",
       p1: {
-        title: "You hereby grant your consent to Event Service, s.r.o., with registered office at Krameriova 966/8, 148 00 Prague 4, ID No.: 26817721, VAT No.: CZ26817721, registered in the public register kept at the Municipal Court in Prague, Section C, Insert 248208 (hereinafter referred to as the &quot;Controller&quot;), to use your personal data in accordance with Regulation (EU) No. 2016/679 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC (General Data Protection Regulation) (hereinafter referred to as the &quot;<strong>Regulation</strong>&quot;) to process the following personal data:",
+        title:
+          "You hereby grant your consent to Event Service, s.r.o., with registered office at Krameriova 966/8, 148 00 Prague 4, ID No.: 26817721, VAT No.: CZ26817721, registered in the public register kept at the Municipal Court in Prague, Section C, Insert 248208 (hereinafter referred to as the &quot;Controller&quot;), to use your personal data in accordance with Regulation (EU) No. 2016/679 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC (General Data Protection Regulation) (hereinafter referred to as the &quot;<strong>Regulation</strong>&quot;) to process the following personal data:",
         username: "username",
         name: "name and surname",
         email: "e-mail address",
@@ -630,51 +634,68 @@ const en = {
       p2: "The username and email address must be processed in order to create and administer the user account. Without providing these data, it will not be possible to create a user account.",
       p3: "First and last name, telephone number, address, website address and other contact details will be processed to enable communication with you. The provision of this data is voluntary.",
       p4: "Gender, date of birth, likeness and nickname will be processed in order to complete and modify the user profile according to your needs. The provision of this data is voluntary.",
-      p5: "Sports team name, team membership information, sports event participation information, attendance, assignments and electronic communication within the team will be processed in order to use the features of the Teamuj application operated by the Administrator. The provision of this personal data is a condition for the use of the various services provided by the Týmuj application.",
+      p5: "Sports team name, team membership information, sports event participation information, attendance, assignments and electronic communication within the team will be processed in order to use the features of the Teamuj application operated by the Administrator. The provision of this personal data is a condition for the use of the various services provided by the Teamheadz application.",
       p6: "This data will be processed by the Administrator for the period of active use of the user account and for a period of 3 years from your last login.",
       p7: "In case you have given your consent to receive newsletters (commercial communications), your e-mail address, name and surname, gender, date of birth, telephone number, address, website address, team membership information, operational data related to the user account will also be processed for the purpose of sending commercial communications, for a period of 3 years from the date of consent. Profiling within the meaning of Article 22 of the Regulation may be used for sending commercial communications.",
-      p8: "You give your explicit consent to the above processing. Consent can be withdrawn at any time, for example by sending an email to info@tymuj.cz or a letter to the contact details of the Administrator. Withdrawal of consent will result in the deletion of the user profile.",
+      p8: "You give your explicit consent to the above processing. Consent can be withdrawn at any time, for example by sending an email to info@teamheadz.com or a letter to the contact details of the Administrator. Withdrawal of consent will result in the deletion of the user profile.",
       p9: {
-        title: "The processing of personal data is carried out by the Administrator, but personal data may also be processed for the Administrator by the following processors:",
-        google: "Google Analytics and Google AdSense software provider, Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043;",
-        microsoft: "Microsoft Office software provider, Microsoft Corporation, located at One Microsoft Way, Redmond, WA98052, United States of America, Registration number: 600413485;",
+        title:
+          "The processing of personal data is carried out by the Administrator, but personal data may also be processed for the Administrator by the following processors:",
+        google:
+          "Google Analytics and Google AdSense software provider, Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043;",
+        microsoft:
+          "Microsoft Office software provider, Microsoft Corporation, located at One Microsoft Way, Redmond, WA98052, United States of America, Registration number: 600413485;",
         alpy: "web hosting provider, ALPY, spol. s r. o., with registered office at Štefánikova 2/63, Smíchov, 150 00 Prague 5, ID No.: 49824881;",
-        smartSelling: "SmartSelling a.s., with registered office at Netroufalky 797/5, Bohunice, 625 00 Brno, ID No.: 292 10 372;",
-        foxMedia: "the provider of development and maintenance of the Týmuj application, Fox Media Czech Republic s.r.o., with registered office at Ocelkova 643/20, Černý Most, 198 00 Prague 9, ID No.: 29144922;",
-        oracle: "MySQL software provider, Oracle Corporation, 500 Oracle Parkway Redwood Shores, CA 94065;",
-        other: "or other providers of processing software, services and applications, which are not currently used by the Company.",
+        smartSelling:
+          "SmartSelling a.s., with registered office at Netroufalky 797/5, Bohunice, 625 00 Brno, ID No.: 292 10 372;",
+        foxMedia:
+          "the provider of development and maintenance of the Teamheadz application, Fox Media Czech Republic s.r.o., with registered office at Ocelkova 643/20, Černý Most, 198 00 Prague 9, ID No.: 29144922;",
+        oracle:
+          "MySQL software provider, Oracle Corporation, 500 Oracle Parkway Redwood Shores, CA 94065;",
+        other:
+          "or other providers of processing software, services and applications, which are not currently used by the Company.",
       },
       p10: {
         title: "Please note that under the Regulation you have the right to",
         withdrawal: "withdraw your consent at any time,",
-        information: "ask us to inform you about which personal data we process about you,",
-        access: "request access to that data and have it updated or corrected, or request a restriction on processing,",
+        information:
+          "ask us to inform you about which personal data we process about you,",
+        access:
+          "request access to that data and have it updated or corrected, or request a restriction on processing,",
         erase: "require us to erase that personal data,",
         copy: "request a copy of the personal data processed,",
-        complaint: "lodge a complaint with the Data Protection Authority."
+        complaint: "lodge a complaint with the Data Protection Authority.",
       },
     },
     cookies: {
-      title: "Information about the processing of personal data through cookies",
+      title:
+        "Information about the processing of personal data through cookies",
       p1: {
-        title: "The personal data controller, Event Service, s.r.o., with registered office at Krameriova 966/8, 148 00 Prague 4, ID No.: 26817721, VAT No.: CZ26817721, registered in the public register kept at the Municipal Court in Prague, Section C, Insert 248208, as the operator of this website, uses cookies on this website for the following purposes:",
-        measuring: "measuring the website traffic and generating statistics regarding the visitors&#39; traffic and behaviour on the website;",
+        title:
+          "The personal data controller, Event Service, s.r.o., with registered office at Krameriova 966/8, 148 00 Prague 4, ID No.: 26817721, VAT No.: CZ26817721, registered in the public register kept at the Municipal Court in Prague, Section C, Insert 248208, as the operator of this website, uses cookies on this website for the following purposes:",
+        measuring:
+          "measuring the website traffic and generating statistics regarding the visitors&#39; traffic and behaviour on the website;",
         function: "the functioning of the website.",
       },
       p2: "The collection of cookies for the purpose referred to in paragraph 1 is considered to be the processing of personal data. Such processing is possible on the basis of a legitimate reason - the legitimate interest of the Controller, and is allowed by Article 6(1)(f) of Regulation (EU) No 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (hereinafter referred to as the &quot;Regulation&quot;).",
-      p3: "The website can also be used in a mode that does <strong>not</strong> allow the collection of data on the behaviour of visitors to the website - this mode can either be set within the browser settings or it is possible to object to such collection on the basis of the legitimate interest of the Administrator pursuant to Article 21 of the Regulation to the address info@tymuj.cz. Your objection will be evaluated without delay. Cookies necessary for the functionality of the website will only be stored for the time necessary for the functioning of the website.",
+      p3: "The website can also be used in a mode that does <strong>not</strong> allow the collection of data on the behaviour of visitors to the website - this mode can either be set within the browser settings or it is possible to object to such collection on the basis of the legitimate interest of the Administrator pursuant to Article 21 of the Regulation to the address info@teamheadz.com. Your objection will be evaluated without delay. Cookies necessary for the functionality of the website will only be stored for the time necessary for the functioning of the website.",
       p4: "If the subject objects to the processing of technical cookies necessary for the functioning of the website, the full functionality and compatibility of the website cannot be guaranteed in this case.",
       p5: "Cookies that are collected for the purpose of measuring website traffic and generating statistics on visitor traffic and behaviour on the website are treated in the form of an aggregate and therefore in an anonymous form that does not allow the identification of individuals.",
       p6: {
         title: "The collected cookies are processed by other processors:",
-        google: "Google Analytics, operated by Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.",
+        google:
+          "Google Analytics, operated by Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.",
       },
       p7: {
         title: "Please note that under the Regulation you have the right to:",
-        process: "request information from the Controller about what personal data it processes about you,",
-        update: "request access to such data from the Controller and have it updated or corrected, or to restrict processing,",
-        delete: "request the Controller to delete such personal data - the Controller will carry out the deletion if the deletion is not contrary to applicable law and the legitimate interests of the Controller,",
-        compliance: "in case of doubts about compliance with the obligations related to the processing of personal data, contact the Controller or the Office for Personal Data Protection.",
+        process:
+          "request information from the Controller about what personal data it processes about you,",
+        update:
+          "request access to such data from the Controller and have it updated or corrected, or to restrict processing,",
+        delete:
+          "request the Controller to delete such personal data - the Controller will carry out the deletion if the deletion is not contrary to applicable law and the legitimate interests of the Controller,",
+        compliance:
+          "in case of doubts about compliance with the obligations related to the processing of personal data, contact the Controller or the Office for Personal Data Protection.",
       },
     },
   },
