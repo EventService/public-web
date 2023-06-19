@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Týmuj</title>
+  <title>{{pageTitle}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
@@ -36,8 +36,8 @@
     </nav>
 
     <div class="header-buttons">
-      <a class="button round inverse login-button" href="https://app.tymuj.cz/login">{{navigation.login}}</a>
-      <a class="button round registration-button" href="https://app.tymuj.cz/signup">{{navigation.register}}</a>
+      <a class="button round inverse login-button" href="https://app.{{url}}/login">{{navigation.login}}</a>
+      <a class="button round registration-button" href="https://app.{{url}}/signup">{{navigation.register}}</a>
     </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
@@ -441,7 +441,7 @@
             </g>
           </svg>
         </a>
-        <a class="button square" href="https://app.tymuj.cz/signup">{{navigation.register}}</a>
+        <a class="button square" href="https://app.{{url}}/signup">{{navigation.register}}</a>
       </div>
   </section>
   </div>
@@ -450,7 +450,7 @@
     <div class="container">
       <a class="logo" href="/"><img src="/img/{{logo}}.svg" alt="týmuj"></a>
       <div class="footer-links">
-        <a href="mailto:info@tymuj.cz">{{footer.contact}}</a>
+        <a href="mailto:info@{{url}}">{{footer.contact}}</a>
         <a href="/terms-of-use">{{footer.termsOfUse}}</a>
         <a href="/privacy">{{footer.privacy}}</a>
       </div>
@@ -466,8 +466,8 @@
         </a>
       </div>
       <div class="copyright">
-        <p class="copyright-text" id="copyright-year">© Týmuj </p>
-        <a href="http://www.eventservice.cz/">Event Service (Provozovatel Týmuj)</a>
+        <p class="copyright-text" id="copyright-year">© {{pageTitle}} </p>
+        <a href="http://www.eventservice.cz/">Event Service ({{provider}} {{pageTitle}})</a>
         <p>Fox Media (App & website)</p>
       </div>
     </div>
