@@ -1,6 +1,3 @@
-// import Glide from '@glidejs/glide'
-// import Focus from 'focus-visible'
-
 const body = document.getElementsByTagName("body")[0];
 const header = document.getElementById("header");
 const navToggle = document.getElementById("nav-toggle");
@@ -52,21 +49,14 @@ const cs = {
 };
 
 const getLocalizedText = (text) => {
-  const localeMatch = window.location.pathname.match(
-    /(?<=\/)[\w]{2}(?=[\/\s]|$)/gm
-  );
-  const locale =
-    Array.isArray(localeMatch) && localeMatch.length > 0
-      ? localeMatch[0]
-      : "en";
-
   let localizationText;
 
-  switch (locale) {
-    case "cs":
+  switch (window.location.host) {
+    case "tymuj.cz":
+    case "localhost:3000":
       localizationText = cs;
       break;
-    case "en":
+    case "teamheadz.com":
     default:
       localizationText = en;
       break;
@@ -178,7 +168,17 @@ for (let i = 0; i < questions.length; i++) {
 // })
 
 const buildUrl = function(url, page, pageSize) {
-  return `${url}?page=${page}&pageSize=${pageSize}`;
+  let lang = en;
+  switch(window.location.host) {
+    case 'tymuj.cz':
+    case 'localhost:3000':
+      lang = 'cs'
+      break;
+    case 'teamheadz.com':
+    default:
+      lang = 'en'
+  }
+  return `${url}?page=${page}&pageSize=${pageSize}&lang=${lang}`;
 };
 
 // ----- Blog detail
