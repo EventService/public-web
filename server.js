@@ -18,8 +18,7 @@ const translateAndSend = (page, req, res) => {
 
         switch (req.headers.host) {
           case "tymuj.cz":
-          case "localhost:3000":
-            hostLocale = "en";
+            hostLocale = "cs";
             break;
           case "teamheadz.com":
           default:

@@ -53,7 +53,6 @@ const getLocalizedText = (text) => {
 
   switch (window.location.host) {
     case "tymuj.cz":
-    case "localhost:3000":
       localizationText = cs;
       break;
     case "teamheadz.com":
@@ -171,7 +170,6 @@ const buildUrl = function(url, page, pageSize) {
   let lang = en;
   switch(window.location.host) {
     case 'tymuj.cz':
-    case 'localhost:3000':
       lang = 'cs'
       break;
     case 'teamheadz.com':
