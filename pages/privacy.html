@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{privacy.pageTitle}} - {{pageTitle}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+  <link href="/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header" id="header">
+    <a class="logo" href="/">
+      <img src="/img/{{logo}}.svg" alt="týmuj">
+    </a>
+    <nav>
+      <a href="/news">{{navigation.news}}</a>
+      <a href="/features">{{navigation.features}}</a>
+      <a href="/premium">{{navigation.premium}}</a>
+      <a href="/faq">{{navigation.faq}}</a>
+    </nav>
+
+    <div class="header-buttons">
+      <a class="button round inverse login-button" href="https://app.{{url}}/login">{{navigation.login}}</a>
+      <a class="button round registration-button" href="https://app.{{url}}/signup">{{navigation.register}}</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
+  </header>
+
+  <section class="blog">
+    <div class="container">
+      <header>
+        <h2 id="blog-title">{{privacy.title}}</h2>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="blog-content-wrapper">
+        <p id="blog-content">
+        <p class="ql-align-center"><span style="color: black;">{{privacy.consent.title}}</span></p>
+        <ol>
+          <li>{{privacy.consent.p1.title}}
+            <ul>
+              <li>{{privacy.consent.p1.username}}</li>
+              <li>{{privacy.consent.p1.name}}</li>
+              <li>{{privacy.consent.p1.email}}</li>
+              <li>{{privacy.consent.p1.gender}}</li>
+              <li>{{privacy.consent.p1.dateOfBirth}}</li>
+              <li>{{privacy.consent.p1.likeness}}</li>
+              <li>{{privacy.consent.p1.phone}}</li>
+              <li>{{privacy.consent.p1.address}}</li>
+              <li>{{privacy.consent.p1.web}}</li>
+              <li>{{privacy.consent.p1.contact}}</li>
+              <li>{{privacy.consent.p1.nickname}}</li>
+              <li>{{privacy.consent.p1.teamName}}</li>
+              <li>{{privacy.consent.p1.teamMembership}}</li>
+              <li>{{privacy.consent.p1.participation}}</li>
+              <li>{{privacy.consent.p1.attendance}}</li>
+              <li>{{privacy.consent.p1.tasks}}</li>
+              <li>{{privacy.consent.p1.communication}}</li>
+              <li>{{privacy.consent.p1.operation}}</li>
+            </ul>
+          </li>
+          <li>{{privacy.consent.p2}}</li>
+          <li>{{privacy.consent.p3}}</li>
+          <li>{{privacy.consent.p4}}</li>
+          <li>{{privacy.consent.p5}}</li>
+          <li>{{privacy.consent.p6}}</li>
+          <li>{{privacy.consent.p7}}</li>
+          <li>{{privacy.consent.p8}}</li>
+          <li>{{privacy.consent.p9.title}}
+            <ul>
+              <li>{{privacy.consent.p9.google}}</li>
+              <li>{{privacy.consent.p9.microsoft}}</li>
+              <li>{{privacy.consent.p9.alpy}}</li>
+              <li>{{privacy.consent.p9.smartSelling}}</li>
+              <li>{{privacy.consent.p9.foxMedia}}</li>
+              <li>{{privacy.consent.p9.oracle}}</li>
+              <li>{{privacy.consent.p9.other}}</li>
+            </ul>
+          </li>
+          <li>
+            {{privacy.consent.p10.title}}
+            <ul>
+              <li>{{privacy.consent.p10.withdrawal}}</li>
+              <li>{{privacy.consent.p10.information}}</li>
+              <li>{{privacy.consent.p10.access}}</li>
+              <li>{{privacy.consent.p10.erase}}</li>
+              <li>{{privacy.consent.p10.copy}}</li>
+              <li>{{privacy.consent.p10.complaint}}</li>
+            </ul>
+          </li>
+        </ol>
+        <p class="ql-align-center">&nbsp;</p>
+        <p class="ql-align-center"><span style="color: black;">{{privacy.cookies.title}}</span></p>
+        <ol>
+          <li>
+            {{privacy.cookies.p1.title}}
+            <ul>
+              <li>{{privacy.cookies.p1.measuring}}</li>
+              <li>{{privacy.cookies.p1.function}}</li>
+            </ul>
+          </li>
+          <li>{{privacy.cookies.p2}}</li>
+          <li>{{privacy.cookies.p3}}</li>
+          <li>{{privacy.cookies.p4}}</li>
+          <li>{{privacy.cookies.p5}}</li>
+          <li>{{privacy.cookies.p6.title}}
+            <ul>
+              <li>{{privacy.cookies.p6.google}}</li>
+            </ul>
+          </li>
+          <li>{{privacy.cookies.p7.title}}
+            <ul>
+              <li>{{privacy.cookies.p7.process}}</li>
+              <li>{{privacy.cookies.p7.update}}</li>
+              <li>{{privacy.cookies.p7.delete}}</li>
+              <li>{{privacy.cookies.p7.compliance}}</li>
+            </ul>
+          </li>
+        </ol>
+        </p>
+      </div>
+    </div>
+
+  </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="logo" href="/"><img src="/img/{{logo}}.svg" alt="týmuj"></a>
+      <div class="footer-links">
+        <a href="mailto:info@{{url}}">{{footer.contact}}</a>
+        <a href="/terms-of-use">{{footer.termsOfUse}}</a>
+        <a href="/privacy">{{footer.privacy}}</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/tymujcz/" aria-label="Instagram">
+          <img src="/img/social/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/Týmujcz-106398882786886/" aria-label="Facebook">
+          <img src="/img/social/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/channel/UCxTpcAhltG1SupXCQdbI4sw" aria-label="YouTube">
+          <img src="/img/social/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text" id="copyright-year">© {{pageTitle}} </p>
+        <a href="http://www.eventservice.cz/">Event Service ({{provider}} {{pageTitle}})</a>
+        <p>Fox Media (App & website)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js" charset="utf-8"></script>
+</body>
+
+</html>

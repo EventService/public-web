@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Novinky - Týmuj</title>
+	<title>{{news.pageTitle}} - {{pageTitle}}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
@@ -24,67 +24,67 @@
 </head>
 
 <body>
-
 	<header class="page-header" id="header">
-		<a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
+		<a class="logo" href="/">
+			<img src="/img/{{logo}}.svg" alt="týmuj">
+		</a>
 		<nav>
-			<a href="/news">Novinky</a>
-			<a href="/features">Funkce</a>
-			<a href="/premium">Premium</a>
-			<a href="/faq">FAQ</a>
+			<a href="/news">{{navigation.news}}</a>
+			<a href="/features">{{navigation.features}}</a>
+			<a href="/premium">{{navigation.premium}}</a>
+			<a href="/faq">{{navigation.faq}}</a>
 		</nav>
 
 		<div class="header-buttons">
-			<a class="button round inverse login-button" href="https://app.tymuj.cz/login">Přihlášení</a>
-			<a class="button round registration-button" href="https://app.tymuj.cz/signup">Registrace</a>
+			<a class="button round inverse login-button" href="https://app.{{url}}/login">{{navigation.login}}</a>
+			<a class="button round registration-button" href="https://app.{{url}}/signup">{{navigation.register}}</a>
 		</div>
-		<button class="nav-toggle" id="nav-toggle"></button>
+
+		<button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
 	</header>
 
 	<section class="blogs">
 		<div class="container">
 			<header>
-				<h2>Články o Týmuj které by vás mohly zajímat</h2>
+				<h2>{{news.title}}</h2>
 			</header>
 		</div>
 
 		<div class="blogs-list container"></div>
 	</section>
 
-	<footer class="site-footer">
-		<div class="container">
-			<a class="logo" href="/"><img src="/img/logo.svg" alt="týmuj"></a>
-			<div class="footer-links">
-				<a href="mailto:info@tymuj.cz">Napište nám</a>
-				<a href="/terms-of-use">Podmínky užití</a>
-				<a href="/privacy">Ochrana osobních údajů</a>
-			</div>
-			<div class="footer-social">
-				<a href="https://www.instagram.com/tymujcz/">
-					<img src="/img/social/instagram.svg" alt="Instagram">
-				</a>
-				<a href="https://www.facebook.com/Týmujcz-106398882786886/">
-					<img src="/img/social/facebook.svg" alt="Facebook">
-				</a>
-				<a href="https://www.youtube.com/channel/UCxTpcAhltG1SupXCQdbI4sw">
-					<img src="/img/social/youtube.svg" alt="YouTube">
-				</a>
-			</div>
-			<div class="copyright">
-				<p class="copyright-text" id="copyright-year">© Týmuj </p>
-				<a href="http://www.eventservice.cz/">Event Service (Provozovatel Týmuj)</a>
-				<p>Fox Media (App & website)</p>
-			</div>
-		</div>
-	</footer>
+  <footer class="site-footer">
+    <div class="container">
+	    <a class="logo" href="/"><img src="/img/{{logo}}.svg" alt="týmuj"></a>
+      <div class="footer-links">
+	      <a href="mailto:info@{{url}}">{{footer.contact}}</a>
+        <a href="/terms-of-use">{{footer.termsOfUse}}</a>
+        <a href="/privacy">{{footer.privacy}}</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/tymujcz/" aria-label="Instagram">
+          <img src="/img/social/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/Týmujcz-106398882786886/" aria-label="Facebook">
+          <img src="/img/social/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/channel/UCxTpcAhltG1SupXCQdbI4sw" aria-label="YouTube">
+          <img src="/img/social/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text" id="copyright-year">© {{pageTitle}} </p>
+        <a href="http://www.eventservice.cz/">Event Service ({{provider}} {{pageTitle}})</a>
+        <p>Fox Media (App & website)</p>
+      </div>
+    </div>
+  </footer>
 
 	<script src="/main.js" charset="utf-8"></script>
-
 	<script>
 		document.addEventListener('DOMContentLoaded', function (event) {
 			//the event occurred         
 			getPostList()
-			addCopyrightYear()
 		})
 	</script>
 </body>

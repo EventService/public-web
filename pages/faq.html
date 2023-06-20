@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{faq.pageTitle}} - {{pageTitle}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+	<link href="/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header" id="header">
+    <a class="logo" href="/">
+      <img src="/img/{{logo}}.svg" alt="týmuj">
+    </a>
+    <nav>
+      <a href="/news">{{navigation.news}}</a>
+      <a href="/features">{{navigation.features}}</a>
+      <a href="/premium">{{navigation.premium}}</a>
+      <a href="/faq">{{navigation.faq}}</a>
+    </nav>
+
+    <div class="header-buttons">
+	    <a class="button round inverse login-button" href="https://app.{{url}}/login">{{navigation.login}}</a>
+	    <a class="button round registration-button" href="https://app.{{url}}/signup">{{navigation.register}}</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
+  </header>
+
+	<section class="faq">
+		<div class="container">
+			<header>
+				<h2>{{faq.title}}</h2>
+				<p>{{faq.description}}</p>
+			</header>
+			<div class="faq-question">
+				<h4>{{faq.introduction.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.introduction.p1}}</p>
+					<p>{{faq.introduction.p2}}</p>
+				</div>
+			</div>
+			<div class="faq-question">
+				<h4>{{faq.platform.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.platform.p1}}</p>
+					<p>{{faq.platform.p2}}</p>
+					<p>{{faq.platform.p3}}</p>
+				</div>
+			</div>
+			<div class="faq-question">
+				<h4>{{faq.usage.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.usage.p1}}</p>
+					<p>{{faq.usage.p2}}</p>
+				</div>
+			</div>
+			<div class="faq-question">
+				<h4>{{faq.sports.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.sports.p1}}</p>
+					<p>{{faq.sports.p2}}</p>
+					<p>{{faq.sports.p3}}</p>
+				</div>
+			</div>
+			<div class="faq-question">
+				<h4>{{faq.reason.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.reason.p1}}</p>
+					<h5>{{faq.reason.trainer.title}}</h5>
+					<p>{{faq.reason.trainer.description}}</p>
+					<h5>{{faq.reason.player.title}}</h5>
+					<p>{{faq.reason.player.description}}</p>
+					<h5>{{faq.reason.guest.title}}</h5>
+					<p>{{faq.reason.guest.description}}</p>
+				</div>
+			</div>
+			<div class="faq-question">
+				<h4>{{faq.creatingTeam.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.creatingTeam.p1}}</p>
+					<p>{{faq.creatingTeam.p2}}</p>
+				</div>
+			</div>
+			<div class="faq-question">
+				<h4>{{faq.privacy.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.privacy.p1}}</p>
+					<p>{{faq.privacy.p2}}</p>
+				</div>
+			</div>
+			<div class="faq-question">
+				<h4>{{faq.multipleTeam.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.multipleTeam.p1}}</p>
+					<p>{{faq.multipleTeam.p2}}</p>
+					<p>{{faq.multipleTeam.p3}}</p>
+				</div>
+			</div>
+			<div class="faq-question">
+				<h4>{{faq.password.title}}</h4>
+				<div class="faq-question-body">
+					<p>{{faq.password.p1}}</p>
+					<p>{{faq.password.p2}}</p>
+					<p>{{faq.password.p3}}</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <footer class="site-footer">
+    <div class="container">
+	    <a class="logo" href="/"><img src="/img/{{logo}}.svg" alt="týmuj"></a>
+      <div class="footer-links">
+	      <a href="mailto:info@{{url}}">{{footer.contact}}</a>
+        <a href="/terms-of-use">{{footer.termsOfUse}}</a>
+        <a href="/privacy">{{footer.privacy}}</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/tymujcz/" aria-label="Instagram">
+          <img src="/img/social/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/Týmujcz-106398882786886/" aria-label="Facebook">
+          <img src="/img/social/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/channel/UCxTpcAhltG1SupXCQdbI4sw" aria-label="YouTube">
+          <img src="/img/social/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text" id="copyright-year">© {{pageTitle}} </p>
+        <a href="http://www.eventservice.cz/">Event Service ({{provider}} {{pageTitle}})</a>
+        <p>Fox Media (App & website)</p>
+      </div>
+    </div>
+  </footer>
+
+	<script src="/main.js" charset="utf-8"></script>
+</body>
+
+</html>

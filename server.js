@@ -1,22 +1,56 @@
-const express = require('express')
-const app = express()
-const path = require('path');
+const express = require("express");
+const app = express();
+const path = require("path");
+const fs = require("fs");
+const translate = require("./src/translate");
 
-app.use(express.static('public'))
+app.use(express.static("public"));
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')))
-app.get('/faq', (req, res) => res.sendFile(path.join(__dirname, 'faq.html')))
-app.get('/features', (req, res) => res.sendFile(path.join(__dirname, 'features.html')))
-app.get('/news', (req, res) => res.sendFile(path.join(__dirname, 'news.html')))
-app.get('/news/:blogId', (req, res) => {    
-    res.sendFile(path.join(__dirname, 'blog.html'))
-})
-app.get('/premium', (req, res) => res.sendFile(path.join(__dirname, 'premium.html')))
-app.get('/terms-of-use', (req, res) => res.sendFile(path.join(__dirname, 'terms-of-use.html')))
-app.get('/privacy', (req, res) => res.sendFile(path.join(__dirname, 'privacy.html')))
-app.get('/terms-of-use-en', (req, res) => res.sendFile(path.join(__dirname, 'terms-of-use-en.html')))
-app.get('/privacy-en', (req, res) => res.sendFile(path.join(__dirname, 'privacy-en.html')))
+const translateAndSend = (page, req, res) => {
+  fs.readFile(
+    path.join(__dirname, `pages/${page}.html`),
+    "utf8",
+    (err, data) => {
+      if (err) {
+        res.send(404);
+      } else {
+        let hostLocale = "en";
 
-const port = process.env.PORT || 3000
+        switch (req.headers.host) {
+          case "tymuj.cz":
+            hostLocale = "cs";
+            break;
+          case "teamheadz.com":
+          default:
+            hostLocale = "en";
+        }
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+        res.send(translate(data, hostLocale));
+      }
+    }
+  );
+};
+
+app.get("/", (req, res) => translateAndSend("index", req, res));
+app.get("/faq", (req, res) => translateAndSend("faq", req, res));
+app.get("/features", (req, res) => translateAndSend("features", req, res));
+app.get("/news", (req, res) => translateAndSend("news", req, res));
+app.get("/news/:blogId", (req, res) => translateAndSend("blog", req, res));
+app.get("/premium", (req, res) => translateAndSend("premium", req, res));
+app.get("/privacy", (req, res) => translateAndSend("privacy", req, res));
+app.get("/terms-of-use", (req, res) =>
+  translateAndSend("terms-of-use", req, res)
+);
+// Support for legacy url
+app.get("/terms-of-use-en", (_req, res) =>
+  res.redirect(301, "https://teamheadz.com/terms-of-use")
+);
+app.get("/privacy-en", (_req, res) =>
+  res.redirect(301, "https://teamheadz.com/privacy")
+);
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () =>
+  console.log(`Example app listening at http://localhost:${port}`)
+);
