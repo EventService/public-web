@@ -4,29 +4,19 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "nodemon ./server.js",
-    "build": "rollup -c && postcss public/main.css -u autoprefixer cssnano -o public/main.min.css"
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:by-all-means/tymuj/public-web.git"
+    "url": "git@github.com:EventService/public-web.git"
   },
   "author": "BAM",
   "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2"
+  },
   "devDependencies": {
-    "@glidejs/glide": "^3.4.1",
-    "autoprefixer": "^9.8.0",
-    "cssnano": "^4.1.10",
-    "focus-visible": "^5.1.0",
-    "just-validate": "^1.5.0",
-    "nodemon": "^2.0.4",
-    "postcss-cli": "^7.1.1",
-    "rollup": "^2.15.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^6.1.0",
-    "smoothscroll-polyfill": "^0.4.4",
-    "watch": "^1.0.2",
-    "express": "^4.17.1"
+    "nodemon": "2.0.22"
   }
 }
