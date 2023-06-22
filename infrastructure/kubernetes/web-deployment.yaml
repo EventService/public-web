@@ -27,8 +27,8 @@ spec:
                 name: web-config
           resources:
             limits:
-              cpu: 20m
-              memory: 50Mi
+              cpu: 100m
+              memory: 200Mi
             requests:
-              cpu: 5m
-              memory: 25Mi
+              cpu: 50m
+              memory: 100Mi
