@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>{{faq.pageTitle}} - {{pageTitle}}</title>
+  <title>{{termsOfUse.pageTitle}} - {{pageTitle}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-  <link href="/main.css" rel="stylesheet">
+  <link href="/main.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 </head>
@@ -43,86 +43,53 @@
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"></button>
   </header>
 
-	<section class="faq">
-		<div class="container">
-			<header>
-				<h2>{{faq.title}}</h2>
-				<p>{{faq.description}}</p>
-			</header>
-			<div class="faq-question">
-				<h4>{{faq.introduction.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.introduction.p1}}</p>
-					<p>{{faq.introduction.p2}}</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>{{faq.platform.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.platform.p1}}</p>
-					<p>{{faq.platform.p2}}</p>
-					<p>{{faq.platform.p3}}</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>{{faq.usage.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.usage.p1}}</p>
-					<p>{{faq.usage.p2}}</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>{{faq.sports.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.sports.p1}}</p>
-					<p>{{faq.sports.p2}}</p>
-					<p>{{faq.sports.p3}}</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>{{faq.reason.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.reason.p1}}</p>
-					<h5>{{faq.reason.trainer.title}}</h5>
-					<p>{{faq.reason.trainer.description}}</p>
-					<h5>{{faq.reason.player.title}}</h5>
-					<p>{{faq.reason.player.description}}</p>
-					<h5>{{faq.reason.guest.title}}</h5>
-					<p>{{faq.reason.guest.description}}</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>{{faq.creatingTeam.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.creatingTeam.p1}}</p>
-					<p>{{faq.creatingTeam.p2}}</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>{{faq.privacy.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.privacy.p1}}</p>
-					<p>{{faq.privacy.p2}}</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>{{faq.multipleTeam.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.multipleTeam.p1}}</p>
-					<p>{{faq.multipleTeam.p2}}</p>
-					<p>{{faq.multipleTeam.p3}}</p>
-				</div>
-			</div>
-			<div class="faq-question">
-				<h4>{{faq.password.title}}</h4>
-				<div class="faq-question-body">
-					<p>{{faq.password.p1}}</p>
-					<p>{{faq.password.p2}}</p>
-					<p>{{faq.password.p3}}</p>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="blog">
+    <div class="container">
+      <header>
+        <h2 id="blog-title">{{termsOfUse.title}}</h2>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="blog-content-wrapper">
+        <p id="blog-content">
+        <p><strong style="color: rgb(88, 88, 88);">{{termsOfUse.subtitle}}</strong></p>
+        <p><strong style="color: rgb(88, 88, 88);">{{termsOfUse.description}}</strong></p>
+        <ol>
+          <li>{{termsOfUse.p1}}</li>
+          <li>{{termsOfUse.p2}}</li>
+          <li>{{termsOfUse.p3}}</li>
+          <li>{{termsOfUse.p4}}</li>
+          <li>{{termsOfUse.p5}}</li>
+          <li>{{termsOfUse.p6}}</li>
+          <li>{{termsOfUse.p7}}</li>
+          <li>{{termsOfUse.p8}}</li>
+          <li>{{termsOfUse.p9}}</li>
+          <li>{{termsOfUse.p10}}</li>
+          <li>{{termsOfUse.p11}}</li>
+          <li>{{termsOfUse.p12}}</li>
+          <li>{{termsOfUse.p13}}
+            <ul>
+              <li>{{termsOfUse.p13a}}
+              <li>{{termsOfUse.p13b}}
+              <li>{{termsOfUse.p13c}}
+              <li>{{termsOfUse.p13d}}
+              <li>{{termsOfUse.p13e}}
+              <li>{{termsOfUse.p13f}}
+            </ul>
+          </li>
+          <li>{{termsOfUse.p14}}</li>
+          <li>{{termsOfUse.p15}}</li>
+          <li>{{termsOfUse.p16}}</li>
+          <li>{{termsOfUse.p17}}</li>
+          <li>{{termsOfUse.p18}}</li>
+        </ol>
+        </p>
+      </div>
+    </div>
+
+  </section>
+  </div>
 
   <footer class="site-footer">
     <div class="container">
@@ -151,7 +118,7 @@
     </div>
   </footer>
 
-	<script src="/main.js" charset="utf-8"></script>
+  <script src="/main.min.js" charset="utf-8"></script>
 </body>
 
 </html>
