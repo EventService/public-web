@@ -9,5 +9,3 @@ services:
       - 80:80
     environment:
       PORT: 80
-      FALLBACK_URI: https://109.205.73.82
-      FALLBACK_HOST: tymuj.cz

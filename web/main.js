@@ -3,7 +3,6 @@ const header = document.getElementById("header");
 const navToggle = document.getElementById("nav-toggle");
 const copyright = document.getElementById("copyright-year");
 const questions = document.getElementsByClassName("faq-question");
-const news = document.getElementsByClassName("news-item");
 
 const PAGE_SIZE = 10;
 const postsUrl = "https://api2.tymuj.cz/blog-posts";
@@ -93,7 +92,7 @@ const addCopyrightYear = function() {
 
 // ----- Blog posts -----
 
-const getFirstPosts = function() {
+export const getFirstPosts = function() {
   const blogsContainer = document.querySelector(".news .news-list");
   appendPostToPage(buildUrl(postsUrl, 0, 3), blogsContainer);
 };
@@ -168,20 +167,20 @@ for (let i = 0; i < questions.length; i++) {
 
 const buildUrl = function(url, page, pageSize) {
   let lang = en;
-  switch(window.location.host) {
-    case 'tymuj.cz':
-      lang = 'cs'
+  switch (window.location.host) {
+    case "tymuj.cz":
+      lang = "cs";
       break;
-    case 'teamheadz.com':
+    case "teamheadz.com":
     default:
-      lang = 'en'
+      lang = "en";
   }
   return `${url}?page=${page}&pageSize=${pageSize}&lang=${lang}`;
 };
 
 // ----- Blog detail
 
-var loadBlogPost = function(url) {
+export const loadBlogPost = function(url) {
   const blogTitle = document.getElementById("blog-title");
   const blogContent = document.getElementById("blog-content");
   // const blogImage = document.getElementById('blog-main-image')
@@ -284,7 +283,7 @@ const appendPostToPage = function(url, blogsContainer) {
     });
 };
 
-const getPostList = function() {
+export const getPostList = function() {
   const blogsContainer = document.querySelector(".blogs .blogs-list");
 
   appendPostToPage(buildUrl(postsUrl, 0, PAGE_SIZE), blogsContainer).then(

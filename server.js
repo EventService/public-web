@@ -2,13 +2,13 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const fs = require("fs");
-const translate = require("./src/translate");
+const translate = require("./src/localization/index");
 
 app.use(express.static("public"));
 
 const translateAndSend = (page, req, res) => {
   fs.readFile(
-    path.join(__dirname, `pages/${page}.html`),
+    path.join(__dirname, `src/pages/${page}.html`),
     "utf8",
     (err, data) => {
       if (err) {
@@ -52,5 +52,5 @@ app.get("/privacy-en", (_req, res) =>
 const port = process.env.PORT || 3000;
 
 app.listen(port, () =>
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Public web server listening at http://localhost:${port}`)
 );

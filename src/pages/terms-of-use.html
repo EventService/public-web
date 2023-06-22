@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-  <link href="/main.css" rel="stylesheet">
+  <link href="/main.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 </head>
@@ -26,7 +26,7 @@
 <body>
   <header class="page-header" id="header">
     <a class="logo" href="/">
-      <img src="/img/{{logo}}.svg" alt="týmuj">
+      <img src="/img/{{logo}}.svg" alt="{{pageTitle}}">
     </a>
     <nav>
       <a href="/news">{{navigation.news}}</a>
@@ -93,7 +93,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <a class="logo" href="/"><img src="/img/{{logo}}.svg" alt="týmuj"></a>
+      <a class="logo" href="/"><img src="/img/{{logo}}.svg" alt="{{pageTitle}}"></a>
       <div class="footer-links">
         <a href="mailto:info@{{url}}">{{footer.contact}}</a>
         <a href="/terms-of-use">{{footer.termsOfUse}}</a>
@@ -118,7 +118,7 @@
     </div>
   </footer>
 
-  <script src="/main.js" charset="utf-8"></script>
+  <script src="/main.min.js" charset="utf-8"></script>
 </body>
 
 </html>
