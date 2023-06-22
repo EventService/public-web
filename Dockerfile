@@ -26,7 +26,6 @@ WORKDIR /app
 COPY --from=prod-deps /app /app
 COPY --from=builder-dev /app/public /app/public
 COPY --from=builder-dev /app/server.js /app/server.js
-COPY --from=builder-dev /app/src/localization /app/src/localization
-COPY --from=builder-dev /app/src/pages /app/src/pages
+COPY --from=builder-dev /app/src /app/src
 
 CMD ["node", "server.js"]
