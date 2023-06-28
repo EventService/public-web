@@ -1,5 +1,7 @@
 const en = require("./en");
 const cs = require("./cs");
+const tymuj = require("./tymuj");
+const teamheadz = require("./teamheadz");
 
 const replaceEmails = (text) => {
   let replacedText = text;
@@ -25,7 +27,8 @@ const replaceUrls = (text) => {
     uniqueUrls.forEach((url) => {
       replacedText = replacedText.replaceAll(
         url,
-        `<a href="${!url.includes("http") ? "https://" : ""
+        `<a href="${
+          !url.includes("http") ? "https://" : ""
         }${url}" rel="noopener noreferrer" target="blank">${url}</a>`
       );
     });
@@ -52,6 +55,21 @@ const getLocalizedText = (text, locale) => {
   return resolve(text, localizationText);
 };
 
+const getLocalizedHost = (text, host) => {
+  let localizationHost;
+
+  switch (host) {
+    case "tymuj":
+      localizationHost = tymuj;
+      break;
+    case "teamheadz":
+    default:
+      localizationHost = teamheadz;
+      break;
+  }
+  return resolve(text, localizationHost);
+};
+
 const resolve = (path, obj) => {
   if (!path) {
     console.error("[Missing translation key]");
@@ -75,7 +93,21 @@ const resolve = (path, obj) => {
   }, obj);
 };
 
-const translate = (text, locale) => {
+const translateHost = (text, host) => {
+  const matches = text.match(/(?<={{).*?(?=}})/gm);
+  let replacedText = text;
+  if (Array.isArray(matches) && matches.length > 0) {
+    matches.forEach((match) => {
+      replacedText = replacedText.replace(
+        `{{${match}}}`,
+        getLocalizedHost(match, host)
+      );
+    });
+  }
+  return replacedText;
+};
+
+const translate = (text, host, locale) => {
   const matches = text.match(/(?<={{).*?(?=}})/gm);
   let replacedText = text;
   if (Array.isArray(matches) && matches.length > 0) {
@@ -86,6 +118,7 @@ const translate = (text, locale) => {
       );
     });
   }
+  replacedText = translateHost(replacedText, host);
   return replacedText;
 };
 
