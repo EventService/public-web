@@ -17,9 +17,11 @@ const translateAndSend = (page, req, res) => {
         let hostLocale = "en";
 
         switch (req.headers.host) {
+          case "www.tymuj.cz":
           case "tymuj.cz":
             hostLocale = "cs";
             break;
+          case "www.teamheadz.com":
           case "teamheadz.com":
           default:
             hostLocale = "en";
