@@ -1,7 +1,7 @@
 const en = {
   lang: "en",
   pageTitle: "{{title}}",
-  logo: "{{logo}}", // Name of logo svg
+  logo: "{{logo}}",
   url: "{{url}}",
   provider: "Provider of",
   navigation: {
