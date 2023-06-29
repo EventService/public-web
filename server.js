@@ -1,3 +1,15 @@
+const dotenv = require("dotenv").config();
+
+if (dotenv.error) {
+  console.error(dotenv.error);
+} else {
+  if (!dotenv.parsed.PORT) throw new Error("Missing PORT env variable!");
+  if (!dotenv.parsed.FALLBACK_URI)
+    throw new Error("Missing FALLBACK_URI env variable!");
+  if (!dotenv.parsed.FALLBACK_HOST)
+    throw new Error("Missing FALLBACK_HOST env variable!");
+}
+
 const express = require("express");
 const app = express();
 const router = express.Router({ mergeParams: true });
@@ -79,17 +91,17 @@ app.get("/privacy-en", (_req, res) => res.redirect(301, "/en/privacy"));
 // Fallback
 app.get(
   "*",
-  proxy("109.205.73.82", {
+  proxy(process.env.FALLBACK_URI, {
     https: true,
     proxyReqOptDecorator: (proxyReqOpts) => {
-      proxyReqOpts.headers = { host: "tymuj.cz" };
+      proxyReqOpts.headers = { host: process.env.FALLBACK_HOST };
       proxyReqOpts.rejectUnauthorized = false;
       return proxyReqOpts;
     },
   })
 );
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 app.listen(port, () =>
   console.log(`Public web server listening at http://localhost:${port}`)
