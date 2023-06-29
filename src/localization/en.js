@@ -1,8 +1,8 @@
 const en = {
   lang: "en",
   pageTitle: "{{title}}",
-  logo: "{{logo}}",
   url: "{{url}}",
+  imageFolder: "{{imageFolder}}",
   provider: "Provider of",
   navigation: {
     homepage: "Homepage",

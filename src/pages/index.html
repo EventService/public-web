@@ -26,7 +26,7 @@
 <body>
   <header class="page-header" id="header">
     <a class="logo" href="/">
-      <img src="/img/{{logo}}.svg" alt="{{pageTitle}}">
+      <img src="/img/{{imageFolder}}/logo.svg" alt="{{pageTitle}}">
     </a>
     <nav>
       <a href="/news">{{navigation.news}}</a>
@@ -80,9 +80,9 @@
       </header>
       <picture class="hero-illustration">
         <source
-          srcset="/img/hero_visual_mobile.png 1x, /img/hero_visual_mobile@2x.png 2x, /img/hero_visual_mobile@3x.png 3x"
+          srcset="/img/{{imageFolder}}/hero_visual_mobile.png 1x, /img/{{imageFolder}}/hero_visual_mobile@2x.png 2x, /img/{{imageFolder}}/hero_visual_mobile@3x.png 3x"
           media="(max-width: 730px)">
-        <img srcset="/img/hero_visual.png 1024w, /img/hero_visual@2x.png 2x, /img/hero_visual@3x.png 3x"
+        <img srcset="/img/{{imageFolder}}/hero_visual.png 1024w, /img/{{imageFolder}}/hero_visual@2x.png 2x, /img/{{imageFolder}}/hero_visual@3x.png 3x"
           alt="App preview">
       </picture>
     </div>
@@ -158,10 +158,10 @@
         </div>
       </div>
       <img class="feature-illustration"
-        srcset="/img/feature-1.png 1x, /img/feature-1@2x.png 2x, /img/feature-1@3x.png 3x"
+           srcset="/img/{{imageFolder}}/feature-1.png 1x, /img/{{imageFolder}}/feature-1@2x.png 2x, /img/{{imageFolder}}/feature-1@3x.png 3x"
         alt="{{homepage.mainFeatures.events.title}}">
       <img class="feature-illustration"
-        srcset="/img/feature-2.png 1x, /img/feature-2@2x.png 2x, /img/feature-2@3x.png 3x"
+        srcset="/img/{{imageFolder}}/feature-2.png 1x, /img/{{imageFolder}}/feature-2@2x.png 2x, /img/{{imageFolder}}/feature-2@3x.png 3x"
         alt="{{homepage.mainFeatures.attendance.title}}">
       <div class="feature-description">
         <h3>{{homepage.mainFeatures.attendance.title}}</h3>
@@ -203,8 +203,8 @@
           <p>{{homepage.mainFeatures.information.surveys.description}}</p>
         </div>
       </div>
-      <img class="feature-illustration" src="/img/feature-3.png"
-        srcset="/img/feature-3.png 1x, /img/feature-3@2x.png 2x, /img/feature-3@3x.png 3x"
+      <img class="feature-illustration" src="/img/{{imageFolder}}/feature-3.png"
+        srcset="/img/{{imageFolder}}/feature-3.png 1x, /img/{{imageFolder}}/feature-3@2x.png 2x, /img/{{imageFolder}}/feature-3@3x.png 3x"
         alt="{{homepage.mainFeatures.information.title}}">
       <div class="feature-extra">
         <header>
@@ -302,7 +302,7 @@
           </a>
         </div>
       </div>
-      <img class="premium-illustration" src="/img/buy-process/1.png" srcset="/img/buy-process/1.png"
+      <img class="premium-illustration" src="/img/{{imageFolder}}/buy-process/1.png" srcset="/img/{{imageFolder}}/buy-process/1.png"
         alt="{{homepage.premium.title}}">
     </div>
   </section>
@@ -448,7 +448,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <a class="logo" href="/"><img src="/img/{{logo}}.svg" alt="{{pageTitle}}"></a>
+      <a class="logo" href="/"><img src="/img/{{imageFolder}}/logo.svg" alt="{{pageTitle}}"></a>
       <div class="footer-links">
         <a href="mailto:info@{{url}}">{{footer.contact}}</a>
         <a href="/terms-of-use">{{footer.termsOfUse}}</a>

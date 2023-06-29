@@ -1,8 +1,8 @@
 const cs = {
   lang: "cs",
   pageTitle: "{{title}}",
-  logo: "{{logo}}",
   url: "{{url}}",
+  imageFolder: "{{imageFolder}}",
   provider: "Provozovatel",
   navigation: {
     homepage: "Homepage",
