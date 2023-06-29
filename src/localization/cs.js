@@ -1,8 +1,8 @@
 const cs = {
   lang: "cs",
-  pageTitle: "Týmuj",
-  logo: 'logo', // Name of logo svg
-  url: 'tymuj.cz',
+  pageTitle: "{{title}}",
+  logo: "{{logo}}",
+  url: "{{url}}",
   provider: "Provozovatel",
   navigation: {
     homepage: "Homepage",
@@ -19,7 +19,7 @@ const cs = {
     leader: {
       title: "Vedoucí týmu",
       description:
-        "Na Týmuj budou všechny informace přehledně na jednom místě. Termíny tréninků a zápasů, seznam hráčů a jejich docházka. Díky zprávám a nástěnce budou všichni vědět o aktuálním dění v týmu. Můžeš vytvořit libovolný počet týmů a pozvat do nich tolik hráčů, kolik je potřeba.",
+        "Na {{title}} budou všechny informace přehledně na jednom místě. Termíny tréninků a zápasů, seznam hráčů a jejich docházka. Díky zprávám a nástěnce budou všichni vědět o aktuálním dění v týmu. Můžeš vytvořit libovolný počet týmů a pozvat do nich tolik hráčů, kolik je potřeba.",
       schedule: "Rychle naplánuj<br>tréninky a zápasy",
       attendance: "Sleduj docházku",
       share: "Sdílej vše důležité<br>v týmu",
@@ -33,7 +33,7 @@ const cs = {
       communicate: "Komunikuj s trenéry<br>a spoluhráči",
     },
     mainFeatures: {
-      title: "Hlavní funkce Týmuj",
+      title: "Hlavní funkce {{title}}",
       events: {
         title: "Události, tréninky a zápasy",
         description:
@@ -61,7 +61,7 @@ const cs = {
       attendance: {
         title: "Dokonalý přehled o docházce",
         description:
-          "Na Týmuj budete vždy vědět, s kým můžete počítat a kdo kvůli nemoci zůstává doma. Docházku lze upravit i zpětně a vyhodnocovat účast jednotlivých členů týmu.",
+          "Na {{title}} budete vždy vědět, s kým můžete počítat a kdo kvůli nemoci zůstává doma. Docházku lze upravit i zpětně a vyhodnocovat účast jednotlivých členů týmu.",
         overview: {
           title: "Vždy víte, kdo přijde",
           description:
@@ -80,13 +80,13 @@ const cs = {
         guests: {
           title: "Přiveďte hosta",
           description:
-            "Chcete přivést kamaráda? V Týmuj snadné a kapitán o tom bude vědět",
+            "Chcete přivést kamaráda? V {{title}} snadné a kapitán o tom bude vědět",
         },
       },
       information: {
         title: "Snadná komunikace a informovanost",
         description:
-          "Využijte Týmuj pro snadní sdílení informací. Všichni uvidí nejnovější zprávy, události a o všem dostanou notifikaci.",
+          "Využijte {{title}} pro snadní sdílení informací. Všichni uvidí nejnovější zprávy, události a o všem dostanou notifikaci.",
         notifications: {
           title: "E-mailové a push notifikace",
           description:
@@ -105,7 +105,7 @@ const cs = {
         surveys: {
           title: "Ankety a soubory",
           description:
-            "Chcete spoluhráče nechat hlasovat nebo jim nasdílet dokument? I to Týmuj umí.",
+            "Chcete spoluhráče nechat hlasovat nebo jim nasdílet dokument? I to {{title}} umí.",
         },
       },
       roster: {
@@ -116,7 +116,7 @@ const cs = {
       wallet: {
         title: "Pokladna",
         description:
-          "Chcete mít přehled o zaplaceném startovném? Týmuj má pro vás celý samostatný modul.",
+          "Chcete mít přehled o zaplaceném startovném? {{title}} má pro vás celý samostatný modul.",
       },
       gallery: {
         title: "Galerie",
@@ -131,17 +131,17 @@ const cs = {
       absence: {
         title: "Absence",
         description:
-          "Jedete lyžovat? Nastavte si absenci a Týmuj vám automaticky vyplní docházku.",
+          "Jedete lyžovat? Nastavte si absenci a {{title}} vám automaticky vyplní docházku.",
       },
       localization: {
         title: "Česky, anglicky nebo slovensky?",
-        description: "Týmuj umí několika jazyky a další postupně přibývají.",
+        description: "{{title}} umí několika jazyky a další postupně přibývají.",
       },
     },
     premium: {
-      title: "Týmuj Premium",
+      title: "{{title}} Premium",
       description:
-        "Díky Týmuj Premium bude organizace vašeho týmu ještě jednodušší a efektivnější. Využíváním Týmuj Premium také podpoříte další provoz a rozvoj Týmuj.",
+        "Díky {{title}} Premium bude organizace vašeho týmu ještě jednodušší a efektivnější. Využíváním {{title}} Premium také podpoříte další provoz a rozvoj {{title}}.",
       benefits: {
         unlimitedMembers: "Neomezený počet členů v týmu",
         unlimitedEvents: "Neomezený počet událostí",
@@ -150,10 +150,10 @@ const cs = {
         subgroups: "Podskupiny v docházce",
         gallery: "Galerie a soubory",
       },
-      more: "Více o Týmuj Premium",
+      more: "Více o {{title}} Premium",
     },
     achievements: {
-      title: "Proč si vybrat Týmuj",
+      title: "Proč si vybrat {{title}}",
       years: "let v provozu",
       users: "Registrovaných uživatelů",
       downloads: "Stažení aplikace",
@@ -161,26 +161,26 @@ const cs = {
       sports: "Dostupných sportů",
     },
     blog: {
-      title: "Co je nového na Týmuj",
+      title: "Co je nového na {{title}}",
       action: "Prozkoumejte náš blog",
     },
     cta: "Začni organizovat svůj tým už dnes",
   },
   news: {
     pageTitle: "Novinky",
-    title: "Články o Týmuj které by vás mohly zajímat",
+    title: "Články o {{title}} které by vás mohly zajímat",
   },
   blog: {
     pageTitle: "Blog",
-    backToNews: "Zpět na seznam blogu"
+    backToNews: "Zpět na seznam blogu",
   },
   features: {
     pageTitle: "Funkce",
     title: "Funkce",
     firstStep: {
-      title: "Jak začít na Týmuj",
+      title: "Jak začít na {{title}}",
       description:
-        "Prvním krokem pro používání Týmuj je založení uživatelského účtu. Poté už jen vytvoříte váš tým, pozvete spoluhráče a můžete začít týmovat.",
+        "Prvním krokem pro používání {{title}} je založení uživatelského účtu. Poté už jen vytvoříte váš tým, pozvete spoluhráče a můžete začít týmovat.",
       account: {
         title: "Založení účtu a vyplnění údajů",
         description:
@@ -201,7 +201,7 @@ const cs = {
     teams: {
       title: "Týmy",
       description:
-        "Týmy jsou základní organizační jednotkou na Týmuj. Každý uživatel může být členem libovolného množství týmů a také počet členů týmu není omezen.",
+        "Týmy jsou základní organizační jednotkou na {{title}}. Každý uživatel může být členem libovolného množství týmů a také počet členů týmu není omezen.",
       roles: {
         title: "Role v týmu",
         description:
@@ -254,7 +254,7 @@ const cs = {
       creating: {
         title: "Tvorba události",
         description:
-          "Na Týmuj existují 2 typy událostí: <b>Událost</b> a <b>Zápas</b>. Rozdíl spočívá v tom, že u události vyplňujete její název, zatímco název Zápasu je tvořen jako „Název vašeho týmu vs. Název soupeře“. Další rozdíly mezi nimi nejsou. U událostí nastavujete: termín konání (povinný je start události, volitelně můžete zadat i termín srazu a termín konce) a vybíráte, které členy týmu na událost zvete. Dále je zde široká škála nepovinných položek – místo konání, limit účastníků, termín pro vyplnění docházky, termín pro rozeslání upozornění těm, co docházku nevyplnili a poznámka/popis události.",
+          "Na {{title}} existují 2 typy událostí: <b>Událost</b> a <b>Zápas</b>. Rozdíl spočívá v tom, že u události vyplňujete její název, zatímco název Zápasu je tvořen jako „Název vašeho týmu vs. Název soupeře“. Další rozdíly mezi nimi nejsou. U událostí nastavujete: termín konání (povinný je start události, volitelně můžete zadat i termín srazu a termín konce) a vybíráte, které členy týmu na událost zvete. Dále je zde široká škála nepovinných položek – místo konání, limit účastníků, termín pro vyplnění docházky, termín pro rozeslání upozornění těm, co docházku nevyplnili a poznámka/popis události.",
       },
       reccuring: {
         title: "Opakovaná událost",
@@ -285,7 +285,7 @@ const cs = {
       overview: {
         title: "Práce s přehledem docházky",
         description:
-          "Docházka se nachází pouze na webu Týmuj, svým rozsahem by pro mobilní aplikaci nebyla vhodná. Zobrazuje vždy maximálně 6 sloupců s událostmi. V řádcích pak zobrazuje všechny členy týmu. Pomocí filtrů lze nastavit, které události chcete vidět. Pro zvolený filtr se vždy přepočítá účast jednotlivých členů týmu. Docházka navíc umožňuje export do CSV, takže s daty můžete dále pracovat ve svém vlastním programu.",
+          "Docházka se nachází pouze na webu {{title}}, svým rozsahem by pro mobilní aplikaci nebyla vhodná. Zobrazuje vždy maximálně 6 sloupců s událostmi. V řádcích pak zobrazuje všechny členy týmu. Pomocí filtrů lze nastavit, které události chcete vidět. Pro zvolený filtr se vždy přepočítá účast jednotlivých členů týmu. Docházka navíc umožňuje export do CSV, takže s daty můžete dále pracovat ve svém vlastním programu.",
       },
     },
     messages: {
@@ -341,10 +341,10 @@ const cs = {
     notifications: {
       title: "Notifikace",
       description:
-        "Důležitou součástí Týmuj jsou notifikace. Mají za úkol zajistit, abyste vždy věděli o všem, co se ve vašem týmu děje.",
+        "Důležitou součástí {{title}} jsou notifikace. Mají za úkol zajistit, abyste vždy věděli o všem, co se ve vašem týmu děje.",
       types: {
         title: "Druhy notifikací",
-        description: "Týmuj posílá notifikace k následujícím situacím:",
+        description: "{{title}} posílá notifikace k následujícím situacím:",
         creatingEvent: "Vytvoření události v týmu",
         changingEvent: "Změna události",
         eventCancellation: "Zrušení události",
@@ -364,7 +364,7 @@ const cs = {
     account: {
       title: "Uživatelský účet",
       description:
-        "Pro používání Týmuj je nutné založit si uživatelský účet. Každý hráč potřebuje svůj vlastní unikátní účet.",
+        "Pro používání {{title}} je nutné založit si uživatelský účet. Každý hráč potřebuje svůj vlastní unikátní účet.",
       attendanceTracking: {
         title: "Trend účasti",
         description:
@@ -384,11 +384,11 @@ const cs = {
   },
   premium: {
     pageTitle: "Premium",
-    title: "Týmuj Premium",
-    subtitle: "Využijte Týmuj naplno s novými funkcemi",
+    title: "{{title}} Premium",
+    subtitle: "Využijte {{title}} naplno s novými funkcemi",
     benefits: {
-      title: "Co získáte s Týmuj Premium",
-      p1: "Díky Týmuj Premium bude organizace vašeho týmu ještě jednodušší a efektivnější. Využíváním Týmuj Premium také podpoříte další provoz a rozvoj Týmuj.",
+      title: "Co získáte s {{title}} Premium",
+      p1: "Díky {{title}} Premium bude organizace vašeho týmu ještě jednodušší a efektivnější. Využíváním {{title}} Premium také podpoříte další provoz a rozvoj {{title}}.",
       p2: "Budete moci naplánovat neomezené množství budoucích událostí a využít přitom funkci jejich hromadné tvorby, vytvořit termínovou listinu tréninků nebo zápasů na celou sezónu vám tak zabere jen několik kliknutí.",
       p3: "S pomocí limitu počtu účastníků na události a systému podskupin budete mít dokonalý přehled o docházce na jednotlivé události.",
       p4: "Komunikaci v týmu a sdílení informací vám pomohou zlepšit e-mailové a push notifikace na zprávy v týmu a možnost nahrát a sdílet soubory nebo obrázky přímo v rámci aplikace.",
@@ -443,9 +443,9 @@ const cs = {
       },
     },
     price: {
-      title: "Kolik stojí Týmuj Premium",
+      title: "Kolik stojí {{title}} Premium",
       description:
-        "Nejvýhodnější cenu za Týmuj Premium získáte při zakoupení 6 měsíců. Pokud jste správcem více týmů, můžete zakoupit Týmuj Premium pro několik týmů najednou a tím ušetřit.",
+        "Nejvýhodnější cenu za {{title}} Premium získáte při zakoupení 6 měsíců. Pokud jste správcem více týmů, můžete zakoupit {{title}} Premium pro několik týmů najednou a tím ušetřit.",
       table: {
         teamCount: "Počet týmů",
         discount: "sleva",
@@ -455,12 +455,12 @@ const cs = {
         teams: "týmy",
       },
       contact:
-        "Pokud jste správcem více týmů, nebo jste klub či jiná sportovní organizace a potřebujete fakturu s IČ, kontaktujte nás na info@tymuj.cz.",
+        "Pokud jste správcem více týmů, nebo jste klub či jiná sportovní organizace a potřebujete fakturu s IČ, kontaktujte nás na {{email}}.",
     },
     purchase: {
-      title: "Jak zakoupit Týmuj Premium",
+      title: "Jak zakoupit {{title}} Premium",
       description:
-        "Týmuj premium můžete zakoupit v mobilní aplikaci prostřednictvím Google Play nebo App Store. V současnosti je možné zakoupit Premium až pro 4 týmy.",
+        "{{title}} premium můžete zakoupit v mobilní aplikaci prostřednictvím Google Play nebo App Store. V současnosti je možné zakoupit Premium až pro 4 týmy.",
       steps: {
         introduction: "Představení a výběr předplatného",
         selection: "Výběr týmu",
@@ -470,69 +470,69 @@ const cs = {
     faq: {
       title: "Často kladené dotazy",
       free: {
-        title: "Je možné používat Týmuj zdarma?",
+        title: "Je možné používat {{title}} zdarma?",
         description:
-          "Ano, je možné využívat Týmuj zdarma a to v režimu Basic s výše popsanými omezeními.",
+          "Ano, je možné využívat {{title}} zdarma a to v režimu Basic s výše popsanými omezeními.",
       },
       trial: {
-        title: "Kdy musím začít za Týmuj platit?",
+        title: "Kdy musím začít za {{title}} platit?",
         description:
-          "Každý nový tým začíná s 2 měsíci Týmuj Premium zdarma, po jejich uplynutí se musí rozhodnout, zda bude pokračovat v omezeném Týmuj Basic nebo v placeném Týmuj Premium.",
+          "Každý nový tým začíná s 2 měsíci {{title}} Premium zdarma, po jejich uplynutí se musí rozhodnout, zda bude pokračovat v omezeném {{title}} Basic nebo v placeném {{title}} Premium.",
       },
       limit: {
         title:
-          "Počítají se do limitu 24 hráčů v Týmuj Basic i trenéři, rodiče, neaktivní členové apod?",
+          "Počítají se do limitu 24 hráčů v {{title}} Basic i trenéři, rodiče, neaktivní členové apod?",
         description:
           "Do limitu se počítají všichni členové daného týmu. Systém, který kontroluje počet členů v týmu, je automatický a nerozlišuje, jak aktivní jsou jednotliví členové, nebo jakou roli v týmu plní.",
       },
       notPaying: {
         title:
-          "Co se stane, pokud Týmuj Premium nezaplatíme? Smaže se náš tým?",
+          "Co se stane, pokud {{title}} Premium nezaplatíme? Smaže se náš tým?",
         description:
-          "Nikdy nedojde ke smazání vašeho týmu ani jiných informací a dat. V případě, že je vás 24 a méně členů v týmu, budete automaticky pokračovat v používání bezplatné, funkčně omezené verze Týmuj Basic. Pokud je vás více než 24 členů, neumožní vám už Týmuj vytvářet nové události, dokud Týmuj Premium opět neaktivujete.",
+          "Nikdy nedojde ke smazání vašeho týmu ani jiných informací a dat. V případě, že je vás 24 a méně členů v týmu, budete automaticky pokračovat v používání bezplatné, funkčně omezené verze {{title}} Basic. Pokud je vás více než 24 členů, neumožní vám už {{title}} vytvářet nové události, dokud {{title}} Premium opět neaktivujete.",
       },
       multipleTeams: {
         title: "Co když mám více týmů?",
         description:
-          "V aplikaci bude možné zakoupit Premium až pro 4 týmy najednou, cena za 1 tým samozřejmě s rostoucím počtem týmů klesá. Pokud máte na starosti ještě více týmů, kontaktujte nás přímo na info@tymuj.cz.",
+          "V aplikaci bude možné zakoupit Premium až pro 4 týmy najednou, cena za 1 tým samozřejmě s rostoucím počtem týmů klesá. Pokud máte na starosti ještě více týmů, kontaktujte nás přímo na {{email}}.",
       },
       invoice: {
         title:
           "Co když nemohu platit kartou, nebo potřebuji fakturu do účetnictví??",
         description:
-          "Kontaktujte nás na info@tymuj.cz a vystavíme vám fakturu s vašimi fakturačnímu údaji, kterou uhradíte bankovním převodem.",
+          "Kontaktujte nás na {{email}} a vystavíme vám fakturu s vašimi fakturačnímu údaji, kterou uhradíte bankovním převodem.",
       },
     },
   },
   faq: {
     pageTitle: "FAQ",
     title: "FAQ",
-    description: "Vše, co chcete vědět o Týmuj a nebojíte se na to zeptat.",
+    description: "Vše, co chcete vědět o {{title}} a nebojíte se na to zeptat.",
     introduction: {
-      title: "Co je to Týmuj?",
-      p1: "<b>Týmuj</b> je online služba, která pomáhá organizovat aktivity ve sportovních týmech a skupinách.",
+      title: "Co je to {{title}}?",
+      p1: "<b>{{title}}</b> je online služba, která pomáhá organizovat aktivity ve sportovních týmech a skupinách.",
       p2: "Díky této službě jsou organizace akcí i týmová komunikace mnohem snadnější a rychlejší.",
     },
     platform: {
-      title: "Jak je to s Týmuj na webu a v mobilu?",
-      p1: "Na počítači nebo notebooku můžete využívat Týmuj na adrese www.tymuj.cz, v mobilu doporučujeme naši mobilní aplikaci <b>Týmuj</b>. Ta je dostupná pro systémy iOS i Android. Stáhnout ji můžete zde:",
+      title: "Jak je to s {{title}} na webu a v mobilu?",
+      p1: "Na počítači nebo notebooku můžete využívat {{title}} na adrese www.{{url}}, v mobilu doporučujeme naši mobilní aplikaci <b>{{title}}</b>. Ta je dostupná pro systémy iOS i Android. Stáhnout ji můžete zde:",
       p2: "iOS: http://bit.ly/Tymuj-AppStore<br>Android: http://bit.ly/Tymuj-GooglePlay",
       p3: "Mobilní aplikace i webová stránka disponují stejnými funkcemi a všechna data jsou mezi aplikací a webem plně synchronizována. Každá změna, kterou provedete na webu, se tak zobrazí i na mobilu a naopak.",
     },
     usage: {
-      title: "Kdo může Týmuj využít?",
+      title: "Kdo může {{title}} využít?",
       p1: "Jakýkoli tým, skupina nebo parta, která má ráda sport a aktivní trávení volného času.",
       p2: "Může jít o vrcholový sport, rekreační aktivity, sportování dětí nebo třeba o kolegy z práce, kteří si chodí po večerech zahrát do blízké tělocvičny. Stranou nejsou ani trenéři nebo lektoři, kteří vedou hodiny aerobicu, fitness či bojových sportů.",
     },
     sports: {
-      title: "Je využití Týmuj omezeno pouze na některé sporty?",
+      title: "Je využití {{title}} omezeno pouze na některé sporty?",
       p1: "Není.",
-      p2: "Týmuj mohou využít všechny sportovní kolektivy: od fotbalistů, přes florbalisty, pozemní hokejistky, vodní pólisty, akvabely, až po dobrovolné hasiče nebo mažoretky. Důležitý je týmový duch.",
-      p3: "Používat Týmuj mohou i skupiny, které nejsou primárně sportovní, ale potřebují nástroj pro organizaci svých aktivit.",
+      p2: "{{title}} mohou využít všechny sportovní kolektivy: od fotbalistů, přes florbalisty, pozemní hokejistky, vodní pólisty, akvabely, až po dobrovolné hasiče nebo mažoretky. Důležitý je týmový duch.",
+      p3: "Používat {{title}} mohou i skupiny, které nejsou primárně sportovní, ale potřebují nástroj pro organizaci svých aktivit.",
     },
     reason: {
-      title: "Najde si důvod pro používání Týmuj opravdu každý člen týmu?",
-      p1: "Ano, Týmuj se hodí se pro každého člena týmu a sportovce. Stačí si najít svou roli.",
+      title: "Najde si důvod pro používání {{title}} opravdu každý člen týmu?",
+      p1: "Ano, {{title}} se hodí se pro každého člena týmu a sportovce. Stačí si najít svou roli.",
       trainer: {
         title: "Jsem trenér, kapitán, vedoucí týmu, lektor atd.",
         description:
@@ -551,25 +551,25 @@ const cs = {
     },
     creatingTeam: {
       title: "Co je třeba udělat pro založení týmu?",
-      p1: "Nejdříve si založte svůj vlastní účet. To lze udělat na webu Tymuj.cz i v mobilní aplikaci. Pro založení účtu je potřeba e-mailová adresa a heslo. Po dokončení registrace budete vyzváni k založení týmu.",
-      p2: "Jakmile vytvoříte tým, můžete pozvat do týmu e-mailem nebo zvacím odkazem jednotlivé členy. Pokud pozvání přijmou, průvodce je provede osobní registrací a pak budou automaticky zařazeni k Vašemu týmu. V praxi to tedy může trvat jen pár minut, než se celý tým sejde na Týmuj.",
+      p1: "Nejdříve si založte svůj vlastní účet. To lze udělat na webu {{url}} i v mobilní aplikaci. Pro založení účtu je potřeba e-mailová adresa a heslo. Po dokončení registrace budete vyzváni k založení týmu.",
+      p2: "Jakmile vytvoříte tým, můžete pozvat do týmu e-mailem nebo zvacím odkazem jednotlivé členy. Pokud pozvání přijmou, průvodce je provede osobní registrací a pak budou automaticky zařazeni k Vašemu týmu. V praxi to tedy může trvat jen pár minut, než se celý tým sejde na {{title}}.",
     },
     privacy: {
       title: "Kdo má přístup k našim stránkám?",
       p1: "Jen ten, koho sami pozvete.",
-      p2: "Pouze vlastník a správci týmu mají právo rozesílat pozvánky do týmu. Pozvaný uživatel se musí nejprve registrovat na Týmuj. Veškeré informace, které v týmu sdílíte jsou soukromé pouze pro váš tým a bez vašeho vědomí se k nim nikdo jiný nedostane.",
+      p2: "Pouze vlastník a správci týmu mají právo rozesílat pozvánky do týmu. Pozvaný uživatel se musí nejprve registrovat na {{title}}. Veškeré informace, které v týmu sdílíte jsou soukromé pouze pro váš tým a bez vašeho vědomí se k nim nikdo jiný nedostane.",
     },
     multipleTeam: {
-      title: "Mohu být členem více týmů na Týmuj?",
+      title: "Mohu být členem více týmů na {{title}}?",
       p1: "Samozřejmě!",
-      p2: "Je to jen na Vás, Vaší sportovní vášni a počtu sportovních týmů, ve kterých jste aktivní. Stačí jedna osobní registrace a můžete se stát členem libovolného počtu týmů na Týmuj. O všech svých sportovních aktivitách tak budete mít přehled na jednom místě.",
+      p2: "Je to jen na Vás, Vaší sportovní vášni a počtu sportovních týmů, ve kterých jste aktivní. Stačí jedna osobní registrace a můžete se stát členem libovolného počtu týmů na {{title}}. O všech svých sportovních aktivitách tak budete mít přehled na jednom místě.",
       p3: "V každém z týmů můžete mít jinou roli. Jednou budete vystupovat jako vlastník či správce, jinde pouze jako člen.",
     },
     password: {
       title: "Zapomněl jsem heslo nebo mám jiný technický problém.",
-      p1: "Heslo si můžete obnovit na stránce https://app.tymuj.cz/password/regeneration, stačí zadat vaši e-mailovu adresu pod kterou jste se registrovali. Na e-mail, kterým jste se registrovali, vám následně přijde odkaz pro obnovu hesla.",
+      p1: "Heslo si můžete obnovit na stránce https://app.{{url}}/password/regeneration, stačí zadat vaši e-mailovu adresu pod kterou jste se registrovali. Na e-mail, kterým jste se registrovali, vám následně přijde odkaz pro obnovu hesla.",
       p2: "Hesla jsou v databázi hashována funkcí bcrypt, nemůžeme vám tedy poslat vaše dosavadní heslo, ale budete si muset nastavit nové.",
-      p3: "V případě jiného dotazu nebo problému se zkuste podívat do <a href='/features'>Popisu funkcí</a>. Pokud ani zde nenajdete odpověď, můžete kontaktovat správce aplikace e-mailem na info@tymuj.cz nebo se nám ozvěte přes Facebook Týmuj.",
+      p3: "V případě jiného dotazu nebo problému se zkuste podívat do <a href='/features'>Popisu funkcí</a>. Pokud ani zde nenajdete odpověď, můžete kontaktovat správce aplikace e-mailem na {{email}} nebo se nám ozvěte přes Facebook {{title}}.",
     },
   },
   termsOfUse: {
@@ -577,31 +577,31 @@ const cs = {
     title: "Podmínky užití",
     subtitle: "Každá hra má svá pravidla. A tady jsou ta naše...",
     description:
-      'Následující text je ujednáním, které upravuje podmínky užívání služby Týmuj, dostupné na URL adresách https://tymuj.cz souvisejících podstránkách a v mobilní aplikaci Týmuj pro platformy iOS a Android. Odsouhlasením tohoto ujednání se uživatel níže uvedených služeb (dále jen "Uživatel" či "Uživatelé") zavazuje dodržovat pravidla v něm stanovená (dále jen Podmínky užití). V případě porušení Podmínek užití kterýmkoli Uživatelem níže uvedených služeb může provozovatel níže uvedených služeb uplatnit opatření obsažená v těchto Podmínkách užití. Podmínky užití jsou platné od 25.5.2018 včetně pozdějších úprav.',
-    p1: "Týmuj je internetový nástroj pro organizaci sportovních týmů a dalších amatérských i profesionálních organizačních jednotek v oblasti sportu a volnočasových aktivit.",
-    p2: "Týmuj lze používat zcela zdarma ve variantě „Basic“. Rozšířené funkcionality jsou k&nbsp;dispozici v&nbsp;placené verzi „Premium“. Platby jsou vždy vázány na registrovaný tým. Popis verze „Premium“, její ceník a způsoby plateb jsou popsány na stránce https://tymuj.cz/premium.",
-    p3: "Každý uživatel mající zájem o využívání nástroje Týmuj je povinen si v rámci aplikace Týmuj.cz vytvořit uživatelský účet. Vytvoření uživatelského účtu spočívá v zadání uživatelského jména a hesla.&nbsp;",
-    p4: "Týmuj je určeno osobám starším 16 let. Mladší uživatelé mohou službu využívat pouze s vědomím a souhlasem zákonného zástupce. Vytvořením uživatelského účtu potvrzuje Uživatel skutečnost, že je starší 16 let, nebo že má souhlas svého zákonného zástupce k užívání Týmuj.",
-    p5: "Jedné osobě není povoleno registrovat více než jeden uživatelský účet. Uživatel však může být členem více než jednoho týmu s týmovým účtem v rámci aplikace Týmuj.cz.",
-    p6: "Všichni uživatelé nesou zodpovědnost za své aktivity spojené s užíváním aplikace Týmuj.cz a souhlasí s tím, že služby nebudou používat k žádným aktivitám, které jsou nebo by mohly být v rozporu s právními předpisy České republiky, Listinou základních práv a svobod, osobnostními právy či právy duševního vlastnictví, porušováním a zasahováním do práva autorského, pravidly používání služeb provozovatele a jeho oprávněnými zájmy, jakož i obecně uznávanými zásadami používání služeb poskytovaných prostřednictvím sítě Internet.",
+      'Následující text je ujednáním, které upravuje podmínky užívání služby {{title}}, dostupné na URL adresách https://{{url}} souvisejících podstránkách a v mobilní aplikaci {{title}} pro platformy iOS a Android. Odsouhlasením tohoto ujednání se uživatel níže uvedených služeb (dále jen "Uživatel" či "Uživatelé") zavazuje dodržovat pravidla v něm stanovená (dále jen Podmínky užití). V případě porušení Podmínek užití kterýmkoli Uživatelem níže uvedených služeb může provozovatel níže uvedených služeb uplatnit opatření obsažená v těchto Podmínkách užití. Podmínky užití jsou platné od 25.5.2018 včetně pozdějších úprav.',
+    p1: "{{title}} je internetový nástroj pro organizaci sportovních týmů a dalších amatérských i profesionálních organizačních jednotek v oblasti sportu a volnočasových aktivit.",
+    p2: "{{title}} lze používat zcela zdarma ve variantě „Basic“. Rozšířené funkcionality jsou k&nbsp;dispozici v&nbsp;placené verzi „Premium“. Platby jsou vždy vázány na registrovaný tým. Popis verze „Premium“, její ceník a způsoby plateb jsou popsány na stránce https://{{url}}/premium.",
+    p3: "Každý uživatel mající zájem o využívání nástroje {{title}} je povinen si v rámci aplikace {{appName}} vytvořit uživatelský účet. Vytvoření uživatelského účtu spočívá v zadání uživatelského jména a hesla.&nbsp;",
+    p4: "{{title}} je určeno osobám starším 16 let. Mladší uživatelé mohou službu využívat pouze s vědomím a souhlasem zákonného zástupce. Vytvořením uživatelského účtu potvrzuje Uživatel skutečnost, že je starší 16 let, nebo že má souhlas svého zákonného zástupce k užívání {{title}}.",
+    p5: "Jedné osobě není povoleno registrovat více než jeden uživatelský účet. Uživatel však může být členem více než jednoho týmu s týmovým účtem v rámci aplikace {{appName}}.",
+    p6: "Všichni uživatelé nesou zodpovědnost za své aktivity spojené s užíváním aplikace {{appName}} a souhlasí s tím, že služby nebudou používat k žádným aktivitám, které jsou nebo by mohly být v rozporu s právními předpisy České republiky, Listinou základních práv a svobod, osobnostními právy či právy duševního vlastnictví, porušováním a zasahováním do práva autorského, pravidly používání služeb provozovatele a jeho oprávněnými zájmy, jakož i obecně uznávanými zásadami používání služeb poskytovaných prostřednictvím sítě Internet.",
     p7: "Vkládání osobních údajů v registraci a další vkládání osobních údajů, dat, audiovizuálních souborů atd. je zcela dobrovolné a užívání aplikace jimi není podmíněno. Tyto údaje slouží jako prostředek k prezentaci uživatele nebo jeho sportovního týmu a nebudou použity k žádným dalším účelům s výjimkami stanovenými těmito podmínkami. Uživatel je povinen udržovat své přihlašovací údaje (uživatelské jméno a heslo) a údaje svého sportovního týmu v tajnosti. Provozovatel nenese odpovědnost za zneužití identifikačních údajů uživatele vzniklé jeho neopatrností či porušením těchto Podmínek užití.&nbsp;",
-    p8: "Uživatel souhlasí s tím, že údaje, které o své osobě zadá do aplikace Týmuj.cz, vyjma uživatelského hesla, budou viditelné pro ostatní členy jeho týmu.",
+    p8: "Uživatel souhlasí s tím, že údaje, které o své osobě zadá do aplikace {{appName}}, vyjma uživatelského hesla, budou viditelné pro ostatní členy jeho týmu.",
     p9: "Uživatel souhlasí s anonymním užitím registračních a statistických údajů služby provozovatelem služby a jeho partnerů pro rozvoj a provoz služby.",
-    p10: "Uživatel je oprávněn svůj účet v aplikaci kdykoli bez náhrady zrušit, a to kontaktováním provozovatele služby na adrese info@tymuj.cz.",
-    p11: "Provozovatel aplikace Týmuj.cz nenese žádnou odpovědnost za obsah týmových stránek a jejich případné veřejné publikace. Za obsah stránek v rámci služby Týmuj.cz jsou plně odpovědní uživatelé, jejichž uživatelské účty se k těmto stránkám vztahují. Tím není dotčeno ustanovení o odstranění uživatelských účtů či smazání týmu při nedodržení pravidel stanovených těmito Podmínkami užití.",
+    p10: "Uživatel je oprávněn svůj účet v aplikaci kdykoli bez náhrady zrušit, a to kontaktováním provozovatele služby na adrese {{email}}.",
+    p11: "Provozovatel aplikace {{appName}} nenese žádnou odpovědnost za obsah týmových stránek a jejich případné veřejné publikace. Za obsah stránek v rámci služby {{title}}.cz jsou plně odpovědní uživatelé, jejichž uživatelské účty se k těmto stránkám vztahují. Tím není dotčeno ustanovení o odstranění uživatelských účtů či smazání týmu při nedodržení pravidel stanovených těmito Podmínkami užití.",
     p12: "Uživatel je povinen vždy respektovat práva třetích osob, zejména při nakládání s audiovizuálními díly, fotografiemi a obdobnými díly. Veškerou odpovědnost za případné neoprávněné nakládání s takovými předměty nese výhradně uživatel.",
     p13: "Provozovatel je oprávněn zrušit uživatelský účet a/nebo smazat týmový účet, pokud",
     p13a: "Uživatel používá služby v rozporu s dobrými mravy, právními předpisy a obecně uznávanými etickými a morálními principy a obecně uznávanými pravidly používání služeb poskytovaných prostřednictvím sítě Internet nebo má sloužit k páchání trestné činnosti (nebo napomáhání k páchání trestné činnosti), přestupků či jiných deliktů;",
     p13b: "Uživatel bude užívat služby ke komerčním a jiným účelům, které by mohly v konečných důsledcích poškodit provozovatele;",
-    p13c: "Uživatel zneužívá, blokuje, modifikuje či jinak mění jakoukoliv součást serveru a aplikace Týmuj.cz;",
-    p13d: "Uživatel pokusil narušit stabilitu, chod nebo data aplikace Týmuj.cz;",
+    p13c: "Uživatel zneužívá, blokuje, modifikuje či jinak mění jakoukoliv součást serveru a aplikace {{appName}};",
+    p13d: "Uživatel pokusil narušit stabilitu, chod nebo data aplikace {{appName}};",
     p13e: "Uživatel používá aplikaci k šíření komerčního softwaru či jiného nelegálního obsahu chráněného právními předpisy, nebo&nbsp;jej používá&nbsp;k nelegálnímu šíření takového obsahu bez souhlasu autora nebo jiné osoby vykonávající majetková práva;",
     p13f: "Se Provozovatel domnívá, že uživatel porušuje chráněná práva provozovatele nebo třetích osob jiným způsobem než je uvedeno v předchozích bodech.",
     p14: "Uživatel nemá nárok na jakoukoli náhradu v souvislosti se zrušením uživatelského účtu.",
     p15: "Provozovatel si vyhrazuje právo jakéhokoliv zásahu do aplikace, změn a úprav bez nutnosti předchozího oznámení uživatelům.",
-    p16: "Provozovatel nenese odpovědnost za případnou nedostupnost či nefunkčnost služeb a za případnou ztrátu nebo poškození dat uložených či vytvořených v aplikaci Týmuj.cz, vzniklou technickými problémy nebo administrativním zásahem Provozovatele, jakož ani za možnou škodu takovýmto způsobem vzniklou.",
-    p17: "Provozovatel si vyhrazuje právo na změnu těchto Podmínek užití aplikace Týmuj.cz.",
-    p18: "Provozovatelem aplikace Týmuj.cz dostupné na URL adresách&nbsp;&nbsp;&nbsp; https://tymuj.cz a souvisejících podstránkách je společnost Event Service, s.r.o.",
+    p16: "Provozovatel nenese odpovědnost za případnou nedostupnost či nefunkčnost služeb a za případnou ztrátu nebo poškození dat uložených či vytvořených v aplikaci {{appName}}, vzniklou technickými problémy nebo administrativním zásahem Provozovatele, jakož ani za možnou škodu takovýmto způsobem vzniklou.",
+    p17: "Provozovatel si vyhrazuje právo na změnu těchto Podmínek užití aplikace {{appName}}.",
+    p18: "Provozovatelem aplikace {{appName}} dostupné na URL adresách&nbsp;&nbsp;&nbsp; https://{{url}} a souvisejících podstránkách je společnost Event Service, s.r.o.",
   },
   privacy: {
     pageTitle: "Zpracování osobních údajů",
@@ -633,10 +633,10 @@ const cs = {
       p2: "Uživatelské jméno a e-mailovou adresu je nutné zpracovat za účelem vytvoření a administrace uživatelského účtu. Bez poskytnutí těchto údajů nebude možné uživatelský účet vytvořit.",
       p3: "Jméno a příjmení, telefonní číslo, adresu, adresu webových stránek a další kontaktní údaje budou zpracovány za účelem umožnění komunikace s Vámi. Poskytnutí těchto údajů je dobrovolné.",
       p4: "Pohlaví, datum narození, podobizna a přezdívka budou zpracovány za účelem doplnění a úpravy uživatelského profilu dle Vašich potřeb. Poskytnutí těchto údajů je dobrovolné.",
-      p5: "Název sportovního týmu, informace o členství v týmu, informace o účasti na sportovní události, docházka, úkoly a elektronická komunikace v rámci týmu budou zpracovány za účelem využití funkcí aplikace Týmuj provozované Správcem. Poskytnutí těchto osobních údajů je podmínkou pro využití jednotlivých služeb poskytovaných aplikací Týmuj.",
+      p5: "Název sportovního týmu, informace o členství v týmu, informace o účasti na sportovní události, docházka, úkoly a elektronická komunikace v rámci týmu budou zpracovány za účelem využití funkcí aplikace {{title}} provozované Správcem. Poskytnutí těchto osobních údajů je podmínkou pro využití jednotlivých služeb poskytovaných aplikací {{title}}.",
       p6: "Tyto údaje budou Správcem zpracovány po dobu aktivního využívání uživatelského účtu a dále po dobu 3 let od Vašeho posledního přihlášení.",
       p7: "V případě, že jste udělili souhlas se zasíláním newsletterů (obchodních sdělení), bude Vaše e-mailová adresa, jméno a příjmení, pohlaví, datum narození, telefonní číslo, adresa, adresa webových stránek, informace o členství v týmu, provozní údaje týkající se uživatelského účtu zpracována i za účelem zasílání obchodních sdělení, a to po dobu 3 let od udělení souhlasu. Při zasílání obchodních sdělení může být užito profilování ve smyslu čl. 22 Nařízení.",
-      p8: "S výše uvedeným zpracováním udělujete svůj výslovný souhlas. Souhlas lze vzít kdykoliv zpět, a to například zasláním emailu&nbsp;na info@tymuj.cz nebo dopisu na kontaktní údaje Správce. Zpětvzetí souhlasu v důsledku zapříčiní smazání uživatelského profilu.",
+      p8: "S výše uvedeným zpracováním udělujete svůj výslovný souhlas. Souhlas lze vzít kdykoliv zpět, a to například zasláním emailu&nbsp;na {{email}} nebo dopisu na kontaktní údaje Správce. Zpětvzetí souhlasu v důsledku zapříčiní smazání uživatelského profilu.",
       p9: {
         title:
           "Zpracování osobních údajů je prováděno Správcem, osobní údaje však pro Správce mohou zpracovávat i tito zpracovatelé:",
@@ -648,7 +648,7 @@ const cs = {
         smartSelling:
           "společnost SmartSelling a.s., se sídlem Netroufalky 797/5, Bohunice, 625 00 Brno, IČ: 292 10 372;",
         foxMedia:
-          "poskytovatel vývoje a údržby aplikace Týmuj, společnost Fox Media Czech Republic s.r.o., se sídlem Ocelkova 643/20, Černý Most, 198 00 Praha 9, IČ: 29144922;",
+          "poskytovatel vývoje a údržby aplikace {{title}}, společnost Fox Media Czech Republic s.r.o., se sídlem Ocelkova 643/20, Černý Most, 198 00 Praha 9, IČ: 29144922;",
         oracle:
           "poskytovatel softwaru MySQL, společnost Oracle Corporation se sídlem 500 Oracle Parkway Redwood Shores, CA 94065;",
         other:
@@ -676,7 +676,7 @@ const cs = {
         function: "fungování webových stránek.",
       },
       p2: "Sběr cookies za účelem uvedeným v odst. 1 se považuje za zpracování osobních údajů. Takové zpracování je možné na základě zákonného důvodu - oprávněného zájmu Správce, a umožňuje ho čl. 6 odst. 1 písm. f) nařízení Evropského parlamentu a Rady (EU) č. 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/ES (obecné nařízení o ochraně osobních údajů) (dále jen „Nařízení“).",
-      p3: "Webové stránky lze používat i v režimu, který&nbsp;<strong>neumožňuje</strong>&nbsp;sbírání údajů o chování návštěvníků webu – tento režim je možný buďto nastavit v rámci nastavení prohlížeče, nebo je možné vznést proti takovému sběru na základě oprávněného zájmu Správce námitku dle čl. 21 Nařízení na adresu info@tymuj.cz. Vaše námitka bude vyhodnocena bezodkladně. Cookies nezbytná pro funkčnost webu budou uchovány pouze po dobu nezbytně nutnou pro fungování webu.",
+      p3: "Webové stránky lze používat i v režimu, který&nbsp;<strong>neumožňuje</strong>&nbsp;sbírání údajů o chování návštěvníků webu – tento režim je možný buďto nastavit v rámci nastavení prohlížeče, nebo je možné vznést proti takovému sběru na základě oprávněného zájmu Správce námitku dle čl. 21 Nařízení na adresu {{email}}. Vaše námitka bude vyhodnocena bezodkladně. Cookies nezbytná pro funkčnost webu budou uchovány pouze po dobu nezbytně nutnou pro fungování webu.",
       p4: "Vznese-li subjekt námitku proti zpracování technických cookies nezbytných pro fungování webových stránek, nelze v takovém případě zaručit plnou funkčnost a kompatibilitu webových stránek.",
       p5: "Cookies, které jsou sbírány za účelem měření návštěvnosti webu a vytváření statistik týkající se návštěvnosti a chování návštěvníků na webu jsou posuzovány v podobě hromadného celku a tím pádem v anonymní podobě, která neumožňuje identifikaci jednotlivce.",
       p6: {

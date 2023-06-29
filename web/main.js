@@ -51,9 +51,11 @@ const getLocalizedText = (text) => {
   let localizationText;
 
   switch (window.location.host) {
+    case "www.tymuj.cz":
     case "tymuj.cz":
       localizationText = cs;
       break;
+    case "www.teamheadz.com":
     case "teamheadz.com":
     default:
       localizationText = en;
@@ -168,9 +170,11 @@ for (let i = 0; i < questions.length; i++) {
 const buildUrl = function(url, page, pageSize) {
   let lang = en;
   switch (window.location.host) {
+    case "www.tymuj.cz":
     case "tymuj.cz":
       lang = "cs";
       break;
+    case "www.teamheadz.com":
     case "teamheadz.com":
     default:
       lang = "en";
