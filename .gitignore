@@ -2,3 +2,4 @@
 node_modules/
 main.min.css
 main.min.js
+.env
