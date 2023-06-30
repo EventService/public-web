@@ -47,7 +47,7 @@ const translateAndSend = (page, req, res) => {
         // If locale was used in originating page, redirect to correct locale
         if (req.headers.referer) {
           const localeMatch = req.headers.referer
-            ? req.headers.referer.match(/(?<=\/)[\w]{2}(?=[\/\s]|$)/gm)
+            ? req.headers.referer.match(/(?<=\/)en|cs(?=[\/\s]|$)/gm)
             : undefined;
           if (
             !req.params.lang &&
