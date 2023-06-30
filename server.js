@@ -94,7 +94,7 @@ app.use(
     https: true,
     proxyReqOptDecorator: (proxyReqOpts) => {
       proxyReqOpts.headers["Host"] = process.env.FALLBACK_HOST;
-      proxyReqOpts.headers["Connection"] = "Keep-Alive";
+      proxyReqOpts.headers["Connection"] = "keep-alive";
       proxyReqOpts.rejectUnauthorized = false;
       return proxyReqOpts;
     },
