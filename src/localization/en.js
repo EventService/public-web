@@ -504,6 +504,11 @@ const en = {
         description:
           "Contact us at {{email}} and we will issue an invoice with your billing details, which you can pay by bank transfer.",
       },
+      cancel: {
+        title: "How do I check or cancel my subscription to {{title}} Premium?",
+        description:
+          "Payment for {{title}} Premium is made in the form of a Subscription via the Play Store (Android) or App Store (Apple iOS). This article provides instructions on how to check the status of your {{title}} Premium subscription or cancel it: https://{{url}}/news/27",
+      },
     },
   },
   faq: {
