@@ -90,7 +90,6 @@ app.get("/privacy-en", (_req, res) => res.redirect(301, "/en/privacy"));
 
 // Fallback
 app.use(
-  "*",
   proxy(process.env.FALLBACK_URI, {
     https: true,
     proxyReqOptDecorator: (proxyReqOpts) => {
