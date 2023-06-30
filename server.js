@@ -89,7 +89,7 @@ app.get("/terms-of-use-en", (_req, res) =>
 app.get("/privacy-en", (_req, res) => res.redirect(301, "/en/privacy"));
 
 // Fallback
-app.get(
+app.use(
   "*",
   proxy(process.env.FALLBACK_URI, {
     https: true,
