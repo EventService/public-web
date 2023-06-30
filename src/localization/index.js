@@ -27,8 +27,7 @@ const replaceUrls = (text) => {
     uniqueUrls.forEach((url) => {
       replacedText = replacedText.replaceAll(
         url,
-        `<a href="${
-          !url.includes("http") ? "https://" : ""
+        `<a href="${!url.includes("http") ? "https://" : ""
         }${url}" rel="noopener noreferrer" target="blank">${url}</a>`
       );
     });
@@ -40,7 +39,7 @@ const replaceTags = (text) => {
   return replaceUrls(replaceEmails(text));
 };
 
-const getLocalizedText = (text, locale) => {
+const getLocalizedText = (text, locale, host) => {
   let localizationText;
 
   switch (locale) {
@@ -52,7 +51,8 @@ const getLocalizedText = (text, locale) => {
       localizationText = en;
       break;
   }
-  return resolve(text, localizationText);
+
+  return replaceTags(translateHost(resolve(text, localizationText), host));
 };
 
 const getLocalizedHost = (text, host) => {
@@ -86,9 +86,6 @@ const resolve = (path, obj) => {
       console.error(`[Missing translation for ${path}]`);
       return `[Missing translation for ${path}]`;
     }
-    if (typeof prev[curr] === "string") {
-      return replaceTags(prev[curr]);
-    }
     return prev[curr];
   }, obj);
 };
@@ -114,11 +111,10 @@ const translate = (text, host, locale) => {
     matches.forEach((match) => {
       replacedText = replacedText.replace(
         `{{${match}}}`,
-        getLocalizedText(match, locale)
+        getLocalizedText(match, locale, host)
       );
     });
   }
-  replacedText = translateHost(replacedText, host);
   return replacedText;
 };
 

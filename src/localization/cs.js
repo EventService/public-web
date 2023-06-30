@@ -135,7 +135,8 @@ const cs = {
       },
       localization: {
         title: "Česky, anglicky nebo slovensky?",
-        description: "{{title}} umí několika jazyky a další postupně přibývají.",
+        description:
+          "{{title}} umí několika jazyky a další postupně přibývají.",
       },
     },
     premium: {
@@ -498,9 +499,14 @@ const cs = {
       },
       invoice: {
         title:
-          "Co když nemohu platit kartou, nebo potřebuji fakturu do účetnictví??",
+          "Co když nemohu platit kartou, nebo potřebuji fakturu do účetnictví?",
         description:
           "Kontaktujte nás na {{email}} a vystavíme vám fakturu s vašimi fakturačnímu údaji, kterou uhradíte bankovním převodem.",
+      },
+      cancel: {
+        title: "Jak zkontrolovat nebo zrušit předplatné {{title}} Premium?",
+        description:
+          "Platba {{title}} Premium je realizována formou Předplatného prostřednictvím aplikací Obchod Play (Android) nebo App Store (Apple iOS). V tomto článku naleznete návod, jak zkontrolovat stav vašeho předplatného {{title}} Premium nebo ho zrušit: https://{{url}}/news/27",
       },
     },
   },
