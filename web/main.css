@@ -5,7 +5,7 @@
   --secondary-color: #84bd01;
   --text-color: #585858;
   --secondary-text-color: #bbc3ca;
-  --secondary-bg-color: #f5f5f5
+  --secondary-bg-color: #f5f5f5;
 }
 
 /* -------- Reset -------- */
@@ -15,331 +15,403 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-html, body, h1, h2, h3, h4, h5, p, ol, ul, li, blockquote, address, section {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul,
+li,
+blockquote,
+address,
+section {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 /* -------- Fonts -------- */
 
 /* latin-ext */
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9WdhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9WdhyyTh89ZNpQ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
 }
 
 /* cyrillic */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 /* greek-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
 /* greek */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+0370-03FF;
 }
 
 /* vietnamese */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
 }
 
 /* cyrillic */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 /* greek-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
 /* greek */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+0370-03FF;
 }
 
 /* vietnamese */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
 }
 
 /* cyrillic */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 /* greek-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
 /* greek */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+0370-03FF;
 }
 
 /* vietnamese */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
 }
 
 /* cyrillic */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 /* greek-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
 /* greek */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+    format("woff2");
   unicode-range: U+0370-03FF;
 }
 
 /* vietnamese */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v1/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /* -------- Typography -------- */
 
 :root {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Bebas Neue', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   color: var(--primary-color);
 }
@@ -349,11 +421,11 @@ h1 {
   line-height: 100px;
   letter-spacing: -1.79px;
   text-align: center;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 h2 {
-  margin-bottom: .35em;
+  margin-bottom: 0.35em;
   font-size: 3.5rem;
   line-height: 56px;
   letter-spacing: -1px;
@@ -383,7 +455,7 @@ a {
   font-weight: 600;
   border: none;
   color: var(--primary-color);
-  transition: border .1s ease-out;
+  transition: border 0.1s ease-out;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   position: relative;
@@ -398,18 +470,18 @@ a.focus-visible {
 }
 
 a.focus-visible::after {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 8px;
   border: 2px solid var(--secondary-color);
-  top: -.4em;
-  bottom: -.4em;
-  left: -.6em;
-  right: -.6em;
+  top: -0.4em;
+  bottom: -0.4em;
+  left: -0.6em;
+  right: -0.6em;
 }
 
 a.secondary {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   line-height: 25px;
   letter-spacing: 0.11px;
   font-weight: 400;
@@ -417,7 +489,7 @@ a.secondary {
 
 a.simple {
   border-bottom: none;
-} 
+}
 
 a.simple:hover {
   border-bottom: none;
@@ -434,41 +506,35 @@ ul {
 }
 
 @media all and (max-width: 1200px) {
-
   :root {
     font-size: 15px;
   }
-
 }
 
 @media all and (max-width: 1023px) {
-
   :root {
     font-size: 14px;
   }
-
 }
 
 @media all and (max-width: 730px) {
-
   :root {
     font-size: 13px;
   }
 
   h1 {
     font-size: 5rem;
-    line-height: .9em;
+    line-height: 0.9em;
   }
 
   h2 {
     font-size: 3rem;
-    line-height: .95em;
+    line-height: 0.95em;
   }
 
   h3 {
     line-height: 1em;
   }
-
 }
 
 /* -------- Base -------- */
@@ -492,14 +558,16 @@ body.header-open {
   grid-column: span 12;
 }
 
-section:not(.hero) .container > header a::after, .news-item a.secondary::after, .feature-extra a::after {
+section:not(.hero) .container > header a::after,
+.news-item a.secondary::after,
+.feature-extra a::after {
   content: url(img/link-icon.svg);
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 
 a.with-right-arrow::before {
   content: url(img/link-icon.svg);
-  margin-right: .3em;
+  margin-right: 0.3em;
   transform: rotate(180deg);
   display: inline-block;
 }
@@ -519,8 +587,8 @@ a.with-right-arrow::before {
 .button.round {
   color: #fff;
   background-color: var(--secondary-color);
-  padding: .5em 1.7em;
-  font-family: 'Helvetica Neue', 'Inter', sans-serif;
+  padding: 0.5em 1.7em;
+  font-family: "Helvetica Neue", "Inter", sans-serif;
   font-size: inherit;
   font-weight: 400;
   letter-spacing: 0.1px;
@@ -538,10 +606,10 @@ a.with-right-arrow::before {
 
 .button.round.focus-visible::after {
   border-radius: 35px;
-  top: -.4em;
-  bottom: -.4em;
-  left: -.4em;
-  right: -.4em;
+  top: -0.4em;
+  bottom: -0.4em;
+  left: -0.4em;
+  right: -0.4em;
 }
 
 .button.square {
@@ -550,7 +618,7 @@ a.with-right-arrow::before {
   padding: 0 1em;
   height: 38px;
   line-height: 38px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: inherit;
   font-weight: 600;
   letter-spacing: 0.1px;
@@ -567,18 +635,22 @@ a.with-right-arrow::before {
 }
 
 .button.square.focus-visible::after {
-  bottom: -.4em;
+  bottom: -0.4em;
 }
 
 .store-buttons a.focus-visible::after {
   border: 3px solid var(--secondary-color);
-  top: -.4em;
-  bottom: -.1em;
-  left: -.4em;
-  right: -.4em;
+  top: -0.4em;
+  bottom: -0.1em;
+  left: -0.4em;
+  right: -0.4em;
 }
 
-.logo, .logo:hover, .store-buttons a, .partners a, .footer-social a {
+.logo,
+.logo:hover,
+.store-buttons a,
+.partners a,
+.footer-social a {
   border: none;
 }
 
@@ -594,7 +666,7 @@ a.with-right-arrow::before {
 
 .store-buttons a {
   margin-right: 13px;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .store-buttons a:last-of-type {
@@ -614,29 +686,23 @@ a.with-right-arrow::before {
 }
 
 @media all and (max-width: 1200px) {
-
   .container {
     width: 960px;
   }
-
 }
 
 @media all and (max-width: 1023px) {
-
   .container {
     width: 730px;
   }
-
 }
 
 @media all and (max-width: 730px) {
-
   .container {
     width: 87%;
     display: flex;
     flex-direction: column;
   }
-
 }
 
 /* -------- Header -------- */
@@ -692,7 +758,7 @@ button.blue-button {
   margin-left: auto;
   cursor: pointer;
   background-color: transparent;
-  background-image: url('img/hamburger/hamburger-open.svg');
+  background-image: url("img/hamburger/hamburger-open.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -704,7 +770,7 @@ button.blue-button {
   position: absolute;
   right: 3rem;
   top: 3rem;
-  background-image: url('img/hamburger/hamburger-close.svg');
+  background-image: url("img/hamburger/hamburger-close.svg");
 }
 
 #header.open {
@@ -744,8 +810,8 @@ button.blue-button {
 }
 
 @media all and (max-width: 730px) {
-
-  .page-header:not(.open) nav, .page-header:not(.open) .header-buttons {
+  .page-header:not(.open) nav,
+  .page-header:not(.open) .header-buttons {
     display: none;
   }
 
@@ -799,21 +865,25 @@ button.blue-button {
 
 .hero-link:before {
   content: url(img/video-icon.svg);
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 @media all and (max-width: 730px) {
-
   .hero {
     padding-top: 5rem;
   }
-
 }
 
 /* -------- Use cases -------- */
 
 .use-cases {
-  background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-color) 50%, var(--primary-color) 50%, var(--primary-color) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--secondary-color) 50%,
+    var(--primary-color) 50%,
+    var(--primary-color) 100%
+  );
   padding-top: 50px;
   padding-bottom: 85px;
 }
@@ -825,7 +895,8 @@ button.blue-button {
   color: #fff;
 }
 
-.use-case:nth-child(1) h3, .use-case:nth-child(1) .use-case-detail {
+.use-case:nth-child(1) h3,
+.use-case:nth-child(1) .use-case-detail {
   color: var(--primary-color);
 }
 
@@ -868,17 +939,20 @@ button.blue-button {
 }
 
 @media all and (max-width: 1023px) {
-
   .use-case-detail {
     width: 100%;
   }
-
 }
 
 @media all and (max-width: 730px) {
-
   .use-cases {
-    background-image: linear-gradient(to bottom, var(--secondary-color), var(--secondary-color) 50%, var(--primary-color) 50%, var(--primary-color) 100%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--secondary-color),
+      var(--secondary-color) 50%,
+      var(--primary-color) 50%,
+      var(--primary-color) 100%
+    );
     padding: 0;
   }
 
@@ -887,7 +961,7 @@ button.blue-button {
   }
 
   .use-case h3 {
-    margin-bottom: .7em;
+    margin-bottom: 0.7em;
   }
 
   .use-case-details {
@@ -899,12 +973,11 @@ button.blue-button {
     width: 60%;
     margin-bottom: 2em;
     justify-content: flex-start;
-   }
+  }
 
-   .use-case-detail img {
-     margin-right: 2em;
-   }
-
+  .use-case-detail img {
+    margin-right: 2em;
+  }
 }
 
 /* -------- Features -------- */
@@ -941,11 +1014,11 @@ button.blue-button {
 
 .features h3 {
   color: var(--primary-color);
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .features h5 {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .feature-description > p {
@@ -989,7 +1062,6 @@ button.blue-button {
 }
 
 @media all and (max-width: 1023px) {
-
   .feature-description {
     grid-column-end: span 6;
   }
@@ -1003,11 +1075,9 @@ button.blue-button {
     margin-bottom: 0;
     align-self: center;
   }
-
 }
 
 @media all and (max-width: 730px) {
-
   .features .container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1172,7 +1242,6 @@ button.blue-button {
 }
 
 @media all and (max-width: 730px) {
-
   .stats {
     padding-bottom: 4rem;
   }
@@ -1212,10 +1281,10 @@ button.blue-button {
     width: 100%;
   }
 
-  .stat-4, .stat-5 {
+  .stat-4,
+  .stat-5 {
     margin-top: 0;
   }
-
 }
 /* -------- News -------- */
 
@@ -1240,8 +1309,10 @@ button.blue-button {
   background-color: #fff;
   border-radius: 1em;
   overflow: hidden;
-  box-shadow: 0 1px 4px 0 rgba(0, 101, 242, 0.1), 0 0 2px 0 rgba(0, 101, 242, 0.1), 0 11px 15px 0 rgba(0, 0, 0, 0.17);
-
+  box-shadow:
+    0 1px 4px 0 rgba(0, 101, 242, 0.1),
+    0 0 2px 0 rgba(0, 101, 242, 0.1),
+    0 11px 15px 0 rgba(0, 0, 0, 0.17);
 
   display: flex;
   flex-direction: column;
@@ -1277,7 +1348,7 @@ button.blue-button {
 .news-item h4 {
   line-height: 1.33;
   letter-spacing: -0.1px;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .news-item p {
@@ -1285,13 +1356,11 @@ button.blue-button {
 }
 
 @media all and (max-width: 730px) {
-
   .news-item {
     margin-bottom: 3rem;
     width: 80%;
     align-self: center;
   }
-
 }
 
 /* -------- Testimonials -------- */
@@ -1332,11 +1401,11 @@ button.blue-button {
 }
 
 #slider-previous {
-  background-image: url('img/icons/previous.svg');
+  background-image: url("img/icons/previous.svg");
 }
 
 #slider-next {
-  background-image: url('img/icons/next.svg');
+  background-image: url("img/icons/next.svg");
 }
 
 .slider-track {
@@ -1365,7 +1434,9 @@ button.blue-button {
   padding: 2em 0;
   background-image: url(img/grid.svg), url(img/grid.svg);
   background-repeat: no-repeat;
-  background-position: top left, bottom right;
+  background-position:
+    top left,
+    bottom right;
   width: 100%;
   height: 100%;
   flex-shrink: 0;
@@ -1441,7 +1512,6 @@ cite {
 }
 
 @media all and (max-width: 1200px) {
-
   .partners a {
     width: 30%;
   }
@@ -1449,11 +1519,9 @@ cite {
   .partners img {
     width: 100%;
   }
-
 }
 
 @media all and (max-width: 1023px) {
-
   .slide {
     grid-column: span 12;
     margin: 4rem 0;
@@ -1463,11 +1531,9 @@ cite {
   .partners {
     grid-column: span 12;
   }
-
 }
 
 @media all and (max-width: 730px) {
-
   .testimonials header a {
     text-align: center;
   }
@@ -1495,7 +1561,7 @@ cite {
   }
 
   cite {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .partners {
@@ -1506,7 +1572,6 @@ cite {
     width: 45%;
     margin-bottom: 1.4em;
   }
-
 }
 
 /* -------- Call to action -------- */
@@ -1534,19 +1599,16 @@ cite {
 }
 
 @media all and (max-width: 1023px) {
-
-  .cta h2, .cta .store-buttons {
+  .cta h2,
+  .cta .store-buttons {
     grid-column: 3 / span 8;
   }
-
 }
 
 @media all and (max-width: 730px) {
-
   .cta h2 {
     margin-bottom: 1em;
   }
-
 }
 
 /* -------- Footer -------- */
@@ -1560,14 +1622,14 @@ cite {
   justify-self: start;
 }
 
-.footer-links{
+.footer-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   grid-column: 4 / span 6;
 }
 
-.footer-links a{
+.footer-links a {
   font-size: 1rem;
   font-weight: 500;
   font-style: normal;
@@ -1587,7 +1649,7 @@ cite {
 }
 
 .footer-social a {
-  margin-left: .8em;
+  margin-left: 0.8em;
 }
 
 .copyright {
@@ -1620,19 +1682,17 @@ cite {
 }
 
 @media all and (max-width: 1023px) {
-
-  .cta h2, .cta .store-buttons {
+  .cta h2,
+  .cta .store-buttons {
     grid-column: 3 / span 8;
   }
 
   .footer-links a {
     font-size: 0.8rem;
   }
-
 }
 
 @media all and (max-width: 730px) {
-
   .site-footer .container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1658,10 +1718,10 @@ cite {
     align-items: center;
   }
 
-  .copyright a, .copyright p {
+  .copyright a,
+  .copyright p {
     margin: 0;
   }
-
 }
 
 /* -------- FAQ -------- */
@@ -1717,7 +1777,8 @@ cite {
   transform: rotate(180deg);
 }
 
-.faq-question p, .faq-question ul {
+.faq-question p,
+.faq-question ul {
   margin-bottom: 2em;
 }
 
@@ -1747,7 +1808,7 @@ cite {
   height: auto;
 }
 
-.blog-content-wrapper {  
+.blog-content-wrapper {
   grid-column: 3 / span 8;
   margin-bottom: 5rem;
 }
@@ -1787,7 +1848,7 @@ cite {
   padding-bottom: 2rem;
 }
 
-.all-features .container .block > h3  {
+.all-features .container .block > h3 {
   margin-top: 1rem;
 }
 
@@ -1795,7 +1856,6 @@ cite {
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-weight: 600;
-
 }
 
 /* PREMIUM */
@@ -1862,7 +1922,7 @@ cite {
 }
 
 .benefits-table thead tr th {
-  border-bottom: 1px solid #e1e1e1
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .benefits-table thead tr th h4 {
@@ -1947,7 +2007,6 @@ cite {
   text-align: center;
 }
 
-
 .prices-table {
   grid-column: 4 / 10;
   box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.17);
@@ -1961,7 +2020,7 @@ cite {
   .prices-table {
     width: 75%;
     align-self: center;
-    margin-block-end: 50px
+    margin-block-end: 50px;
   }
 }
 
@@ -2046,9 +2105,10 @@ cite {
 
 .prices-illustration {
   grid-column: 3 / 11;
+  grid-row: 3;
   position: absolute;
-  bottom: 0;
   z-index: -1;
+  top: 60px;
 }
 
 @media all and (max-width: 1023px) {
