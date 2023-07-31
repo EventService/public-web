@@ -457,6 +457,7 @@ const cs = {
       },
       contact:
         "Pokud jste správcem více týmů, nebo jste klub či jiná sportovní organizace a potřebujete fakturu s IČ, kontaktujte nás na {{email}}.",
+      sponsor: "Neváhejte se s námi spojit také v případě, že chcete {{title}} Premium pro svůj tým či týmy objednat prostřednictvím svého sponzora nebo zaměstnavatele."
     },
     purchase: {
       title: "Jak zakoupit {{title}} Premium",
