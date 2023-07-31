@@ -458,6 +458,7 @@ const en = {
       },
       contact:
         "If you are a manager of multiple teams or are a club or other sports organization and need an invoice with a tax number, please contact us at {{email}}.",
+      sponsor: "Please also feel free to contact us if you would like to order {{title}} Premium for your team(s) through your sponsor or employer."
     },
     purchase: {
       title: "How to buy {{title}} Premium?",
